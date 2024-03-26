@@ -90,7 +90,7 @@ diccionario_seleccion = {
 }
 def cargar_datos(carrera, semestre):
     
-    ruta_archivo = f'C:/Users/Intevo/Desktop/PROYECTO UNIVERSIDAD DISTRITAL/MÓDULO ANALÍTICA DIAGNÓSTICA/DATOS/{carrera}{semestre}.csv'
+    ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MÓDULO ANALÍTICA DIAGNÓSTICA/DATOS/{carrera}{semestre}.csv'
     datos = pd.read_csv(ruta_archivo,sep=";")
     
     return datos
