@@ -46,7 +46,7 @@ if not creds or not creds.valid:
     else:
         flow = InstalledAppFlow.from_client_secrets_file('C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/credentials.json', SCOPES) # Reemplazar con la ruta correcta
         creds = flow.run_local_server(port=0)
-    with open('token.json', 'w') as token:
+    with open('C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/token.json', 'w') as token:
         token.write(creds.to_json())
         
 # Crear una instancia de la API de Drive
@@ -56,7 +56,7 @@ drive_service = build('drive', 'v3', credentials=creds)
 folder_id = '1hQeetmO4XIObUefS_nzePqKqq3VksUEC'
 
 # Ruta de destino para guardar los archivos descargados
-save_path = 'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-POYECTO/MÓDULO DE ANALÍTICA DIAGNÓSTICA/DATOS'  # Reemplazar con la ruta deseada
+save_path = 'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MÓDULO ANALÍTICA DIAGNÓSTICA/DATOS'  # Reemplazar con la ruta deseada
 
 # Función para descargar archivos de la carpeta de Drive
 def download_folder(folder_id, save_path):
