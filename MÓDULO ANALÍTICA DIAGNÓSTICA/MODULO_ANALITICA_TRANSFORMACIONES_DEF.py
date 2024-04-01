@@ -85,17 +85,62 @@ print("Archivos descargados:")
 for file in files:
     print(file)
     
+
+from fastapi import FastAPI, Request
+from typing import List
+from pydantic import BaseModel
+
+app = FastAPI()
+
 diccionario_seleccion = {
-    "columnas": ['LOCALIDAD_COLEGIO', 'ESTRATO', 'PG_ICFES', 'DISTANCIA'] 
+    "columnas": [],
 }
+
+carrera = ""
+semestre = ""
+
+class InputData(BaseModel):
+    columnas: List[str]
+    carrera: str
+    semestre: int
+
+@app.post("/procesar_datos/")
+async def procesar_datos(data: InputData):
+    global diccionario_seleccion, carrera, semestre
+    
+    diccionario_seleccion["columnas"] = data.columnas
+    carrera = data.carrera
+    semestre = data.semestre
+    
+    print("Diccionario seleccion actualizado:", diccionario_seleccion)
+    print("Carrera actualizada:", carrera)
+    print("Semestre actualizado:", semestre)
+    
+ 
+    # Y luego devolver una respuesta
+    return {"mensaje": "Datos recibidos correctamente"}
+
+@app.get("/")
+async def read_root():
+    return {"message": "¡Bienvenido a la API!", "diccionario_seleccion": diccionario_seleccion, "carrera": carrera, "semestre": semestre}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="127.0.0.1", port=8000)
+    
+
+    
+#diccionario_seleccion = {
+#    "columnas": ['LOCALIDAD_COLEGIO', 'ESTRATO', 'PG_ICFES', 'DISTANCIA'] 
+#}
 def cargar_datos(carrera, semestre):
     
     ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MÓDULO ANALÍTICA DIAGNÓSTICA/DATOS/{carrera}{semestre}.csv'
     datos = pd.read_csv(ruta_archivo,sep=";")
     
     return datos
-carrera="industrial"
-semestre="1"
+#carrera="industrial"
+#semestre="1"
 
 
 df = cargar_datos(carrera, semestre)
