@@ -18,6 +18,10 @@ import os
 from openpyxl import Workbook
 from openpyxl.drawing.image import Image as XLImage
 
+from fastapi import FastAPI, Request
+from typing import List
+from pydantic import BaseModel
+
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -86,10 +90,6 @@ for file in files:
     print(file)
     
 
-from fastapi import FastAPI, Request
-from typing import List
-from pydantic import BaseModel
-
 app = FastAPI()
 
 diccionario_seleccion = {
@@ -127,9 +127,7 @@ async def read_root():
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="127.0.0.1", port=8000)
-    
 
-    
 #diccionario_seleccion = {
 #    "columnas": ['LOCALIDAD_COLEGIO', 'ESTRATO', 'PG_ICFES', 'DISTANCIA'] 
 #}
