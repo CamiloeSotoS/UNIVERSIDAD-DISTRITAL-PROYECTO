@@ -149,7 +149,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('SIN TRANSFORMAR')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
-    plt.show()
+    #plt.show()
     print("sin transformaición)")
     #---------------------------------------------------------------
     # REESCALADO
@@ -175,7 +175,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('REESCALAR')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
-    plt.show()
+    #plt.show()
     print("reescalado)")
     #---------------------------------------------------------------
     # ESTANDARIZADO
@@ -201,7 +201,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('ESTANDARIZACIÓN')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
-    plt.show()
+    #plt.show()
     print("estandarizado)")
     #---------------------------------------------------------------
     # NORMALIZADO
@@ -228,7 +228,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('NORMALIZACIÓN')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
-    plt.show()
+    #plt.show()
     print("normalizado")
     
     #---------------------------------------------------------------
@@ -256,7 +256,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('ESTANDARIZACIÓN ROBUSTA')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
-    plt.show()
+    #plt.show()
     print("robusta")
     #---------------------------------------------------------------
     # YEO JHONSON
@@ -283,7 +283,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('TRANSFORMACIÓN YEO-JHONSON')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
-    plt.show()
+    #plt.show()
     print("yeo")
     #---------------------------------------------------------------
     # BOX COX
@@ -326,7 +326,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('TRANSFORMACIÓN BOX-COX')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
-    plt.show()
+    #plt.show()
     print("box")
     #---------------------------------------------------------------
     #---------------------------------------------------------------
