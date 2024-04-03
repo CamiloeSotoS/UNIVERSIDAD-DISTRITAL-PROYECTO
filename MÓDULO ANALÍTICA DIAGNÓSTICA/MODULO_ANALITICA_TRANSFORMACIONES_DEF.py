@@ -371,19 +371,22 @@ async def procesar_datos(data: InputData):
                         Xpandas_ROB1,Xpandas_T_BOX1,Xpandas_T_JOHNSON1],axis=0)
     X_values1.fillna(0,inplace=True)
 
+    data_with_columns = X_values1.to_dict(orient='records')
+
     diccionario_dataframes = [
         {
-            'transformacion': 'SIN TRANSFORMACION',
-            'dataTransformacion': X_values1.values.tolist()
+
+            'dataTransformacion': data_with_columns,
+            'columnas': X_values1.columns.tolist()
         }
-    ] 
-    with open("dataframes_1S.json", "w") as json_file:
-        json.dump({"data": diccionario_dataframes}, json_file)
+    ]
 
-    print("Los DataFrames han sido guardados en 'dataframes_1S.json'.")
+    # Guardar en archivo JSON
+    with open("dataframes.json", "w") as json_file:
+        json.dump({"data": diccionario_dataframes}, json_file, indent=4)
 
-    # Y luego devolver una respuesta
-    return {"mensaje": "Datos recibidos correctamente"}
+    print("Los DataFrames han sido guardados en 'dataframes.json'.")
+
 
 @app.get("/")
 async def read_root():
