@@ -2630,7 +2630,6 @@ async def procesar_datos(data: InputData):
         json.dump({"data": diccionario_dataframes}, json_file, indent=4)
 
         print("Los DataFrames han sido guardados en 'Metricas_Modelos.json'.")
-
 #AdaBoost
 #Bagging
 #CatBoost
@@ -2652,7 +2651,6 @@ async def procesar_datos(data: InputData):
 #VotingSoft
 #VotingWeighted
 #XGB
-
 @app.get("/")
 async def read_root():
     return {"message": "¡Bienvenido a la API!", "modelo": modelos_seleccionados, "carrera": carrera, "semestre": semestre}
