@@ -47,6 +47,7 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.model_selection import KFold
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import cross_val_score
+from sklearn.model_selection import StratifiedKFold
 
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
@@ -241,7 +242,7 @@ async def procesar_datos(data: InputData):
         modelo = KNeighborsClassifier()
         semilla = 5
         num_folds = 10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn_transformado, Y_trn)
@@ -332,7 +333,7 @@ async def procesar_datos(data: InputData):
         modelo = SVC()
         semilla=5
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -426,7 +427,7 @@ async def procesar_datos(data: InputData):
         modelo = DecisionTreeClassifier()
         semilla=7
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -513,7 +514,7 @@ async def procesar_datos(data: InputData):
         modelo = GaussianNB()
         semilla=7
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -602,7 +603,7 @@ async def procesar_datos(data: InputData):
         modelo = LinearDiscriminantAnalysis()
         semilla=7
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -700,7 +701,7 @@ async def procesar_datos(data: InputData):
         modelo = BaggingClassifier(estimator=base_estimator, oob_score=True, random_state=1)
         semilla=7
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -790,7 +791,7 @@ async def procesar_datos(data: InputData):
         modelo = RandomForestClassifier()
         semilla=7
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -886,7 +887,7 @@ async def procesar_datos(data: InputData):
                                     min_samples_leaf=1,  min_samples_split = 2,
                                     bootstrap=True,criterion='gini') 
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold =StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -976,7 +977,7 @@ async def procesar_datos(data: InputData):
         modelo = AdaBoostClassifier(estimator = None,  algorithm = 'SAMME.R', 
                                     random_state= None, n_estimators =50) 
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -1069,7 +1070,7 @@ async def procesar_datos(data: InputData):
                                         min_samples_split= 2, min_samples_leaf= 3,max_features= 2)
         semilla=7
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -1159,7 +1160,7 @@ async def procesar_datos(data: InputData):
                             min_child_weight =6,gamma = 0.05,learning_rate = 0.3)
         semilla=7
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -1250,7 +1251,7 @@ async def procesar_datos(data: InputData):
         modelo = CatBoostClassifier(random_state=semilla, verbose =0)
         semilla=7
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -1344,7 +1345,7 @@ async def procesar_datos(data: InputData):
                             min_split_gain = 0, boosting_type = 'gbdt')
         semilla=7
         num_folds=10
-        kfold = KFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
@@ -1429,7 +1430,7 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_voting_hard_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         semilla= 7 
-        kfold = KFold(n_splits=10, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
         
         modelo1 = GradientBoostingClassifier(random_state=semilla, n_estimators=800, 
                                         learning_rate = 0.01, max_depth = 2,
@@ -1564,7 +1565,7 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         semilla= 7 
-        kfold = KFold(n_splits=10, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
         modelo1 = GradientBoostingClassifier(random_state=semilla, n_estimators=800, 
                                         learning_rate = 0.01, max_depth = 2,
                                         max_features =2, min_samples_leaf = 9, 
@@ -1692,7 +1693,7 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         semilla= 7 
-        kfold = KFold(n_splits=10, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
         base_estimator=DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
                                         max_depth=8, max_features=1, max_leaf_nodes=None,
                                         min_impurity_decrease=0.0,
@@ -1811,7 +1812,7 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         semilla= 7 
-        kfold = KFold(n_splits=10, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
         modelo3 = ExtraTreesClassifier(n_estimators=400, max_features=None,bootstrap = False, 
                                         max_depth = 11,min_samples_split = 4, 
                                         min_samples_leaf = 1)
@@ -2042,7 +2043,7 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_super_aprendiz(X_trn, Y_trn):
         X_trn_transformado = X_trn
         semilla = 7 
-        kfold = KFold(n_splits=10, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
         modelo3 = ExtraTreesClassifier(n_estimators=400, max_features=None, bootstrap=False, 
                                     max_depth=11, min_samples_split=4, min_samples_leaf=1)
 
@@ -2166,7 +2167,7 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn):
         X_trn_transformado = X_trn
         semilla = 7 
-        kfold = KFold(n_splits=10, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
         modelo3 = ExtraTreesClassifier(n_estimators=400, max_features=None, bootstrap=False, 
                                     max_depth=11, min_samples_split=4, min_samples_leaf=1)
 
@@ -2377,7 +2378,6 @@ async def procesar_datos(data: InputData):
     print("Exactitud: ", round(accuracy*100, 2))
     print("Información Mutua Normalizada (NMI):", round(nmi*100, 2))
     print("Índice Kappa de Cohen:", round(kappa*100, 2))
-
 
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
