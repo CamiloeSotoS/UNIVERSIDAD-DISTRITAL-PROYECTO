@@ -1149,6 +1149,7 @@ async def procesar_datos(data: InputData):
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    XGB
 #------------------------------------------------------------------------------------------------------------------------------------------
+
     def entrenar_modelo_XB_con_transformacion(X_trn, Y_trn):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
@@ -1176,6 +1177,8 @@ async def procesar_datos(data: InputData):
 
     modelo_XB = entrenar_modelo_XB_con_transformacion(X_trn, Y_trn)
 
+
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_XB = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_XB.predict(X_trn)
@@ -1193,6 +1196,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1200,11 +1204,16 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_XB_entrenamiento = pd.concat([resultados_df_XB, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
-    resultados_df_XB_entrenamiento["MODELO"]=' XGB'
+    resultados_df_XB_entrenamiento["MODELO"]='XGB'
     resultados_df_XB_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_XB_entrenamiento
+    
+    
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_XB = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_XB.predict(X_tst)
@@ -1222,6 +1231,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1229,14 +1239,15 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_XB_prueba = pd.concat([resultados_df_XB, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_XB_prueba["MODELO"]='XGB'
     resultados_df_XB_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_XB_prueba
-
+    
     resultados_df_XB = pd.concat([resultados_df_XB_prueba,resultados_df_XB_entrenamiento], ignore_index=True)
     resultados_df_XB
-
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
