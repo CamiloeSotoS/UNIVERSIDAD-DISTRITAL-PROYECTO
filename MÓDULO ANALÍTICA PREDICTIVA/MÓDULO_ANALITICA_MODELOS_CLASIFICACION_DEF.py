@@ -237,7 +237,7 @@ async def procesar_datos(data: InputData):
         'metric': ['euclidean', 'manhattan', 'minkowski'],
         'algorithm': ['auto', 'kd_tree','ball_tree','brute'],
         'p': [i for i in range(1, 18,1)],
-        'weights': ['uniform'],
+        'weights': ['uniform','distance'],
         
     }
         modelo = KNeighborsClassifier()
