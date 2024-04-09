@@ -237,7 +237,7 @@ async def procesar_datos(data: InputData):
         'metric': ['euclidean', 'manhattan', 'minkowski'],
         'algorithm': ['auto', 'kd_tree','ball_tree','brute'],
         'p': [i for i in range(1, 18,1)],
-        'weights': ['uniform','distance'],
+        'weights': ['uniform'],
         
     }
         modelo = KNeighborsClassifier()
@@ -318,6 +318,8 @@ async def procesar_datos(data: InputData):
     resultados_df_knn_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_knn_prueba
     
+    mejores_hiperparametros_knn = modelo_knn.get_params()
+
     cadena_hiperparametros_knn = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_knn.items()])
     df_hiperparametros_knn = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -418,6 +420,9 @@ async def procesar_datos(data: InputData):
     resultados_df_svc_prueba["MODELO"]='SVC'
     resultados_df_svc_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_svc_prueba
+
+    mejores_hiperparametros_svc = modelo_svc.get_params()
+    mejores_hiperparametros_svc
 
     cadena_hiperparametros_svc = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_svc.items()])
     df_hiperparametros_svc = pd.DataFrame({
@@ -523,6 +528,9 @@ async def procesar_datos(data: InputData):
     resultados_df_tree_prueba["MODELO"]='DecisionTree'
     resultados_df_tree_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_tree_prueba
+    
+    mejores_hiperparametros_tree = modelo_tree.get_params()
+    mejores_hiperparametros_tree
     
     cadena_hiperparametros_tree = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_tree.items()])
     df_hiperparametros_tree = pd.DataFrame({
@@ -710,6 +718,9 @@ async def procesar_datos(data: InputData):
     resultados_df_LDA_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_LDA_prueba
 
+    mejores_hiperparametros_LDA = modelo_LDA.get_params()
+    mejores_hiperparametros_LDA
+
     cadena_hiperparametros_LDA = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_LDA.items()])
     df_hiperparametros_LDA = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -820,6 +831,9 @@ async def procesar_datos(data: InputData):
     resultados_df_BG_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_BG_prueba
 
+    mejores_hiperparametros_BG = modelo_BG.get_params()
+    mejores_hiperparametros_BG
+
     cadena_hiperparametros_BG = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_BG.items()])
     df_hiperparametros_BG = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -920,6 +934,9 @@ async def procesar_datos(data: InputData):
     resultados_df_random_prueba["MODELO"]='RandomForest'
     resultados_df_random_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_random_prueba
+
+    mejores_hiperparametros_random = modelo_random.get_params()
+    mejores_hiperparametros_random
 
     cadena_hiperparametros_random = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_random.items()])
     df_hiperparametros_random = pd.DataFrame({
@@ -1027,6 +1044,9 @@ async def procesar_datos(data: InputData):
     resultados_df_extra_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_extra_prueba
 
+    mejores_hiperparametros_extra = modelo_extra.get_params()
+    mejores_hiperparametros_extra
+
     cadena_hiperparametros_extra = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_extra.items()])
     df_hiperparametros_extra = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -1126,6 +1146,9 @@ async def procesar_datos(data: InputData):
     resultados_df_ADA_prueba["MODELO"]='AdaBoost'
     resultados_df_ADA_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_ADA_prueba
+
+    mejores_hiperparametros_ADA = modelo_ADA.get_params()
+    mejores_hiperparametros_ADA
 
     cadena_hiperparametros_ADA = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_ADA.items()])
     df_hiperparametros_ADA = pd.DataFrame({
@@ -1232,6 +1255,9 @@ async def procesar_datos(data: InputData):
     resultados_df_GD_prueba["MODELO"]='GradientBoosting'
     resultados_df_GD_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_GD_prueba
+
+    mejores_hiperparametros_GD = modelo_GD.get_params()
+    mejores_hiperparametros_GD
 
     cadena_hiperparametros_GD = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_GD.items()])
     df_hiperparametros_GD = pd.DataFrame({
@@ -1348,6 +1374,9 @@ async def procesar_datos(data: InputData):
     # Imprimir el DataFrame con los resultados
     resultados_df_XB_prueba
     
+    mejores_hiperparametros_XB = modelo_XB.get_params()
+    mejores_hiperparametros_XB
+    
     cadena_hiperparametros_XB = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_XB.items()])
     df_hiperparametros_XB = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -1449,6 +1478,9 @@ async def procesar_datos(data: InputData):
     resultados_df_CB_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_CB_prueba
 
+    mejores_hiperparametros_CB = modelo_CB.get_params()
+    mejores_hiperparametros_CB
+
     cadena_hiperparametros_CB = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_CB.items()])
     df_hiperparametros_CB = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -1469,30 +1501,33 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_LIGHT_con_transformacion(X_trn, Y_trn):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
-        parameters = { 'min_child_samples' : [i for i in range(200, 10000, 100)]}
+        parameters = {
+        'min_child_samples' : [i for i in range(200, 10000, 100)],'colsample_bytree': [0.6, 0.8, 1.0],
+        'boosting_type': ['gbdt', 'dart', 'goss'],'objective': ['binary', 'multiclass'],'random_state': [42]}
         semilla=7
         modelo = LGBMClassifier (random_state=semilla,                           
-                            num_leaves =  10,max_depth = 1, n_estimators = 100,    
-                            learning_rate = 0.1 ,class_weight=  None, subsample = 1,
-                            colsample_bytree= 1, reg_alpha=  0, reg_lambda = 0,
-                            min_split_gain = 0, boosting_type = 'gbdt')
+                                num_leaves =  10,max_depth = 1, n_estimators = 100,    
+                                learning_rate = 0.1 ,class_weight=  None, subsample = 1,
+                                colsample_bytree= 1, reg_alpha=  0, reg_lambda = 0,
+                                min_split_gain = 0, boosting_type = 'gbdt')
         semilla=7
         num_folds=10
         kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_LIGHT=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = LGBMClassifier(verbose=-1,**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo,grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_LIGHT = entrenar_modelo_LIGHT_con_transformacion(X_trn, Y_trn)
+    modelo_LIGHT,mejores_hiperparametros_LIGHT = entrenar_modelo_LIGHT_con_transformacion(X_trn, Y_trn)
 
     resultados_df_LIGHT = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1551,6 +1586,17 @@ async def procesar_datos(data: InputData):
     resultados_df_LIGHT_prueba["MODELO"]='LGBM'
     resultados_df_LIGHT_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_LIGHT_prueba
+
+    mejores_hiperparametros_LIGHT = modelo_LIGHT.get_params()
+    mejores_hiperparametros_LIGHT
+
+    cadena_hiperparametros_LIGHT = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_LIGHT.items()])
+    df_hiperparametros_LIGHT = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_LIGHT],
+        'MODELO': ['LGBM'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
 
     resultados_df_LIGHT = pd.concat([resultados_df_LIGHT_prueba,resultados_df_LIGHT_entrenamiento], ignore_index=True)
     resultados_df_LIGHT
@@ -1621,14 +1667,15 @@ async def procesar_datos(data: InputData):
         mejor_modelo.fit(X_trn_transformado, Y_trn)
         resultados = cross_val_score(mejor_modelo, X_trn_transformado, Y_trn, 
                                         cv=kfold,scoring = metrica)
+        mejores_hiperparametros_voting_hard=mejor_modelo.get_params
         print("Rendimiento del modelo:") 
         print ("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean()*100," % ") 
-        return mejor_modelo
+        return mejor_modelo, mejores_hiperparametros_voting_hard
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_voting_hard = entrenar_modelo_voting_hard_con_transformacion(X_trn, Y_trn)
+    modelo_voting_hard, mejores_hiperparametros_voting_hard = entrenar_modelo_voting_hard_con_transformacion(X_trn, Y_trn)
 
     resultados_df_voting_hard = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1682,6 +1729,13 @@ async def procesar_datos(data: InputData):
     df_accuracy = pd.DataFrame({'MÉTRICA': ['Exactitud'], 'VALOR': [round(accuracy*100, 2)]})
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
+
+    estimadores = modelo_voting_hard.estimators
+    hiperparametros_voting_hard = []
+    for nombre, estimador in estimadores:
+        hiperparametros = estimador.get_params()
+        hiperparametros_estimador = {'Estimador': nombre, 'Hiperparámetros': hiperparametros}
+        hiperparametros_voting_hard.append(hiperparametros_estimador)
 
     resultados_df_voting_hard_prueba = pd.concat([resultados_df_voting_hard, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_voting_hard_prueba["MODELO"]='VotingHard'
