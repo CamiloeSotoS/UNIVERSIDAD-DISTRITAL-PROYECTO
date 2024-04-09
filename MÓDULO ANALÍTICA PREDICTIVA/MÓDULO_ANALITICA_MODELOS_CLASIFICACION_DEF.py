@@ -840,7 +840,7 @@ async def procesar_datos(data: InputData):
         parameters = { 
                     'min_samples_split' : [1, 2 , 3,  4 , 6 , 8 , 10 , 15, 20 ],  
                     'min_samples_leaf' : [ 1 , 3 , 5 , 7 , 9, 12, 15 ],
-                    'criterion':('gini','entropy')
+                    'criterion':('gini','entropy','log_loss'),
                     
                 }
         modelo = RandomForestClassifier()
@@ -1046,10 +1046,11 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_ADA_con_transformacion(X_trn, Y_trn):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
-        parameters = {'learning_rate' : [i/10000.0 for i in range(5,20,5)]}
+        parameters = {'learning_rate' : [i/10000.0 for i in range(5,20,5)],
+                  'n_estimators':[i for i in range(1,50,1)]}
         semilla=7            
         modelo = AdaBoostClassifier(estimator = None,  algorithm = 'SAMME.R', 
-                                    random_state= None, n_estimators =50) 
+                                    random_state= None) 
         num_folds=10
         kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
@@ -1145,11 +1146,12 @@ async def procesar_datos(data: InputData):
         X_trn_transformado = X_trn
         parameters = { 
                     'learning_rate' : [0.01, 0.05, 0.1,0.15],
-                    'n_estimators': [i for i in range(100,1200,100)]      
+                    'n_estimators': [i for i in range(100,1200,100)],
+                    'criterion':['friedman_mse']     
                 }
         semilla=7
         modelo = GradientBoostingClassifier(random_state=semilla,
-                                        n_estimators= 100,learning_rate= 0.1,max_depth= 2,
+                                        learning_rate= 0.1,max_depth= 2,
                                         min_samples_split= 2, min_samples_leaf= 3,max_features= 2)
         semilla=7
         num_folds=10
@@ -1245,33 +1247,37 @@ async def procesar_datos(data: InputData):
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    XGB
 #------------------------------------------------------------------------------------------------------------------------------------------
-
     def entrenar_modelo_XB_con_transformacion(X_trn, Y_trn):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
         parameters = {'reg_alpha': [0,0.1,0.2,0.3,0.4,0.5],
-                    'reg_lambda':  [i/100.0 for i in range(130,150,5)]}
+                    'reg_lambda':  [i/1000.0 for i in range(100,150,5)],
+                    'n_estimators':  [i for i in range(1,10,2)],
+                    'colsample_bytree': [0.1,0.3, 0.5,0.6,0.7,0.8, 0.9, 1,1.1],
+                    'objective' : ('binary:logistic', 'Multi: softprob'),
+                    'loss': ['log_loss'],
+                    'max_features':('sqrt','log2')
+                    }
         semilla=7
-        modelo = XGBClassifier(random_state=semilla,                       
-                            n_estimators=40,colsample_bytree = 1, subsample =1,max_depth =2,
-                            min_child_weight =6,gamma = 0.05,learning_rate = 0.3)
+        modelo = XGBClassifier(random_state=semilla,subsample =1,max_depth =2)
         semilla=7
         num_folds=10
         kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_XB=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = XGBClassifier(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo,grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_XB = entrenar_modelo_XB_con_transformacion(X_trn, Y_trn)
+    modelo_XB,mejores_hiperparametros_XB = entrenar_modelo_XB_con_transformacion(X_trn, Y_trn)
 
 
     # Predecir las etiquetas para los datos de prueba
@@ -1342,7 +1348,15 @@ async def procesar_datos(data: InputData):
     # Imprimir el DataFrame con los resultados
     resultados_df_XB_prueba
     
-    resultados_df_XB = pd.concat([resultados_df_XB_prueba,resultados_df_XB_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_XB = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_XB.items()])
+    df_hiperparametros_XB = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_XB],
+        'MODELO': ['XGB'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+
+    resultados_df_XB = pd.concat([resultados_df_XB_prueba,resultados_df_XB_entrenamiento,df_hiperparametros_XB], ignore_index=True)
     resultados_df_XB
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -1353,7 +1367,9 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_CB_con_transformacion(X_trn, Y_trn):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
-        parameters = {'border_count':[53],'l2_leaf_reg': [42]} 
+        parameters = {'border_count':[53],'l2_leaf_reg': [42],'learning_rate': [0.01, 0.05, 0.1],
+                    'depth': [4, 6, 8],'thread_count': [4, 8, 12]
+                    } 
         semilla=7
         modelo = CatBoostClassifier(random_state=semilla, verbose =0)
         semilla=7
@@ -1362,17 +1378,18 @@ async def procesar_datos(data: InputData):
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_CB=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = CatBoostClassifier(verbose=0,**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo,grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_CB = entrenar_modelo_CB_con_transformacion(X_trn, Y_trn)
+    modelo_CB,mejores_hiperparametros_CB = entrenar_modelo_CB_con_transformacion(X_trn, Y_trn)
 
     resultados_df_CB = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1432,7 +1449,16 @@ async def procesar_datos(data: InputData):
     resultados_df_CB_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_CB_prueba
 
-    resultados_df_CB = pd.concat([resultados_df_CB_prueba,resultados_df_CB_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_CB = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_CB.items()])
+    df_hiperparametros_CB = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_CB],
+        'MODELO': ['CatBoost'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+
+
+    resultados_df_CB = pd.concat([resultados_df_CB_prueba,resultados_df_CB_entrenamiento,df_hiperparametros_CB], ignore_index=True)
     resultados_df_CB
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
