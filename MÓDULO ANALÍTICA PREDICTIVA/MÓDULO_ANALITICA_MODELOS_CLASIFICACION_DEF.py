@@ -233,12 +233,13 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         parameters = {
-            'n_neighbors': [i for i in range(14, 18, 1)],
-            'metric': ['euclidean', 'manhattan', 'minkowski'],
-            'algorithm': ['auto'],
-            'p': [i for i in range(1, 6)],
-            'weights': ['uniform']
-        }
+        'n_neighbors': [i for i in range(1, 18, 1)],
+        'metric': ['euclidean', 'manhattan', 'minkowski'],
+        'algorithm': ['auto', 'kd_tree','ball_tree','brute'],
+        'p': [i for i in range(1, 18,1)],
+        'weights': ['uniform'],
+        
+    }
         modelo = KNeighborsClassifier()
         semilla = 5
         num_folds = 10
@@ -246,18 +247,18 @@ async def procesar_datos(data: InputData):
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn_transformado, Y_trn)
+        mejores_hiperparametros_knn=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
-
         mejor_modelo = KNeighborsClassifier(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
-
+        return mejor_modelo ,grid_resultado.best_params_
     X_trn = X_trn
     Y_trn = Y_trn 
+    modelo_knn, mejores_hiperparametros_knn = entrenar_modelo_knn_con_transformacion(X_trn, Y_trn)
+    mejores_hiperparametros_knn
 
-    modelo_knn = entrenar_modelo_knn_con_transformacion(X_trn, Y_trn)
     
     resultados_df_knn = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -316,7 +317,16 @@ async def procesar_datos(data: InputData):
     resultados_df_knn_prueba["MODELO"]='KNeighbors'
     resultados_df_knn_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_knn_prueba
-    resultados_df_knn = pd.concat([resultados_df_knn_prueba,resultados_df_knn_entrenamiento], ignore_index=True)
+    
+    cadena_hiperparametros_knn = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_knn.items()])
+    df_hiperparametros_knn = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_knn],
+        'MODELO': ['KNeighbors'],
+        'TIPO_DE_DATOS': ['Entrenamiento']
+    })
+    resultados_df_knn = pd.concat([resultados_df_knn_prueba,resultados_df_knn_entrenamiento,df_hiperparametros_knn], ignore_index=True)
+    resultados_df_knn['TIPO_DE_DATOS']=np.where(resultados_df_knn['MÉTRICA']=='Mejores Hiperparametros','Hiperparametros del modelo',resultados_df_knn['TIPO_DE_DATOS'])
     resultados_df_knn
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -325,9 +335,9 @@ async def procesar_datos(data: InputData):
 #------------------------------------------------------------------------------------------------------------------------------------------
     def entrenar_modelo_svc_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
-        parameters = { 'kernel':  ['rbf'], 
+        parameters = { 'kernel':   ['rbf', 'poly', 'sigmoid','linear'], 
                 'C': [i/10000 for i in range(8,12,1)],
-                'max_iter':[i for i in range(1,100)],
+                'max_iter':[i for i in range(1,3,1)],
                 'gamma' : [i/100 for i in range(90,110,5)],
                 'random_state':[i for i in range(1,5,1)]}
         modelo = SVC()
@@ -337,17 +347,19 @@ async def procesar_datos(data: InputData):
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_svc=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = SVC(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo ,grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_svc = entrenar_modelo_svc_con_transformacion(X_trn, Y_trn)
+    modelo_svc,mejores_hiperparametros_svc = entrenar_modelo_svc_con_transformacion(X_trn, Y_trn)
+    mejores_hiperparametros_svc
 
     resultados_df_SVC = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -407,7 +419,14 @@ async def procesar_datos(data: InputData):
     resultados_df_svc_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_svc_prueba
 
-    resultados_df_svc = pd.concat([resultados_df_svc_prueba,resultados_df_svc_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_svc = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_svc.items()])
+    df_hiperparametros_svc = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_svc],
+        'MODELO': ['SVC'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_svc = pd.concat([resultados_df_svc_prueba,resultados_df_svc_entrenamiento,df_hiperparametros_svc], ignore_index=True)
     resultados_df_svc
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -417,13 +436,15 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_tree_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         parameters = {          
-                'max_depth':[i for i in range(3,6,1)],
-                'min_samples_split' :  [i for i in range(1,3,1)],  
-                'min_samples_leaf' : [i for i in range(1,3,1)], 
-                'max_features' : [i for i in range(5,7,1)], 
+                'max_depth':[i for i in range(1,7,1)],
+                'min_samples_split' :  [i for i in range(1,7,1)],  
+                'min_samples_leaf' : [i for i in range(1,7,1)], 
+                'max_features' : [i for i in range(1,7,1)], 
                 'splitter': ["best", "random"],
-                'random_state': [i for i in range(1,4,1)],
-                'criterion': ['entropy']}
+                'random_state': [i for i in range(1,5,1)],
+                'criterion': ['entropy']
+                
+    }
         modelo = DecisionTreeClassifier()
         semilla=7
         num_folds=10
@@ -431,17 +452,19 @@ async def procesar_datos(data: InputData):
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_tree=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = DecisionTreeClassifier(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo,grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_tree = entrenar_modelo_tree_con_transformacion(X_trn, Y_trn)
+    modelo_tree,mejores_hiperparametros_tree = entrenar_modelo_tree_con_transformacion(X_trn, Y_trn)
+
 
     resultados_df_tree = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -501,7 +524,14 @@ async def procesar_datos(data: InputData):
     resultados_df_tree_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_tree_prueba
     
-    resultados_df_tree = pd.concat([resultados_df_tree_prueba,resultados_df_tree_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_tree = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_tree.items()])
+    df_hiperparametros_tree = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_tree],
+        'MODELO': ['DecisionTree'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_tree = pd.concat([resultados_df_tree_prueba,resultados_df_tree_entrenamiento,df_hiperparametros_tree], ignore_index=True)
     resultados_df_tree
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -598,8 +628,9 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         parameters = { 'solver':  ['svd','lsqr','eigen'],
-                'n_components':[1,2,3,4,5,None],
-                'shrinkage': ['auto',None, 0, 0.001, 0.01, 0.1, 0.5,1]}
+                'n_components':[1,2,3,4,5],
+                'shrinkage': ['auto', 0.001, 0.01, 0.1, 0.5,1,10,100,1000],
+                'tol':[i/1000 for i in range(1,100,1)]}
         modelo = LinearDiscriminantAnalysis()
         semilla=7
         num_folds=10
@@ -607,17 +638,19 @@ async def procesar_datos(data: InputData):
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_LDA=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = LinearDiscriminantAnalysis(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo, grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_LDA = entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn)
+    modelo_LDA,mejores_hiperparametros_LDA = entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn)
+    mejores_hiperparametros_LDA
 
     resultados_df_LDA = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -677,7 +710,14 @@ async def procesar_datos(data: InputData):
     resultados_df_LDA_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_LDA_prueba
 
-    resultados_df_LDA = pd.concat([resultados_df_LDA_prueba,resultados_df_LDA_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_LDA = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_LDA.items()])
+    df_hiperparametros_LDA = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_LDA],
+        'MODELO': ['LDA'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_LDA = pd.concat([resultados_df_LDA_prueba,resultados_df_LDA_entrenamiento,df_hiperparametros_LDA], ignore_index=True)
     resultados_df_LDA
 
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -689,31 +729,38 @@ async def procesar_datos(data: InputData):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
         parameters = {'n_estimators': [i for i in range(750,760,5)],
-                'max_samples' : [i/100.0 for i in range(40,50,5)],
-                'max_features': [i/100.0 for i in range(60,65,5)],
+                'max_samples' : [i/100.0 for i in range(70,90,5)],
+                'max_features': [i/100.0 for i in range(75,85,5)],
                 'bootstrap': [True], 
                 'bootstrap_features': [True]}
         
-        base_estimator= DecisionTreeClassifier(criterion= 'gini', 
-                                    max_depth=5, max_features= 3,min_samples_leaf= 4, 
-                                    min_samples_split = 8,random_state= 10, splitter= 'random')
-
-        modelo = BaggingClassifier(estimator=base_estimator, oob_score=True, random_state=1)
+        base_estimator= DecisionTreeClassifier(criterion= 'entropy', 
+                                    max_depth=5, 
+                                    max_features= 3,
+                                    min_samples_leaf= 4, 
+                                    min_samples_split = 8,
+                                    random_state= 3, 
+                                    splitter= 'best')
         semilla=7
+        modelo = BaggingClassifier(estimator=base_estimator,n_estimators=750, random_state=semilla,
+                                bootstrap= True, bootstrap_features = True, max_features = 0.7,
+                                max_samples= 0.5)
+        
         num_folds=10
         kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_BG=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = BaggingClassifier(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo,grid_resultado.best_params_
     X_trn = X_trn
     Y_trn = Y_trn 
-    modelo_BG = entrenar_modelo_BG_con_transformacion(X_trn, Y_trn)
+    modelo_BG,mejores_hiperparametros_BG = entrenar_modelo_BG_con_transformacion(X_trn, Y_trn)
 
     resultados_df_BG = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -773,7 +820,14 @@ async def procesar_datos(data: InputData):
     resultados_df_BG_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_BG_prueba
 
-    resultados_df_BG = pd.concat([resultados_df_BG_prueba,resultados_df_BG_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_BG = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_BG.items()])
+    df_hiperparametros_BG = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_BG],
+        'MODELO': ['Bagging'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_BG = pd.concat([resultados_df_BG_prueba,resultados_df_BG_entrenamiento,df_hiperparametros_BG], ignore_index=True)
     resultados_df_BG
 
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -784,8 +838,9 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_random_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         parameters = { 
-                    'min_samples_split' : [ 2 , 4 , 6 , 8 , 10 , 15 ],  
-                    'min_samples_leaf' : [ 1 , 3 , 5 , 7 , 9 ] 
+                    'min_samples_split' : [1, 2 , 3,  4 , 6 , 8 , 10 , 15, 20 ],  
+                    'min_samples_leaf' : [ 1 , 3 , 5 , 7 , 9, 12, 15 ],
+                    'criterion':('gini','entropy')
                     
                 }
         modelo = RandomForestClassifier()
@@ -795,18 +850,18 @@ async def procesar_datos(data: InputData):
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_random=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = RandomForestClassifier(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo,grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_random = entrenar_modelo_random_con_transformacion(X_trn, Y_trn)
-
+    modelo_random,mejores_hiperparametros_random = entrenar_modelo_random_con_transformacion(X_trn, Y_trn)
 
     resultados_df_random = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -866,42 +921,52 @@ async def procesar_datos(data: InputData):
     resultados_df_random_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_random_prueba
 
-    resultados_df_random = pd.concat([resultados_df_random_prueba,resultados_df_random_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_random = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_random.items()])
+    df_hiperparametros_random = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_random],
+        'MODELO': ['RandomForest'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_random = pd.concat([resultados_df_random_prueba,resultados_df_random_entrenamiento,df_hiperparametros_random], ignore_index=True)
     resultados_df_random
-
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    EXTRATREES
 #------------------------------------------------------------------------------------------------------------------------------------------
-
     def entrenar_modelo_extra_con_transformacion(X_trn, Y_trn):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
-        parameters = {'min_samples_split' : [i for i in range(1,3,1)], 
-                    'min_samples_leaf' : [i for i in range(0,2,1)] }
+        parameters = {'min_samples_split' : [i for i in range(1,10,1)], 
+                    'min_samples_leaf' : [i for i in range(0,10,1)],
+                    #'max_features':[i for i in range(0,5,1)],
+                    #'max_depth':[i for i in range(0,5,1)],
+                    'min_samples_leaf':[i for i in range(0,10,1)],
+                    'min_samples_split':[i for i in range(0,10,1)],
+                    'criterion':('gini','entropy')}
         
         semilla=7            
         modelo = ExtraTreesClassifier(random_state=semilla, 
-                                    n_estimators=40, max_features=1,max_depth= 10,
-                                    min_samples_leaf=1,  min_samples_split = 2,
-                                    bootstrap=True,criterion='gini') 
+                                    n_estimators=40,
+                                    bootstrap=True) 
         num_folds=10
-        kfold =StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+        kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_extra=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = ExtraTreesClassifier(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo,grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_extra = entrenar_modelo_extra_con_transformacion(X_trn, Y_trn)
+    modelo_extra,mejores_hiperparametros_extra = entrenar_modelo_extra_con_transformacion(X_trn, Y_trn)
 
 
     resultados_df_extra = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
@@ -962,7 +1027,16 @@ async def procesar_datos(data: InputData):
     resultados_df_extra_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_extra_prueba
 
-    resultados_df_extra = pd.concat([resultados_df_extra_prueba,resultados_df_extra_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_extra = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_extra.items()])
+    df_hiperparametros_extra = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_extra],
+        'MODELO': ['ExtraTrees'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+
+
+    resultados_df_extra = pd.concat([resultados_df_extra_prueba,resultados_df_extra_entrenamiento,df_hiperparametros_extra], ignore_index=True)
     resultados_df_extra
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -981,18 +1055,19 @@ async def procesar_datos(data: InputData):
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_ADA=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = AdaBoostClassifier(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo,grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_ADA = entrenar_modelo_ADA_con_transformacion(X_trn, Y_trn)
-    
+    modelo_ADA, mejores_hiperparametros_ADA= entrenar_modelo_ADA_con_transformacion(X_trn, Y_trn)
+
     resultados_df_ADA = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_ADA.predict(X_trn)
@@ -1051,18 +1126,26 @@ async def procesar_datos(data: InputData):
     resultados_df_ADA_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_ADA_prueba
 
-    resultados_df_ADA = pd.concat([resultados_df_ADA_prueba,resultados_df_ADA_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_ADA = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_ADA.items()])
+    df_hiperparametros_ADA = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_ADA],
+        'MODELO': ['AdaBoost'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+
+    resultados_df_ADA = pd.concat([resultados_df_ADA_prueba,resultados_df_ADA_entrenamiento,df_hiperparametros_ADA], ignore_index=True)
     resultados_df_ADA
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    Gradient Boosting
 #------------------------------------------------------------------------------------------------------------------------------------------
-
     def entrenar_modelo_GD_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         parameters = { 
-                    'subsample' : [ 0.5,0.6,0.7 , 0.75 , 0.8 , 0.85 , 0.9 , 0.95 , 1 ]        
+                    'learning_rate' : [0.01, 0.05, 0.1,0.15],
+                    'n_estimators': [i for i in range(100,1200,100)]      
                 }
         semilla=7
         modelo = GradientBoostingClassifier(random_state=semilla,
@@ -1074,17 +1157,21 @@ async def procesar_datos(data: InputData):
         metrica = 'accuracy'
         grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
         grid_resultado = grid.fit(X_trn, Y_trn)
+        mejores_hiperparametros_GD=grid_resultado.best_params_
         print("Resultados de GridSearchCV para el modelo")
         print("Mejor valor EXACTITUD usando k-fold:", grid_resultado.best_score_*100)
         print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
         mejor_modelo = GradientBoostingClassifier(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
-        return mejor_modelo
+        return mejor_modelo,grid_resultado.best_params_
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_GD = entrenar_modelo_GD_con_transformacion(X_trn, Y_trn)
+    modelo_GD,mejores_hiperparametros_GD = entrenar_modelo_GD_con_transformacion(X_trn, Y_trn)
+
+
+
 
     resultados_df_GD = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1144,6 +1231,15 @@ async def procesar_datos(data: InputData):
     resultados_df_GD_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_GD_prueba
 
+    cadena_hiperparametros_GD = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_GD.items()])
+    df_hiperparametros_GD = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_GD],
+        'MODELO': ['GradientBoosting'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_GD = pd.concat([resultados_df_GD_prueba,resultados_df_GD_entrenamiento,df_hiperparametros_GD], ignore_index=True)
+    resultados_df_GD
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
