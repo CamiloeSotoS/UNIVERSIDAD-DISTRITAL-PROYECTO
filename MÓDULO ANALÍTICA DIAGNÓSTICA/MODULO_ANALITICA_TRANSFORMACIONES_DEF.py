@@ -149,6 +149,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('SIN TRANSFORMAR')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
+    ax.legend()
     #plt.show()
     print("sin transformaición)")
     #---------------------------------------------------------------
@@ -175,6 +176,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('REESCALAR')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
+    ax.legend()
     #plt.show()
     print("reescalado)")
     #---------------------------------------------------------------
@@ -201,6 +203,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('ESTANDARIZACIÓN')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
+    ax.legend()
     #plt.show()
     print("estandarizado)")
     #---------------------------------------------------------------
@@ -228,6 +231,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('NORMALIZACIÓN')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
+    ax.legend()
     #plt.show()
     print("normalizado")
     
@@ -256,6 +260,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('ESTANDARIZACIÓN ROBUSTA')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
+    ax.legend()
     #plt.show()
     print("robusta")
     #---------------------------------------------------------------
@@ -283,6 +288,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('TRANSFORMACIÓN YEO-JHONSON')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
+    ax.legend()
     #plt.show()
     print("yeo")
     #---------------------------------------------------------------
@@ -326,6 +332,7 @@ async def procesar_datos(data: InputData):
     ax.set_title('TRANSFORMACIÓN BOX-COX')
     ax.set_xlabel('Valor')
     ax.set_ylabel('Densidad')
+    ax.legend()
     #plt.show()
     print("box")
     #---------------------------------------------------------------
