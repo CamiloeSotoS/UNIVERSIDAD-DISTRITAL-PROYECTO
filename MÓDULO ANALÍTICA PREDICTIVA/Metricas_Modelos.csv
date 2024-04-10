@@ -11,7 +11,7 @@ Puntuacion F1|59.44|KNeighbors|Entrenamiento
 Exactitud|64.56|KNeighbors|Entrenamiento
 Informacion Mutua Normalizada (NMI)|4.04|KNeighbors|Entrenamiento
 Indice Kappa de Cohen|17.94|KNeighbors|Entrenamiento
-Mejores Hiperparametros|algorithm: auto, metric: manhattan, n_neighbors: 15, p: 1, weights: uniform|KNeighbors|Hiperparametros del modelo
+Mejores Hiperparametros|algorithm: auto, leaf_size: 30, metric: manhattan, metric_params: None, n_jobs: None, n_neighbors: 15, p: 1, weights: uniform|KNeighbors|Hiperparametros del modelo
 Precision|52.51|SVC|Prueba
 Exhaustividad|63.35|SVC|Prueba
 Puntuacion F1|52.14|SVC|Prueba
@@ -24,7 +24,7 @@ Puntuacion F1|49.94|SVC|Entrenamiento
 Exactitud|61.21|SVC|Entrenamiento
 Informacion Mutua Normalizada (NMI)|0.76|SVC|Entrenamiento
 Indice Kappa de Cohen|3.08|SVC|Entrenamiento
-Mejores Hiperparametros|C: 0.0008, gamma: 1.05, kernel: sigmoid, max_iter: 1, random_state: 1|SVC|Hiperparametros del modelo
+Mejores Hiperparametros|C: 0.0008, break_ties: False, cache_size: 200, class_weight: None, coef0: 0.0, decision_function_shape: ovr, degree: 3, gamma: 1.05, kernel: sigmoid, max_iter: 1, probability: False, random_state: 1, shrinking: True, tol: 0.001, verbose: False|SVC|Hiperparametros del modelo
 Precision|56.79|DecisionTree|Prueba
 Exhaustividad|64.18|DecisionTree|Prueba
 Puntuacion F1|54.02|DecisionTree|Prueba
@@ -37,7 +37,7 @@ Puntuacion F1|53.64|DecisionTree|Entrenamiento
 Exactitud|64.13|DecisionTree|Entrenamiento
 Informacion Mutua Normalizada (NMI)|4.76|DecisionTree|Entrenamiento
 Indice Kappa de Cohen|10.15|DecisionTree|Entrenamiento
-Mejores Hiperparametros|max_depth: 4, max_features: 1, min_samples_leaf: 1, min_samples_split: 3, random_state: 4, splitter: best|DecisionTree|Hiperparametros del modelo
+Mejores Hiperparametros|ccp_alpha: 0.0, class_weight: None, criterion: gini, max_depth: 4, max_features: 1, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 1, min_samples_split: 3, min_weight_fraction_leaf: 0.0, monotonic_cst: None, random_state: 4, splitter: best|DecisionTree|Hiperparametros del modelo
 Precision|55.59|NaiveBayes|Prueba
 Exhaustividad|64.01|NaiveBayes|Prueba
 Puntuacion F1|51.91|NaiveBayes|Prueba
@@ -62,46 +62,46 @@ Puntuacion F1|48.88|LDA|Entrenamiento
 Exactitud|61.99|LDA|Entrenamiento
 Informacion Mutua Normalizada (NMI)|1.18|LDA|Entrenamiento
 Indice Kappa de Cohen|2.91|LDA|Entrenamiento
-Mejores Hiperparametros|n_components: 1, shrinkage: 1, solver: lsqr, tol: 0.001|LDA|Hiperparametros del modelo
-Precision|57.5|Bagging|Prueba
-Exhaustividad|63.68|Bagging|Prueba
-Puntuacion F1|57.03|Bagging|Prueba
-Exactitud|63.68|Bagging|Prueba
-Informacion Mutua Normalizada (NMI)|0.87|Bagging|Prueba
-Indice Kappa de Cohen|7.62|Bagging|Prueba
-Precision|96.81|Bagging|Entrenamiento
-Exhaustividad|96.65|Bagging|Entrenamiento
-Puntuacion F1|96.56|Bagging|Entrenamiento
-Exactitud|96.65|Bagging|Entrenamiento
-Informacion Mutua Normalizada (NMI)|83.13|Bagging|Entrenamiento
-Indice Kappa de Cohen|93.24|Bagging|Entrenamiento
-Mejores Hiperparametros|bootstrap: True, bootstrap_features: True, max_features: 0.75, max_samples: 0.7, n_estimators: 750|Bagging|Hiperparametros del modelo
-Precision|53.9|RandomForest|Prueba
-Exhaustividad|63.18|RandomForest|Prueba
-Puntuacion F1|52.94|RandomForest|Prueba
-Exactitud|63.18|RandomForest|Prueba
-Informacion Mutua Normalizada (NMI)|0.06|RandomForest|Prueba
-Indice Kappa de Cohen|1.37|RandomForest|Prueba
-Precision|67.6|RandomForest|Entrenamiento
-Exhaustividad|65.12|RandomForest|Entrenamiento
-Puntuacion F1|55.64|RandomForest|Entrenamiento
-Exactitud|65.12|RandomForest|Entrenamiento
-Informacion Mutua Normalizada (NMI)|6.07|RandomForest|Entrenamiento
-Indice Kappa de Cohen|13.37|RandomForest|Entrenamiento
-Mejores Hiperparametros|criterion: log_loss, min_samples_leaf: 15, min_samples_split: 15|RandomForest|Hiperparametros del modelo
-Precision|56.9|ExtraTrees|Prueba
-Exhaustividad|63.85|ExtraTrees|Prueba
-Puntuacion F1|55.44|ExtraTrees|Prueba
-Exactitud|63.85|ExtraTrees|Prueba
-Informacion Mutua Normalizada (NMI)|0.64|ExtraTrees|Prueba
-Indice Kappa de Cohen|5.4|ExtraTrees|Prueba
-Precision|81.5|ExtraTrees|Entrenamiento
-Exhaustividad|82.42|ExtraTrees|Entrenamiento
-Puntuacion F1|79.64|ExtraTrees|Entrenamiento
-Exactitud|82.42|ExtraTrees|Entrenamiento
-Informacion Mutua Normalizada (NMI)|43.24|ExtraTrees|Entrenamiento
-Indice Kappa de Cohen|60.51|ExtraTrees|Entrenamiento
-Mejores Hiperparametros|criterion: gini, min_samples_leaf: 2, min_samples_split: 5|ExtraTrees|Hiperparametros del modelo
+Mejores Hiperparametros|covariance_estimator: None, n_components: 1, priors: None, shrinkage: 1, solver: lsqr, store_covariance: False, tol: 0.001|LDA|Hiperparametros del modelo
+Precision|54.12|Bagging|Prueba
+Exhaustividad|61.69|Bagging|Prueba
+Puntuacion F1|54.88|Bagging|Prueba
+Exactitud|61.69|Bagging|Prueba
+Informacion Mutua Normalizada (NMI)|0.12|Bagging|Prueba
+Indice Kappa de Cohen|2.81|Bagging|Prueba
+Precision|97.33|Bagging|Entrenamiento
+Exhaustividad|97.22|Bagging|Entrenamiento
+Puntuacion F1|97.17|Bagging|Entrenamiento
+Exactitud|97.22|Bagging|Entrenamiento
+Informacion Mutua Normalizada (NMI)|85.34|Bagging|Entrenamiento
+Indice Kappa de Cohen|94.41|Bagging|Entrenamiento
+Mejores Hiperparametros|bootstrap: True, bootstrap_features: True, estimator: None, max_features: 0.75, max_samples: 0.7, n_estimators: 750, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|Bagging|Hiperparametros del modelo
+Precision|54.8|RandomForest|Prueba
+Exhaustividad|63.52|RandomForest|Prueba
+Puntuacion F1|53.14|RandomForest|Prueba
+Exactitud|63.52|RandomForest|Prueba
+Informacion Mutua Normalizada (NMI)|0.14|RandomForest|Prueba
+Indice Kappa de Cohen|1.98|RandomForest|Prueba
+Precision|67.08|RandomForest|Entrenamiento
+Exhaustividad|64.77|RandomForest|Entrenamiento
+Puntuacion F1|54.99|RandomForest|Entrenamiento
+Exactitud|64.77|RandomForest|Entrenamiento
+Informacion Mutua Normalizada (NMI)|5.45|RandomForest|Entrenamiento
+Indice Kappa de Cohen|12.27|RandomForest|Entrenamiento
+Mejores Hiperparametros|bootstrap: True, ccp_alpha: 0.0, class_weight: None, criterion: log_loss, max_depth: None, max_features: sqrt, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 15, min_samples_split: 10, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|RandomForest|Hiperparametros del modelo
+Precision|57.4|ExtraTrees|Prueba
+Exhaustividad|64.01|ExtraTrees|Prueba
+Puntuacion F1|56.3|ExtraTrees|Prueba
+Exactitud|64.01|ExtraTrees|Prueba
+Informacion Mutua Normalizada (NMI)|0.99|ExtraTrees|Prueba
+Indice Kappa de Cohen|6.85|ExtraTrees|Prueba
+Precision|86.53|ExtraTrees|Entrenamiento
+Exhaustividad|83.2|ExtraTrees|Entrenamiento
+Puntuacion F1|80.86|ExtraTrees|Entrenamiento
+Exactitud|83.2|ExtraTrees|Entrenamiento
+Informacion Mutua Normalizada (NMI)|44.14|ExtraTrees|Entrenamiento
+Indice Kappa de Cohen|62.57|ExtraTrees|Entrenamiento
+Mejores Hiperparametros|bootstrap: False, ccp_alpha: 0.0, class_weight: None, criterion: gini, max_depth: None, max_features: sqrt, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 2, min_samples_split: 5, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|ExtraTrees|Hiperparametros del modelo
 Precision|41.4|AdaBoost|Prueba
 Exhaustividad|64.34|AdaBoost|Prueba
 Puntuacion F1|50.39|AdaBoost|Prueba
@@ -114,7 +114,7 @@ Puntuacion F1|46.57|AdaBoost|Entrenamiento
 Exactitud|61.28|AdaBoost|Entrenamiento
 Informacion Mutua Normalizada (NMI)|0.0|AdaBoost|Entrenamiento
 Indice Kappa de Cohen|0.0|AdaBoost|Entrenamiento
-Mejores Hiperparametros|learning_rate: 0.0015, n_estimators: 36|AdaBoost|Hiperparametros del modelo
+Mejores Hiperparametros|algorithm: SAMME.R, estimator: None, learning_rate: 0.0015, n_estimators: 36, random_state: None|AdaBoost|Hiperparametros del modelo
 Precision|56.84|GradientBoosting|Prueba
 Exhaustividad|64.18|GradientBoosting|Prueba
 Puntuacion F1|53.29|GradientBoosting|Prueba
@@ -127,7 +127,7 @@ Puntuacion F1|53.75|GradientBoosting|Entrenamiento
 Exactitud|64.34|GradientBoosting|Entrenamiento
 Informacion Mutua Normalizada (NMI)|6.72|GradientBoosting|Entrenamiento
 Indice Kappa de Cohen|10.66|GradientBoosting|Entrenamiento
-Mejores Hiperparametros|criterion: friedman_mse, learning_rate: 0.01, loss: log_loss, n_estimators: 200|GradientBoosting|Hiperparametros del modelo
+Mejores Hiperparametros|ccp_alpha: 0.0, criterion: friedman_mse, init: None, learning_rate: 0.01, loss: log_loss, max_depth: 3, max_features: None, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 1, min_samples_split: 2, min_weight_fraction_leaf: 0.0, n_estimators: 200, n_iter_no_change: None, random_state: None, subsample: 1.0, tol: 0.0001, validation_fraction: 0.1, verbose: 0, warm_start: False|GradientBoosting|Hiperparametros del modelo
 Precision|53.77|XGB|Prueba
 Exhaustividad|61.86|XGB|Prueba
 Puntuacion F1|54.38|XGB|Prueba
@@ -140,7 +140,7 @@ Puntuacion F1|65.68| XGB|Entrenamiento
 Exactitud|71.1| XGB|Entrenamiento
 Informacion Mutua Normalizada (NMI)|18.96| XGB|Entrenamiento
 Indice Kappa de Cohen|31.23| XGB|Entrenamiento
-Mejores Hiperparametros|colsample_bytree: 0.9, loss: log_loss, max_features: sqrt, n_estimators: 5, objective: binary:logistic, reg_alpha: 0.2, reg_lambda: 0.12|XGB|Hiperparametros del modelo
+Mejores Hiperparametros|objective: multi:softprob, base_score: None, booster: None, callbacks: None, colsample_bylevel: None, colsample_bynode: None, colsample_bytree: 0.9, device: None, early_stopping_rounds: None, enable_categorical: False, eval_metric: None, feature_types: None, gamma: None, grow_policy: None, importance_type: None, interaction_constraints: None, learning_rate: None, max_bin: None, max_cat_threshold: None, max_cat_to_onehot: None, max_delta_step: None, max_depth: None, max_leaves: None, min_child_weight: None, missing: nan, monotone_constraints: None, multi_strategy: None, n_estimators: 5, n_jobs: None, num_parallel_tree: None, random_state: None, reg_alpha: 0.2, reg_lambda: 0.12, sampling_method: None, scale_pos_weight: None, subsample: None, tree_method: None, validate_parameters: None, verbosity: None, loss: log_loss, max_features: sqrt|XGB|Hiperparametros del modelo
 Precision|58.28|CatBoost|Prueba
 Exhaustividad|64.51|CatBoost|Prueba
 Puntuacion F1|53.48|CatBoost|Prueba
@@ -153,7 +153,7 @@ Puntuacion F1|52.47|CatBoost|Entrenamiento
 Exactitud|63.49|CatBoost|Entrenamiento
 Informacion Mutua Normalizada (NMI)|3.3|CatBoost|Entrenamiento
 Indice Kappa de Cohen|8.19|CatBoost|Entrenamiento
-Mejores Hiperparametros|border_count: 53, depth: 6, l2_leaf_reg: 42, learning_rate: 0.01, thread_count: 4|CatBoost|Hiperparametros del modelo
+Mejores Hiperparametros|learning_rate: 0.01, depth: 6, l2_leaf_reg: 42, border_count: 53, thread_count: 4, verbose: 0|CatBoost|Hiperparametros del modelo
 Precision|56.13|LGBM|Prueba
 Exhaustividad|63.35|LGBM|Prueba
 Puntuacion F1|55.09|LGBM|Prueba
@@ -187,81 +187,81 @@ Puntuacion F1|54.09|VotingSoft|Prueba
 Exactitud|64.68|VotingSoft|Prueba
 Informacion Mutua Normalizada (NMI)|1.08|VotingSoft|Prueba
 Indice Kappa de Cohen|4.57|VotingSoft|Prueba
-Precision|73.37|VotingSoft|Entrenamiento
-Exhaustividad|67.54|VotingSoft|Entrenamiento
-Puntuacion F1|59.07|VotingSoft|Entrenamiento
-Exactitud|67.54|VotingSoft|Entrenamiento
-Informacion Mutua Normalizada (NMI)|13.64|VotingSoft|Entrenamiento
-Indice Kappa de Cohen|19.89|VotingSoft|Entrenamiento
+Precision|73.53|VotingSoft|Entrenamiento
+Exhaustividad|67.83|VotingSoft|Entrenamiento
+Puntuacion F1|59.56|VotingSoft|Entrenamiento
+Exactitud|67.83|VotingSoft|Entrenamiento
+Informacion Mutua Normalizada (NMI)|14.19|VotingSoft|Entrenamiento
+Indice Kappa de Cohen|20.74|VotingSoft|Entrenamiento
 Precision|59.77|StackingLineal|Prueba
 Exhaustividad|65.17|StackingLineal|Prueba
 Puntuacion F1|55.73|StackingLineal|Prueba
 Exactitud|65.17|StackingLineal|Prueba
 Informacion Mutua Normalizada (NMI)|1.9|StackingLineal|Prueba
 Indice Kappa de Cohen|7.22|StackingLineal|Prueba
-Precision|76.23|StackingLineal|Entrenamiento
-Exhaustividad|72.46|StackingLineal|Entrenamiento
-Puntuacion F1|66.85|StackingLineal|Entrenamiento
-Exactitud|72.46|StackingLineal|Entrenamiento
-Informacion Mutua Normalizada (NMI)|23.17|StackingLineal|Entrenamiento
-Indice Kappa de Cohen|34.06|StackingLineal|Entrenamiento
-Precision|56.48|Stackingnolineal|Prueba
-Exhaustividad|63.68|Stackingnolineal|Prueba
-Puntuacion F1|55.55|Stackingnolineal|Prueba
-Exactitud|63.68|Stackingnolineal|Prueba
-Informacion Mutua Normalizada (NMI)|0.77|Stackingnolineal|Prueba
-Indice Kappa de Cohen|5.48|Stackingnolineal|Prueba
-Precision|69.39|Stackingnolineal|Entrenamiento
-Exhaustividad|70.04|Stackingnolineal|Entrenamiento
-Puntuacion F1|63.91|Stackingnolineal|Entrenamiento
-Exactitud|70.04|Stackingnolineal|Entrenamiento
-Informacion Mutua Normalizada (NMI)|14.67|Stackingnolineal|Entrenamiento
-Indice Kappa de Cohen|28.7|Stackingnolineal|Entrenamiento
+Precision|76.4|StackingLineal|Entrenamiento
+Exhaustividad|72.81|StackingLineal|Entrenamiento
+Puntuacion F1|67.37|StackingLineal|Entrenamiento
+Exactitud|72.81|StackingLineal|Entrenamiento
+Informacion Mutua Normalizada (NMI)|23.85|StackingLineal|Entrenamiento
+Indice Kappa de Cohen|35.06|StackingLineal|Entrenamiento
+Precision|56.83|Stackingnolineal|Prueba
+Exhaustividad|63.85|Stackingnolineal|Prueba
+Puntuacion F1|54.83|Stackingnolineal|Prueba
+Exactitud|63.85|Stackingnolineal|Prueba
+Informacion Mutua Normalizada (NMI)|0.5|Stackingnolineal|Prueba
+Indice Kappa de Cohen|4.48|Stackingnolineal|Prueba
+Precision|69.6|Stackingnolineal|Entrenamiento
+Exhaustividad|69.04|Stackingnolineal|Entrenamiento
+Puntuacion F1|62.58|Stackingnolineal|Entrenamiento
+Exactitud|69.04|Stackingnolineal|Entrenamiento
+Informacion Mutua Normalizada (NMI)|11.99|Stackingnolineal|Entrenamiento
+Indice Kappa de Cohen|25.71|Stackingnolineal|Entrenamiento
 Precision|55.99|VotingWeighted|Prueba
 Exhaustividad|64.01|VotingWeighted|Prueba
 Puntuacion F1|52.96|VotingWeighted|Prueba
 Exactitud|64.01|VotingWeighted|Prueba
 Informacion Mutua Normalizada (NMI)|0.27|VotingWeighted|Prueba
 Indice Kappa de Cohen|2.36|VotingWeighted|Prueba
-Precision|71.26|VotingWeighted|Entrenamiento
-Exhaustividad|65.55|VotingWeighted|Entrenamiento
-Puntuacion F1|55.78|VotingWeighted|Entrenamiento
-Exactitud|65.55|VotingWeighted|Entrenamiento
-Informacion Mutua Normalizada (NMI)|9.38|VotingWeighted|Entrenamiento
-Indice Kappa de Cohen|14.06|VotingWeighted|Entrenamiento
-Precision|56.64|SuperAprendiz|Prueba
-Exhaustividad|63.52|SuperAprendiz|Prueba
-Puntuacion F1|56.13|SuperAprendiz|Prueba
-Exactitud|63.52|SuperAprendiz|Prueba
-Informacion Mutua Normalizada (NMI)|0.75|SuperAprendiz|Prueba
-Indice Kappa de Cohen|6.2|SuperAprendiz|Prueba
-Precision|78.28|SuperAprendiz|Entrenamiento
-Exhaustividad|77.65|SuperAprendiz|Entrenamiento
-Puntuacion F1|74.01|SuperAprendiz|Entrenamiento
-Exactitud|77.65|SuperAprendiz|Entrenamiento
-Informacion Mutua Normalizada (NMI)|31.29|SuperAprendiz|Entrenamiento
-Indice Kappa de Cohen|48.47|SuperAprendiz|Entrenamiento
-Precision|54.61|SuperAprendizdoscapas|Prueba
-Exhaustividad|62.35|SuperAprendizdoscapas|Prueba
-Puntuacion F1|55.02|SuperAprendizdoscapas|Prueba
-Exactitud|62.35|SuperAprendizdoscapas|Prueba
-Informacion Mutua Normalizada (NMI)|0.31|SuperAprendizdoscapas|Prueba
-Indice Kappa de Cohen|3.6|SuperAprendizdoscapas|Prueba
-Precision|78.35|SuperAprendizdoscapas|Entrenamiento
-Exhaustividad|77.58|SuperAprendizdoscapas|Entrenamiento
-Puntuacion F1|73.9|SuperAprendizdoscapas|Entrenamiento
-Exactitud|77.58|SuperAprendizdoscapas|Entrenamiento
-Informacion Mutua Normalizada (NMI)|31.47|SuperAprendizdoscapas|Entrenamiento
-Indice Kappa de Cohen|48.23|SuperAprendizdoscapas|Entrenamiento
-Precision|51.7|RedNeuronal|Prueba
-Exhaustividad|63.52|RedNeuronal|Prueba
-Puntuacion F1|51.43|RedNeuronal|Prueba
-Exactitud|63.52|RedNeuronal|Prueba
-Informacion Mutua Normalizada (NMI)|0.1|RedNeuronal|Prueba
-Indice Kappa de Cohen|0.02|RedNeuronal|Prueba
-Precision|58.56|RedNeuronal|Entrenamiento
-Exhaustividad|61.99|RedNeuronal|Entrenamiento
-Puntuacion F1|49.68|RedNeuronal|Entrenamiento
-Exactitud|61.99|RedNeuronal|Entrenamiento
-Informacion Mutua Normalizada (NMI)|0.93|RedNeuronal|Entrenamiento
-Indice Kappa de Cohen|3.68|RedNeuronal|Entrenamiento
+Precision|71.76|VotingWeighted|Entrenamiento
+Exhaustividad|65.62|VotingWeighted|Entrenamiento
+Puntuacion F1|55.83|VotingWeighted|Entrenamiento
+Exactitud|65.62|VotingWeighted|Entrenamiento
+Informacion Mutua Normalizada (NMI)|9.76|VotingWeighted|Entrenamiento
+Indice Kappa de Cohen|14.19|VotingWeighted|Entrenamiento
+Precision|57.01|SuperAprendiz|Prueba
+Exhaustividad|63.85|SuperAprendiz|Prueba
+Puntuacion F1|56.01|SuperAprendiz|Prueba
+Exactitud|63.85|SuperAprendiz|Prueba
+Informacion Mutua Normalizada (NMI)|0.88|SuperAprendiz|Prueba
+Indice Kappa de Cohen|6.3|SuperAprendiz|Prueba
+Precision|75.63|SuperAprendiz|Entrenamiento
+Exhaustividad|75.59|SuperAprendiz|Entrenamiento
+Puntuacion F1|71.4|SuperAprendiz|Entrenamiento
+Exactitud|75.59|SuperAprendiz|Entrenamiento
+Informacion Mutua Normalizada (NMI)|25.4|SuperAprendiz|Entrenamiento
+Indice Kappa de Cohen|43.38|SuperAprendiz|Entrenamiento
+Precision|56.92|SuperAprendizdoscapas|Prueba
+Exhaustividad|63.68|SuperAprendizdoscapas|Prueba
+Puntuacion F1|56.25|SuperAprendizdoscapas|Prueba
+Exactitud|63.68|SuperAprendizdoscapas|Prueba
+Informacion Mutua Normalizada (NMI)|0.83|SuperAprendizdoscapas|Prueba
+Indice Kappa de Cohen|6.5|SuperAprendizdoscapas|Prueba
+Precision|78.55|SuperAprendizdoscapas|Entrenamiento
+Exhaustividad|77.08|SuperAprendizdoscapas|Entrenamiento
+Puntuacion F1|73.19|SuperAprendizdoscapas|Entrenamiento
+Exactitud|77.08|SuperAprendizdoscapas|Entrenamiento
+Informacion Mutua Normalizada (NMI)|32.24|SuperAprendizdoscapas|Entrenamiento
+Indice Kappa de Cohen|46.75|SuperAprendizdoscapas|Entrenamiento
+Precision|54.72|RedNeuronal|Prueba
+Exhaustividad|64.01|RedNeuronal|Prueba
+Puntuacion F1|51.95|RedNeuronal|Prueba
+Exactitud|64.01|RedNeuronal|Prueba
+Informacion Mutua Normalizada (NMI)|0.21|RedNeuronal|Prueba
+Indice Kappa de Cohen|1.24|RedNeuronal|Prueba
+Precision|58.35|RedNeuronal|Entrenamiento
+Exhaustividad|61.92|RedNeuronal|Entrenamiento
+Puntuacion F1|49.73|RedNeuronal|Entrenamiento
+Exactitud|61.92|RedNeuronal|Entrenamiento
+Informacion Mutua Normalizada (NMI)|0.88|RedNeuronal|Entrenamiento
+Indice Kappa de Cohen|3.59|RedNeuronal|Entrenamiento

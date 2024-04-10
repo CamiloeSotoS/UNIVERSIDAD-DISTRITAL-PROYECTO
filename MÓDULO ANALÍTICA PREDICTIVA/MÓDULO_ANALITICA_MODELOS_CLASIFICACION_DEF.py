@@ -1734,7 +1734,7 @@ async def procesar_datos(data: InputData):
     hiperparametros_voting_hard = []
     for nombre, estimador in estimadores:
         hiperparametros = estimador.get_params()
-        hiperparametros_estimador = {'Estimador': nombre, 'Hiperparámetros': hiperparametros}
+        hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
         hiperparametros_voting_hard.append(hiperparametros_estimador)
 
     resultados_df_voting_hard_prueba = pd.concat([resultados_df_voting_hard, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
