@@ -626,7 +626,15 @@ async def procesar_datos(data: InputData):
     resultados_df_gaussian_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_gaussian_prueba
     
-    resultados_df_gaussian = pd.concat([resultados_df_gaussian_prueba,resultados_df_gaussian_entrenamiento], ignore_index=True)
+    cadena_hiperparametros_gaussian = 'No tiene hiperparametros'
+    df_hiperparametros_gaussian = pd.DataFrame({
+        'MÉTRICA': ['No tiene Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_gaussian],
+        'MODELO': ['NaiveBayes'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+
+    resultados_df_gaussian = pd.concat([resultados_df_gaussian_prueba,resultados_df_gaussian_entrenamiento,df_hiperparametros_gaussian], ignore_index=True)
     resultados_df_gaussian
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -1598,7 +1606,7 @@ async def procesar_datos(data: InputData):
         'TIPO_DE_DATOS': ['Hiperparametros del modelo']
     })
 
-    resultados_df_LIGHT = pd.concat([resultados_df_LIGHT_prueba,resultados_df_LIGHT_entrenamiento], ignore_index=True)
+    resultados_df_LIGHT = pd.concat([resultados_df_LIGHT_prueba,resultados_df_LIGHT_entrenamiento,df_hiperparametros_LIGHT], ignore_index=True)
     resultados_df_LIGHT
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -1798,17 +1806,19 @@ async def procesar_datos(data: InputData):
                                         ('Bagging',modelo5),('Decision tree',modelo6)],
         voting='soft',weights=[0.9,0.7,0.9,0.9,0.9,0.9]) 
         mejor_modelo.fit(X_trn_transformado, Y_trn)
+        mejores_hiperparametros_voting_soft=mejor_modelo.get_params
         resultados = cross_val_score(mejor_modelo, X_trn_transformado, Y_trn, cv=kfold,scoring = metrica)
         print("Rendimiento del modelo:") 
         print ("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean()*100," % ") 
-        return mejor_modelo
+        return mejor_modelo,mejores_hiperparametros_voting_soft
 
     # Cargar los datos
     #datos = cargar_datos(carrera, semestre)
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_voting_soft = entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn)
+    # Entrenar el modelo KNN con transformación Yeo-Johnson
+    modelo_voting_soft,mejores_hiperparametros_voting_soft = entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn)
 
     resultados_df_voting_soft = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1868,7 +1878,24 @@ async def procesar_datos(data: InputData):
     resultados_df_voting_soft_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_voting_soft_prueba
 
-    resultados_df_voting_soft = pd.concat([resultados_df_voting_soft_prueba,resultados_df_voting_soft_entrenamiento], ignore_index=True)
+    estimadores = modelo_voting_soft.estimators
+    hiperparametros_voting_soft = []
+    for nombre, estimador in estimadores:
+        hiperparametros = estimador.get_params()
+        hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
+        hiperparametros_voting_soft.append(hiperparametros_estimador)
+
+    cadena_hiperparametros_voting_soft = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_voting_soft])
+
+    df_hiperparametros_voting_soft = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_voting_soft],
+        'MODELO': ['VotingSoft'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+
+
+    resultados_df_voting_soft = pd.concat([resultados_df_voting_soft_prueba,resultados_df_voting_soft_entrenamiento,df_hiperparametros_voting_soft], ignore_index=True)
     resultados_df_voting_soft
 
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -1920,15 +1947,16 @@ async def procesar_datos(data: InputData):
                                         ('Bagging',modelo5),('Decision tree',modelo6)], 
                                         final_estimator=estimador_final) 
         mejor_modelo.fit(X_trn_transformado, Y_trn)
+        mejores_hiperparametros_stacking_lineal=mejor_modelo.get_params
         resultados = cross_val_score(mejor_modelo, X_trn_transformado, Y_trn, cv=kfold,scoring = metrica)
         print("Rendimiento del modelo:") 
         print ("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean()*100," % ") 
-        return mejor_modelo
+        return mejor_modelo,mejores_hiperparametros_stacking_lineal
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_stacking_lineal = entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn)
+    modelo_stacking_lineal,mejores_hiperparametros_stacking_lineal = entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn)
 
     resultados_df_stacking_lineal = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1988,8 +2016,26 @@ async def procesar_datos(data: InputData):
     resultados_df_stacking_lineal_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_stacking_lineal_prueba
 
-    resultados_df_stacking_lineal = pd.concat([resultados_df_stacking_lineal_prueba,resultados_df_stacking_lineal_entrenamiento], ignore_index=True)
+    estimadores = modelo_stacking_lineal.estimators
+    hiperparametros_stacking_lineal = []
+    for nombre, estimador in estimadores:
+        hiperparametros = estimador.get_params()
+        hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
+        hiperparametros_stacking_lineal.append(hiperparametros_estimador)
+        
+
+    cadena_hiperparametros_stacking_lineal = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_stacking_lineal])
+
+    df_hiperparametros_stacking_lineal = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_stacking_lineal],
+        'MODELO': ['StackingLineal'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+
+    resultados_df_stacking_lineal = pd.concat([resultados_df_stacking_lineal_prueba,resultados_df_stacking_lineal_entrenamiento,df_hiperparametros_stacking_lineal], ignore_index=True)
     resultados_df_stacking_lineal
+
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -2027,15 +2073,16 @@ async def procesar_datos(data: InputData):
                                         ('Decision tree',modelo6)], 
                                         final_estimator=estimador_final) 
         mejor_modelo.fit(X_trn_transformado, Y_trn)
+        mejores_hiperparametros_stacking_nolineal=mejor_modelo.get_params
         resultados = cross_val_score(mejor_modelo, X_trn_transformado, Y_trn, cv=kfold,scoring = metrica)
         print("Rendimiento del modelo:") 
         print ("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean()*100," % ") 
-        return mejor_modelo
+        return mejor_modelo,mejores_hiperparametros_stacking_nolineal
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_stacking_nolineal = entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn)
+    modelo_stacking_nolineal,mejores_hiperparametros_stacking_nolineal = entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn)
 
 
     resultados_df_stacking_nolineal = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
@@ -2096,9 +2143,23 @@ async def procesar_datos(data: InputData):
     resultados_df_stacking_nolineal_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_stacking_nolineal_prueba
 
-    resultados_df_stacking_nolineal = pd.concat([resultados_df_stacking_nolineal_prueba,resultados_df_stacking_nolineal_entrenamiento], ignore_index=True)
-    resultados_df_stacking_nolineal
+    estimadores = modelo_stacking_nolineal.estimators
+    hiperparametros_stacking_nolineal = []
+    for nombre, estimador in estimadores:
+        hiperparametros = estimador.get_params()
+        hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
+        hiperparametros_stacking_nolineal.append(hiperparametros_estimador)
+        
+    cadena_hiperparametros_stacking_nolineal = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_stacking_nolineal])
 
+    df_hiperparametros_stacking_nolineal = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_stacking_nolineal],
+        'MODELO': ['Stackingnolineal'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_stacking_nolineal = pd.concat([resultados_df_stacking_nolineal_prueba,resultados_df_stacking_nolineal_entrenamiento,df_hiperparametros_stacking_nolineal], ignore_index=True)
+    resultados_df_stacking_nolineal
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -2270,17 +2331,18 @@ async def procesar_datos(data: InputData):
         super_learner.add_meta(estimador_final)
         
         super_learner.fit(X_trn_transformado, Y_trn)
+        mejores_hiperparametros_super_learner=super_learner.get_params
         resultados = cross_val_score(super_learner, X_trn_transformado, Y_trn, cv=kfold, scoring='accuracy')
         
         print("Rendimiento del modelo:") 
         print("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean() * 100, "%") 
-        return super_learner
+        return super_learner,mejores_hiperparametros_super_learner,estimadores
 
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_superaprendiz = entrenar_modelo_super_aprendiz(X_trn, Y_trn)
+    modelo_superaprendiz,mejores_hiperparametros_super_learner,estimadores = entrenar_modelo_super_aprendiz(X_trn, Y_trn)
 
 
 
@@ -2342,7 +2404,21 @@ async def procesar_datos(data: InputData):
     resultados_df_superaprendiz_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_superaprendiz_prueba
 
-    resultados_df_superaprendiz = pd.concat([resultados_df_superaprendiz_prueba,resultados_df_superaprendiz_entrenamiento], ignore_index=True)
+    hiperparametros_superaprendiz = []
+    for nombre, estimador in estimadores:
+        hiperparametros = estimador.get_params()
+        hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
+        hiperparametros_superaprendiz.append(hiperparametros_estimador)
+        
+    cadena_hiperparametros_superaprendiz = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_superaprendiz])
+
+    df_hiperparametros_superaprendiz = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_superaprendiz],
+        'MODELO': ['SuperAprendiz'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_superaprendiz = pd.concat([resultados_df_superaprendiz_prueba,resultados_df_superaprendiz_entrenamiento,df_hiperparametros_superaprendiz], ignore_index=True)
     resultados_df_superaprendiz
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -2376,27 +2452,28 @@ async def procesar_datos(data: InputData):
         estimadores = [('Extratrees', modelo3), ('Random Forest', modelo4), 
                     ('Bagging', modelo5), ('Decision tree', modelo6)]
         
-        super_learner = SuperLearner(folds=10, random_state=semilla, verbose=2)
-        super_learner.add(estimadores)
-        super_learner.add(estimadores)
+        superaprendiz_dos_capas = SuperLearner(folds=10, random_state=semilla, verbose=2)
+        superaprendiz_dos_capas.add(estimadores)
+        superaprendiz_dos_capas.add(estimadores)
         estimador_final = ExtraTreesClassifier(n_estimators=100, max_features=None,
                                             bootstrap=False, max_depth=11, min_samples_split=4, 
                                             min_samples_leaf=1)
         
-        super_learner.add_meta(estimador_final)
+        superaprendiz_dos_capas.add_meta(estimador_final)
         
-        super_learner.fit(X_trn_transformado, Y_trn)
-        resultados = cross_val_score(super_learner, X_trn_transformado, Y_trn, cv=kfold, scoring='accuracy')
+        superaprendiz_dos_capas.fit(X_trn_transformado, Y_trn)
+        mejores_hiperparametros_superaprendiz_dos_capas=superaprendiz_dos_capas.get_params
+        resultados = cross_val_score(superaprendiz_dos_capas, X_trn_transformado, Y_trn, cv=kfold, scoring='accuracy')
         
         print("Rendimiento del modelo:") 
         print("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean() * 100, "%") 
-        return super_learner
+        return superaprendiz_dos_capas,mejores_hiperparametros_superaprendiz_dos_capas,estimadores
 
 
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_superaprendiz_dos_capas = entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn)
+    modelo_superaprendiz_dos_capas,mejores_hiperparametros_superaprendiz_dos_capas,estimadores = entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn)
 
     resultados_df_superaprendiz_dos_capas = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -2457,9 +2534,35 @@ async def procesar_datos(data: InputData):
     resultados_df_superaprendiz_dos_capas_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_superaprendiz_dos_capas_prueba
 
-    resultados_df_superaprendiz_dos_capas = pd.concat([resultados_df_superaprendiz_dos_capas_prueba,resultados_df_superaprendiz_dos_capas_entrenamiento], ignore_index=True)
-    resultados_df_superaprendiz_dos_capas
+    hiperparametros_superaprendiz_dos_capas = [] 
+    for nombre, estimador in estimadores:
+        hiperparametros = estimador.get_params()
+        hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
+        hiperparametros_superaprendiz_dos_capas.append(hiperparametros_estimador)
+    cadena_hiperparametros_superaprendiz_dos_capas = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_superaprendiz_dos_capas])
 
+    df_hiperparametros_superaprendiz_dos_capas = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_superaprendiz_dos_capas],
+        'MODELO': ['SuperAprendizdoscapas'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_superaprendiz_dos_capas = pd.concat([resultados_df_superaprendiz_dos_capas_prueba,resultados_df_superaprendiz_dos_capas_entrenamiento,df_hiperparametros_superaprendiz_dos_capas], ignore_index=True)
+    resultados_df_superaprendiz_dos_capas
+    
+    
+    
+    
+    
+#------------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------
+##                                                    RED NEURONAL
+#------------------------------------------------------------------------------------------------------------------------------------------
+    np.random.seed(42)
+
+    torch.manual_seed(42)
+    torch.cuda.manual_seed(42)
     class NeuralNetwork(nn.Module):
         def __init__(self, input_size, hidden_size, num_classes):
             super(NeuralNetwork, self).__init__()
@@ -2473,29 +2576,42 @@ async def procesar_datos(data: InputData):
             out = self.fc2(out)
             return out
 
-    def train_neural_network(X_train, y_train, input_size, hidden_size, num_classes, num_epochs=100, learning_rate=0.001):
+    def train_neural_network(X_train, y_train, input_size, hidden_size, num_classes, num_epochs=100, learning_rate=0.0015):
+        # Convertir datos de entrenamiento a tensores de PyTorch
         X_train_tensor = torch.tensor(X_train, dtype=torch.float32)
         y_train_tensor = torch.tensor(y_train, dtype=torch.long)
+        
+        # Inicializar modelo y función de pérdida
         model = NeuralNetwork(input_size, hidden_size, num_classes)
         criterion = nn.CrossEntropyLoss()
         optimizer = optim.Adam(model.parameters(), lr=learning_rate)
         
+        # Entrenamiento del modelo
         for epoch in range(num_epochs):
+            # Forward pass y pérdida
             outputs = model(X_train_tensor)
             loss = criterion(outputs, y_train_tensor)
+            
+            # Backward pass y optimización
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
             
             if (epoch+1) % 10 == 0:
                 print ('Epoch [{}/{}], Loss: {:.4f}'.format(epoch+1, num_epochs, loss.item()))
-        return model
+
+        return model,num_epochs,learning_rate
 
     def evaluate_model(model, X_test, y_test):
+        # Convertir datos de prueba a tensores de PyTorch
         X_test_tensor = torch.tensor(X_test, dtype=torch.float32)
         y_test_tensor = torch.tensor(y_test, dtype=torch.long)
+
+        # Obtener las predicciones del modelo
         outputs = model(X_test_tensor)
         _, predicted = torch.max(outputs, 1)
+
+        # Calcular las métricas del modelo
         accuracy = accuracy_score(y_test_tensor.numpy(), predicted.numpy())
         precision = precision_score(y_test, predicted.numpy(), average='weighted')
         recall = recall_score(y_test, predicted.numpy(), average='weighted')
@@ -2511,9 +2627,14 @@ async def procesar_datos(data: InputData):
     Y_trn = Y_trn 
     input_size = X_trn.shape[1]
     num_classes = 4
-    hidden_size = 170
-    modelo_red_reuronal = train_neural_network(X_train_array , Y_trn, input_size, hidden_size, num_classes)
+    hidden_size =155
+
+    # Supongamos que X_train, y_train, X_test, y_test son tus datos de entrenamiento y prueba
+    modelo_red_reuronal,num_epochs,learning_rate = train_neural_network(X_train_array , Y_trn, input_size, hidden_size, num_classes)
     evaluate_model(modelo_red_reuronal, X_test_array , Y_tst)
+    
+    
+    
     resultados_df_red_reuronal = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
     X_train_tensor = torch.tensor(X_train_array, dtype=torch.float32)
     outputs = modelo_red_reuronal(X_train_tensor)
@@ -2579,8 +2700,25 @@ async def procesar_datos(data: InputData):
     resultados_df_red_reuronal_prueba
 
 
-    resultados_df_red_reuronal = pd.concat([resultados_df_red_reuronal_prueba,resultados_df_red_reuronal_entrenamiento], ignore_index=True)
+    hiperparametros = {
+        "input_size": input_size,
+        "hidden_size": hidden_size,
+        "num_classes": num_classes,
+        "num_epochs": num_epochs,
+        "learning_rate": learning_rate
+    }
+    cadena_hiperparametros = ', '.join([f"{key}={value}" for key, value in hiperparametros.items()])
+
+    df_hiperparametros_red_neuronal = pd.DataFrame({
+        'MÉTRICA': ['Hiperparámetros'],
+        'VALOR': [cadena_hiperparametros],
+        'MODELO': ['RedNeuronal'],
+        'TIPO_DE_DATOS': ['Entrenamiento']
+    })
+
+    resultados_df_red_reuronal = pd.concat([resultados_df_red_reuronal_prueba,resultados_df_red_reuronal_entrenamiento,df_hiperparametros_red_neuronal], ignore_index=True)
     resultados_df_red_reuronal
+
 
     Metricas_Modelos=pd.concat([resultados_df_knn,resultados_df_svc,resultados_df_tree,
                                 resultados_df_gaussian,resultados_df_LDA,resultados_df_BG,
