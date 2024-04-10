@@ -2765,6 +2765,8 @@ async def procesar_datos(data: InputData):
 #VotingSoft
 #VotingWeighted
 #XGB
+
+    Metricas_Modelos.to_csv('Metricas_Modelos.csv',sep="|",index=False,encoding='utf-8')
 @app.get("/")
 async def read_root():
     return {"message": "¡Bienvenido a la API!", "modelo": modelos_seleccionados, "carrera": carrera, "semestre": semestre}
