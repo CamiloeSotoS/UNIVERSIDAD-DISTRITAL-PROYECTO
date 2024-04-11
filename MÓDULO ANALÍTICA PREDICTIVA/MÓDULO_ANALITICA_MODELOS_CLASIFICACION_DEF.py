@@ -196,7 +196,7 @@ def download_folder(folder_id, save_path):
 
 # Descargar archivos de la carpeta
 download_folder(folder_id, save_path)
-
+from sklearn.metrics import accuracy_score
 # Listar archivos descargados
 files = os.listdir(save_path)
 print("Archivos descargados:")
@@ -205,7 +205,7 @@ for file in files:
     
 
 app = FastAPI()
-
+from sklearn.metrics import accuracy_score
 carrera = ""
 semestre = ""
 modelos_seleccionados=[]
