@@ -72,6 +72,7 @@ from sklearn.ensemble import StackingClassifier
 import torch
 import torch.nn as nn
 import torch.optim as optim
+from sklearn.metrics import accuracy_score
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
@@ -233,13 +234,13 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         parameters = {
-        'n_neighbors': [i for i in range(1, 18, 1)],
-        'metric': ['euclidean', 'manhattan', 'minkowski'],
-        'algorithm': ['auto', 'kd_tree','ball_tree','brute'],
-        'p': [i for i in range(1, 18,1)],
-        'weights': ['uniform'],
-        
-    }
+            'n_neighbors': [i for i in range(1, 18, 1)],
+            'metric': ['euclidean', 'manhattan', 'minkowski'],
+            'algorithm': ['auto', 'kd_tree','ball_tree','brute'],
+            #'p': [i for i in range(1, 18,1)],
+            'weights': ['uniform']
+            
+        }
         modelo = KNeighborsClassifier()
         semilla = 5
         num_folds = 10
@@ -258,8 +259,8 @@ async def procesar_datos(data: InputData):
     Y_trn = Y_trn 
     modelo_knn, mejores_hiperparametros_knn = entrenar_modelo_knn_con_transformacion(X_trn, Y_trn)
     mejores_hiperparametros_knn
-
     
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_knn = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_knn.predict(X_trn)
@@ -277,6 +278,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -284,11 +286,15 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_knn_entrenamiento = pd.concat([resultados_df_knn, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_knn_entrenamiento["MODELO"]='KNeighbors'
     resultados_df_knn_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
-    resultados_df_knn_entrenamiento
-
+    # Imprimir el DataFrame con los resultados
+    resultados_df_knn_entrenamiento   
+    
+        
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_knn = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_knn.predict(X_tst)
@@ -306,6 +312,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -313,12 +320,15 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_knn_prueba = pd.concat([resultados_df_knn, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_knn_prueba["MODELO"]='KNeighbors'
     resultados_df_knn_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_knn_prueba
     
     mejores_hiperparametros_knn = modelo_knn.get_params()
+    mejores_hiperparametros_knn
 
     cadena_hiperparametros_knn = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_knn.items()])
     df_hiperparametros_knn = pd.DataFrame({
@@ -338,10 +348,11 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_svc_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         parameters = { 'kernel':   ['rbf', 'poly', 'sigmoid','linear'], 
-                'C': [i/10000 for i in range(8,12,1)],
-                'max_iter':[i for i in range(1,3,1)],
-                'gamma' : [i/100 for i in range(90,110,5)],
-                'random_state':[i for i in range(1,5,1)]}
+                    'C': [i/10000 for i in range(8,12,1)],
+                    'max_iter':[i for i in range(1,3,1)],
+                    'gamma' : [i/100 for i in range(80,110,5)],
+                    'random_state':[i for i in range(1,5,1)]
+                    }
         modelo = SVC()
         semilla=5
         num_folds=10
@@ -362,7 +373,8 @@ async def procesar_datos(data: InputData):
 
     modelo_svc,mejores_hiperparametros_svc = entrenar_modelo_svc_con_transformacion(X_trn, Y_trn)
     mejores_hiperparametros_svc
-
+    
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_SVC = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_svc.predict(X_trn)
@@ -380,6 +392,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -387,11 +400,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_svc_entrenamiento = pd.concat([resultados_df_SVC, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_svc_entrenamiento["MODELO"]='SVC'
     resultados_df_svc_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_svc_entrenamiento
-
+    
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_SVC = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_svc.predict(X_tst)
@@ -409,6 +425,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -416,14 +433,16 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_svc_prueba = pd.concat([resultados_df_SVC, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_svc_prueba["MODELO"]='SVC'
     resultados_df_svc_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_svc_prueba
-
+    
     mejores_hiperparametros_svc = modelo_svc.get_params()
     mejores_hiperparametros_svc
-
+    
     cadena_hiperparametros_svc = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_svc.items()])
     df_hiperparametros_svc = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -446,8 +465,8 @@ async def procesar_datos(data: InputData):
                 'min_samples_leaf' : [i for i in range(1,7,1)], 
                 'max_features' : [i for i in range(1,7,1)], 
                 'splitter': ["best", "random"],
-                'random_state': [i for i in range(1,5,1)],
-                'criterion': ['entropy']
+                'random_state': [i for i in range(1,5,1)]
+                #'criterion': ['gini','entropy','log_loss']
                 
     }
         modelo = DecisionTreeClassifier()
@@ -470,7 +489,7 @@ async def procesar_datos(data: InputData):
 
     modelo_tree,mejores_hiperparametros_tree = entrenar_modelo_tree_con_transformacion(X_trn, Y_trn)
 
-
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_tree = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_tree.predict(X_trn)
@@ -488,6 +507,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -495,11 +515,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_tree_entrenamiento = pd.concat([resultados_df_tree, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_tree_entrenamiento["MODELO"]='DecisionTree'
     resultados_df_tree_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_tree_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_tree = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_tree.predict(X_tst)
@@ -517,6 +540,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -524,11 +548,13 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_tree_prueba = pd.concat([resultados_df_tree, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_tree_prueba["MODELO"]='DecisionTree'
     resultados_df_tree_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_tree_prueba
-    
+
     mejores_hiperparametros_tree = modelo_tree.get_params()
     mejores_hiperparametros_tree
     
@@ -567,7 +593,8 @@ async def procesar_datos(data: InputData):
     Y_trn = Y_trn 
 
     modelo_gaussian = entrenar_modelo_gaussian_con_transformacion(X_trn, Y_trn)
-
+    
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_gaussian = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_gaussian.predict(X_trn)
@@ -585,6 +612,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -592,11 +620,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_gaussian_entrenamiento = pd.concat([resultados_df_gaussian, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_gaussian_entrenamiento["MODELO"]='NaiveBayes'
     resultados_df_gaussian_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_gaussian_entrenamiento
-    
+
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_gaussian = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_gaussian.predict(X_tst)
@@ -614,6 +645,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -621,11 +653,13 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_gaussian_prueba = pd.concat([resultados_df_gaussian, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_gaussian_prueba["MODELO"]='NaiveBayes'
     resultados_df_gaussian_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_gaussian_prueba
-    
+
     cadena_hiperparametros_gaussian = 'No tiene hiperparametros'
     df_hiperparametros_gaussian = pd.DataFrame({
         'MÉTRICA': ['No tiene Hiperparametros'],
@@ -633,7 +667,6 @@ async def procesar_datos(data: InputData):
         'MODELO': ['NaiveBayes'],
         'TIPO_DE_DATOS': ['Hiperparametros del modelo']
     })
-
     resultados_df_gaussian = pd.concat([resultados_df_gaussian_prueba,resultados_df_gaussian_entrenamiento,df_hiperparametros_gaussian], ignore_index=True)
     resultados_df_gaussian
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -644,7 +677,7 @@ async def procesar_datos(data: InputData):
     def entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         parameters = { 'solver':  ['svd','lsqr','eigen'],
-                'n_components':[1,2,3,4,5],
+                'n_components':[1,2,3,4,5,6,7,8,9,10],
                 'shrinkage': ['auto', 0.001, 0.01, 0.1, 0.5,1,10,100,1000],
                 'tol':[i/1000 for i in range(1,100,1)]}
         modelo = LinearDiscriminantAnalysis()
@@ -667,7 +700,8 @@ async def procesar_datos(data: InputData):
 
     modelo_LDA,mejores_hiperparametros_LDA = entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn)
     mejores_hiperparametros_LDA
-
+    
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_LDA = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_LDA.predict(X_trn)
@@ -685,6 +719,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -692,11 +727,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_LDA_entrenamiento = pd.concat([resultados_df_LDA, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_LDA_entrenamiento["MODELO"]='LDA'
     resultados_df_LDA_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_LDA_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_LDA = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_LDA.predict(X_tst)
@@ -714,6 +752,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -721,9 +760,11 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_LDA_prueba = pd.concat([resultados_df_LDA, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_LDA_prueba["MODELO"]='LDA'
     resultados_df_LDA_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_LDA_prueba
 
     mejores_hiperparametros_LDA = modelo_LDA.get_params()
@@ -739,12 +780,13 @@ async def procesar_datos(data: InputData):
     resultados_df_LDA = pd.concat([resultados_df_LDA_prueba,resultados_df_LDA_entrenamiento,df_hiperparametros_LDA], ignore_index=True)
     resultados_df_LDA
 
+
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    BAGGING
 #------------------------------------------------------------------------------------------------------------------------------------------
-    def entrenar_modelo_BG_con_transformacion(X_trn, Y_trn):
+    def entrenar_modelo_BG_con_transformacion(X_trn, Y_trn,mejores_hiperparametros_tree):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
         parameters = {'n_estimators': [i for i in range(750,760,5)],
@@ -752,19 +794,11 @@ async def procesar_datos(data: InputData):
                 'max_features': [i/100.0 for i in range(75,85,5)],
                 'bootstrap': [True], 
                 'bootstrap_features': [True]}
-        
-        base_estimator= DecisionTreeClassifier(criterion= 'entropy', 
-                                    max_depth=5, 
-                                    max_features= 3,
-                                    min_samples_leaf= 4, 
-                                    min_samples_split = 8,
-                                    random_state= 3, 
-                                    splitter= 'best')
+        base_estimator= DecisionTreeClassifier(**mejores_hiperparametros_tree)
         semilla=7
         modelo = BaggingClassifier(estimator=base_estimator,n_estimators=750, random_state=semilla,
                                 bootstrap= True, bootstrap_features = True, max_features = 0.7,
                                 max_samples= 0.5)
-        
         num_folds=10
         kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
         metrica = 'accuracy'
@@ -779,8 +813,9 @@ async def procesar_datos(data: InputData):
         return mejor_modelo,grid_resultado.best_params_
     X_trn = X_trn
     Y_trn = Y_trn 
-    modelo_BG,mejores_hiperparametros_BG = entrenar_modelo_BG_con_transformacion(X_trn, Y_trn)
-
+    modelo_BG,mejores_hiperparametros_BG = entrenar_modelo_BG_con_transformacion(X_trn, Y_trn,mejores_hiperparametros_tree)
+    
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_BG = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_BG.predict(X_trn)
@@ -798,6 +833,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -805,11 +841,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_BG_entrenamiento = pd.concat([resultados_df_BG, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_BG_entrenamiento["MODELO"]='Bagging'
     resultados_df_BG_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_BG_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_BG = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_BG.predict(X_tst)
@@ -827,6 +866,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -834,14 +874,16 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_BG_prueba = pd.concat([resultados_df_BG, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_BG_prueba["MODELO"]='Bagging'
     resultados_df_BG_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_BG_prueba
 
     mejores_hiperparametros_BG = modelo_BG.get_params()
     mejores_hiperparametros_BG
-
+    
     cadena_hiperparametros_BG = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_BG.items()])
     df_hiperparametros_BG = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -851,7 +893,6 @@ async def procesar_datos(data: InputData):
     })
     resultados_df_BG = pd.concat([resultados_df_BG_prueba,resultados_df_BG_entrenamiento,df_hiperparametros_BG], ignore_index=True)
     resultados_df_BG
-
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -863,7 +904,8 @@ async def procesar_datos(data: InputData):
                     'min_samples_split' : [1, 2 , 3,  4 , 6 , 8 , 10 , 15, 20 ],  
                     'min_samples_leaf' : [ 1 , 3 , 5 , 7 , 9, 12, 15 ],
                     'criterion':('gini','entropy','log_loss'),
-                    
+                    #'max_features':('sqrt','log2',None)
+                    #'class_weight':('balanced','balanced_subsample')
                 }
         modelo = RandomForestClassifier()
         semilla=7
@@ -884,7 +926,8 @@ async def procesar_datos(data: InputData):
     Y_trn = Y_trn 
 
     modelo_random,mejores_hiperparametros_random = entrenar_modelo_random_con_transformacion(X_trn, Y_trn)
-
+    
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_random = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_random.predict(X_trn)
@@ -902,6 +945,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -909,11 +953,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_random_entrenamiento = pd.concat([resultados_df_random, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_random_entrenamiento["MODELO"]='RandomForest'
     resultados_df_random_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_random_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_random = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_random.predict(X_tst)
@@ -931,6 +978,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -938,14 +986,15 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_random_prueba = pd.concat([resultados_df_random, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_random_prueba["MODELO"]='RandomForest'
     resultados_df_random_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_random_prueba
 
     mejores_hiperparametros_random = modelo_random.get_params()
     mejores_hiperparametros_random
-
     cadena_hiperparametros_random = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_random.items()])
     df_hiperparametros_random = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -953,8 +1002,10 @@ async def procesar_datos(data: InputData):
         'MODELO': ['RandomForest'],
         'TIPO_DE_DATOS': ['Hiperparametros del modelo']
     })
+
     resultados_df_random = pd.concat([resultados_df_random_prueba,resultados_df_random_entrenamiento,df_hiperparametros_random], ignore_index=True)
     resultados_df_random
+
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -969,7 +1020,7 @@ async def procesar_datos(data: InputData):
                     #'max_depth':[i for i in range(0,5,1)],
                     'min_samples_leaf':[i for i in range(0,10,1)],
                     'min_samples_split':[i for i in range(0,10,1)],
-                    'criterion':('gini','entropy')}
+                    'criterion':('gini','entropy','log_loss')}
         
         semilla=7            
         modelo = ExtraTreesClassifier(random_state=semilla, 
@@ -993,7 +1044,7 @@ async def procesar_datos(data: InputData):
 
     modelo_extra,mejores_hiperparametros_extra = entrenar_modelo_extra_con_transformacion(X_trn, Y_trn)
 
-
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_extra = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_extra.predict(X_trn)
@@ -1011,6 +1062,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1018,11 +1070,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_extra_entrenamiento = pd.concat([resultados_df_extra, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_extra_entrenamiento["MODELO"]='ExtraTrees'
     resultados_df_extra_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_extra_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_extra = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_extra.predict(X_tst)
@@ -1040,6 +1095,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1047,14 +1103,16 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_extra_prueba = pd.concat([resultados_df_extra, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_extra_prueba["MODELO"]='ExtraTrees'
     resultados_df_extra_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_extra_prueba
 
     mejores_hiperparametros_extra = modelo_extra.get_params()
     mejores_hiperparametros_extra
-
+    
     cadena_hiperparametros_extra = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_extra.items()])
     df_hiperparametros_extra = pd.DataFrame({
         'MÉTRICA': ['Mejores Hiperparametros'],
@@ -1062,7 +1120,6 @@ async def procesar_datos(data: InputData):
         'MODELO': ['ExtraTrees'],
         'TIPO_DE_DATOS': ['Hiperparametros del modelo']
     })
-
 
     resultados_df_extra = pd.concat([resultados_df_extra_prueba,resultados_df_extra_entrenamiento,df_hiperparametros_extra], ignore_index=True)
     resultados_df_extra
@@ -1075,7 +1132,7 @@ async def procesar_datos(data: InputData):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
         parameters = {'learning_rate' : [i/10000.0 for i in range(5,20,5)],
-                  'n_estimators':[i for i in range(1,50,1)]}
+                    'n_estimators':[i for i in range(1,50,1)]}
         semilla=7            
         modelo = AdaBoostClassifier(estimator = None,  algorithm = 'SAMME.R', 
                                     random_state= None) 
@@ -1097,6 +1154,7 @@ async def procesar_datos(data: InputData):
 
     modelo_ADA, mejores_hiperparametros_ADA= entrenar_modelo_ADA_con_transformacion(X_trn, Y_trn)
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_ADA = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_ADA.predict(X_trn)
@@ -1114,6 +1172,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1121,11 +1180,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_ADA_entrenamiento = pd.concat([resultados_df_ADA, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_ADA_entrenamiento["MODELO"]='AdaBoost'
     resultados_df_ADA_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_ADA_entrenamiento
-    
+
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_ADA = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_ADA.predict(X_tst)
@@ -1143,6 +1205,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1150,9 +1213,11 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_ADA_prueba = pd.concat([resultados_df_ADA, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_ADA_prueba["MODELO"]='AdaBoost'
     resultados_df_ADA_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_ADA_prueba
 
     mejores_hiperparametros_ADA = modelo_ADA.get_params()
@@ -1178,11 +1243,12 @@ async def procesar_datos(data: InputData):
         parameters = { 
                     'learning_rate' : [0.01, 0.05, 0.1,0.15],
                     'n_estimators': [i for i in range(100,1200,100)],
+                    'loss':('log_loss','exponential'),
                     'criterion':['friedman_mse']     
                 }
         semilla=7
         modelo = GradientBoostingClassifier(random_state=semilla,
-                                        learning_rate= 0.1,max_depth= 2,
+                                        n_estimators= 100,learning_rate= 0.1,max_depth= 2,
                                         min_samples_split= 2, min_samples_leaf= 3,max_features= 2)
         semilla=7
         num_folds=10
@@ -1197,15 +1263,11 @@ async def procesar_datos(data: InputData):
         mejor_modelo = GradientBoostingClassifier(**grid_resultado.best_params_)
         mejor_modelo.fit(X_trn_transformado, Y_trn)
         return mejor_modelo,grid_resultado.best_params_
-
     X_trn = X_trn
     Y_trn = Y_trn 
-
     modelo_GD,mejores_hiperparametros_GD = entrenar_modelo_GD_con_transformacion(X_trn, Y_trn)
 
-
-
-
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_GD = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_GD.predict(X_trn)
@@ -1223,6 +1285,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1230,11 +1293,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_GD_entrenamiento = pd.concat([resultados_df_GD, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_GD_entrenamiento["MODELO"]='GradientBoosting'
     resultados_df_GD_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_GD_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_GD = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_GD.predict(X_tst)
@@ -1252,6 +1318,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1259,11 +1326,12 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_GD_prueba = pd.concat([resultados_df_GD, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_GD_prueba["MODELO"]='GradientBoosting'
     resultados_df_GD_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_GD_prueba
-
     mejores_hiperparametros_GD = modelo_GD.get_params()
     mejores_hiperparametros_GD
 
@@ -1276,6 +1344,7 @@ async def procesar_datos(data: InputData):
     })
     resultados_df_GD = pd.concat([resultados_df_GD_prueba,resultados_df_GD_entrenamiento,df_hiperparametros_GD], ignore_index=True)
     resultados_df_GD
+
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -1312,8 +1381,7 @@ async def procesar_datos(data: InputData):
     Y_trn = Y_trn 
 
     modelo_XB,mejores_hiperparametros_XB = entrenar_modelo_XB_con_transformacion(X_trn, Y_trn)
-
-
+    
     # Predecir las etiquetas para los datos de prueba
     resultados_df_XB = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1342,12 +1410,10 @@ async def procesar_datos(data: InputData):
 
     # Concatenar los DataFrames
     resultados_df_XB_entrenamiento = pd.concat([resultados_df_XB, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
-    resultados_df_XB_entrenamiento["MODELO"]='XGB'
+    resultados_df_XB_entrenamiento["MODELO"]=' XGB'
     resultados_df_XB_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
     # Imprimir el DataFrame con los resultados
     resultados_df_XB_entrenamiento
-    
-    
 
     # Predecir las etiquetas para los datos de prueba
     resultados_df_XB = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
@@ -1381,7 +1447,7 @@ async def procesar_datos(data: InputData):
     resultados_df_XB_prueba["TIPO_DE_DATOS"]='Prueba'
     # Imprimir el DataFrame con los resultados
     resultados_df_XB_prueba
-    
+
     mejores_hiperparametros_XB = modelo_XB.get_params()
     mejores_hiperparametros_XB
     
@@ -1400,11 +1466,10 @@ async def procesar_datos(data: InputData):
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    CatBoost
 #------------------------------------------------------------------------------------------------------------------------------------------
-
     def entrenar_modelo_CB_con_transformacion(X_trn, Y_trn):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
-        parameters = {'border_count':[53],'l2_leaf_reg': [42],'learning_rate': [0.01, 0.05, 0.1],
+        parameters = {'border_count':[53],'l2_leaf_reg': [42],'learning_rate': [0.01],
                     'depth': [4, 6, 8],'thread_count': [4, 8, 12]
                     } 
         semilla=7
@@ -1428,6 +1493,7 @@ async def procesar_datos(data: InputData):
 
     modelo_CB,mejores_hiperparametros_CB = entrenar_modelo_CB_con_transformacion(X_trn, Y_trn)
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_CB = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_CB.predict(X_trn)
@@ -1445,6 +1511,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1452,11 +1519,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_CB_entrenamiento = pd.concat([resultados_df_CB, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_CB_entrenamiento["MODELO"]='CatBoost'
     resultados_df_CB_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_CB_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_CB = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_CB.predict(X_tst)
@@ -1474,6 +1544,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1481,9 +1552,11 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_CB_prueba = pd.concat([resultados_df_CB, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_CB_prueba["MODELO"]='CatBoost'
     resultados_df_CB_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_CB_prueba
 
     mejores_hiperparametros_CB = modelo_CB.get_params()
@@ -1497,15 +1570,14 @@ async def procesar_datos(data: InputData):
         'TIPO_DE_DATOS': ['Hiperparametros del modelo']
     })
 
-
     resultados_df_CB = pd.concat([resultados_df_CB_prueba,resultados_df_CB_entrenamiento,df_hiperparametros_CB], ignore_index=True)
     resultados_df_CB
+
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    LGBM
 #------------------------------------------------------------------------------------------------------------------------------------------
-
     def entrenar_modelo_LIGHT_con_transformacion(X_trn, Y_trn):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
@@ -1536,7 +1608,7 @@ async def procesar_datos(data: InputData):
     Y_trn = Y_trn 
 
     modelo_LIGHT,mejores_hiperparametros_LIGHT = entrenar_modelo_LIGHT_con_transformacion(X_trn, Y_trn)
-
+    
     resultados_df_LIGHT = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_LIGHT.predict(X_trn)
@@ -1554,6 +1626,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1561,11 +1634,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_LIGHT_entrenamiento = pd.concat([resultados_df_LIGHT, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_LIGHT_entrenamiento["MODELO"]='LGBM'
     resultados_df_LIGHT_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_LIGHT_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_LIGHT = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_LIGHT.predict(X_tst)
@@ -1583,6 +1659,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1590,9 +1667,11 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_LIGHT_prueba = pd.concat([resultados_df_LIGHT, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_LIGHT_prueba["MODELO"]='LGBM'
     resultados_df_LIGHT_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_LIGHT_prueba
 
     mejores_hiperparametros_LIGHT = modelo_LIGHT.get_params()
@@ -1608,64 +1687,32 @@ async def procesar_datos(data: InputData):
 
     resultados_df_LIGHT = pd.concat([resultados_df_LIGHT_prueba,resultados_df_LIGHT_entrenamiento,df_hiperparametros_LIGHT], ignore_index=True)
     resultados_df_LIGHT
+
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    VOTING HARD
 #------------------------------------------------------------------------------------------------------------------------------------------
-
-    def entrenar_modelo_voting_hard_con_transformacion(X_trn, Y_trn):
+    def entrenar_modelo_voting_hard_con_transformacion(X_trn, Y_trn,
+                                                    mejores_hiperparametros_GD,
+                                                    mejores_hiperparametros_tree,
+                                                    mejores_hiperparametros_ADA,
+                                                    mejores_hiperparametros_extra,
+                                                    mejores_hiperparametros_random,
+                                                    mejores_hiperparametros_BG,
+                                                    mejores_hiperparametros_XB):
         X_trn_transformado = X_trn
         semilla= 7 
         kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
-        
-        modelo1 = GradientBoostingClassifier(random_state=semilla, n_estimators=800, 
-                                        learning_rate = 0.01, max_depth = 2,
-                                        max_features =2, min_samples_leaf = 9, 
-                                        min_samples_split = 2, subsample = 1 )
-        
-        base_estimator=DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, 
-                                        criterion='gini',
-                                        max_depth=8, max_features=1, max_leaf_nodes=None,
-                                        min_impurity_decrease=0.0,
-                                        min_samples_leaf=1, min_samples_split=5,
-                                        min_weight_fraction_leaf=0.0,
-                                        random_state=5, splitter='random')
-
-        modelo2 = AdaBoostClassifier(estimator=base_estimator,n_estimators=1200, 
-                                        algorithm ='SAMME.R', learning_rate = 0.001, 
-                                        random_state=semilla)
-
-        modelo3 = ExtraTreesClassifier(n_estimators=300, max_features=None,
-                                        bootstrap = False, max_depth = 11,min_samples_split = 4, 
-                                        min_samples_leaf = 1)
-
-        modelo4 = RandomForestClassifier (n_estimators=1100, max_features=None,
-                                        min_samples_split = 5, max_depth= 3, 
-                                        min_samples_leaf= 1)
-
-        model = DecisionTreeClassifier(criterion= 'gini', 
-                                        max_depth=6, 
-                                        max_features= None, 
-                                        min_samples_leaf= 9, 
-                                        min_samples_split = 2, 
-                                        random_state= 10, 
-                                        splitter= 'random')
-
-        modelo5 = BaggingClassifier(estimator=model, n_estimators=50, 
-                                        random_state=semilla,
-                                        bootstrap= True, bootstrap_features = False, 
-                                        max_features = 0.9,
-                                        max_samples= 0.95)
-
-        modelo6 = DecisionTreeClassifier(criterion= 'gini', max_depth=6,max_features= None, 
-                                        min_samples_leaf= 9, 
-                                        min_samples_split = 2, random_state= 10, splitter= 'random')
-
-        modelo7 = XGBClassifier(n_estimators= 40, random_state=semilla,colsample_bytree = 1, 
-                                        subsample =1, reg_alpha = 0.2, reg_lambda= 1.35,
-                                        learning_rate= 0.3,max_depth =2, min_child_weight =6,
-                                        gamma = 0.05)
+        modelo1 = GradientBoostingClassifier(**mejores_hiperparametros_GD)
+        base_estimator=DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo2 = AdaBoostClassifier(**mejores_hiperparametros_ADA)
+        modelo3 = ExtraTreesClassifier(**mejores_hiperparametros_extra)
+        modelo4 = RandomForestClassifier (**mejores_hiperparametros_random)
+        model = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo5 = BaggingClassifier(**mejores_hiperparametros_BG)
+        modelo6 = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo7 = XGBClassifier(**mejores_hiperparametros_XB)
         metrica = 'accuracy'
         mejor_modelo = VotingClassifier(
         estimators=[('Gradient', modelo1), ('Adaboost', modelo2), 
@@ -1680,10 +1727,14 @@ async def procesar_datos(data: InputData):
         print ("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean()*100," % ") 
         return mejor_modelo, mejores_hiperparametros_voting_hard
 
-    X_trn = X_trn
-    Y_trn = Y_trn 
-
-    modelo_voting_hard, mejores_hiperparametros_voting_hard = entrenar_modelo_voting_hard_con_transformacion(X_trn, Y_trn)
+    modelo_voting_hard, mejores_hiperparametros_voting_hard= entrenar_modelo_voting_hard_con_transformacion(X_trn, Y_trn,
+                                                    mejores_hiperparametros_GD,
+                                                    mejores_hiperparametros_tree,
+                                                    mejores_hiperparametros_ADA,
+                                                    mejores_hiperparametros_extra,
+                                                    mejores_hiperparametros_random,
+                                                    mejores_hiperparametros_BG,
+                                                    mejores_hiperparametros_XB)
 
     resultados_df_voting_hard = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1702,6 +1753,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1709,11 +1761,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_voting_hard_entrenamiento = pd.concat([resultados_df_voting_hard, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_voting_hard_entrenamiento["MODELO"]='VotingHard'
     resultados_df_voting_hard_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_voting_hard_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_voting_hard = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_voting_hard.predict(X_tst)
@@ -1731,12 +1786,20 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
     df_accuracy = pd.DataFrame({'MÉTRICA': ['Exactitud'], 'VALOR': [round(accuracy*100, 2)]})
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
+
+    # Concatenar los DataFrames
+    resultados_df_voting_hard_prueba = pd.concat([resultados_df_voting_hard, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
+    resultados_df_voting_hard_prueba["MODELO"]='VotingHard'
+    resultados_df_voting_hard_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
+    resultados_df_voting_hard_prueba
 
     estimadores = modelo_voting_hard.estimators
     hiperparametros_voting_hard = []
@@ -1745,60 +1808,43 @@ async def procesar_datos(data: InputData):
         hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
         hiperparametros_voting_hard.append(hiperparametros_estimador)
 
-    resultados_df_voting_hard_prueba = pd.concat([resultados_df_voting_hard, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
-    resultados_df_voting_hard_prueba["MODELO"]='VotingHard'
-    resultados_df_voting_hard_prueba["TIPO_DE_DATOS"]='Prueba'
-    resultados_df_voting_hard_prueba
+    hiperparametros_voting_hard
+    
+    cadena_hiperparametros_voting_hard = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_voting_hard])
 
-    resultados_df_voting_hard = pd.concat([resultados_df_voting_hard_prueba,resultados_df_voting_hard_entrenamiento], ignore_index=True)
+    df_hiperparametros_voting_hard = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_voting_hard],
+        'MODELO': ['VotingHard'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+
+    resultados_df_voting_hard = pd.concat([resultados_df_voting_hard_prueba,resultados_df_voting_hard_entrenamiento,df_hiperparametros_voting_hard], ignore_index=True)
     resultados_df_voting_hard
+
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    VOTING SOFT
 #------------------------------------------------------------------------------------------------------------------------------------------
-    def entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn):
+    def entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn,
+                                                    mejores_hiperparametros_GD,
+                                                    mejores_hiperparametros_tree,
+                                                    mejores_hiperparametros_ADA,
+                                                    mejores_hiperparametros_extra,
+                                                    mejores_hiperparametros_random,
+                                                    mejores_hiperparametros_BG):
         X_trn_transformado = X_trn
         semilla= 7 
         kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
-        modelo1 = GradientBoostingClassifier(random_state=semilla, n_estimators=800, 
-                                        learning_rate = 0.01, max_depth = 2,
-                                        max_features =2, min_samples_leaf = 9, 
-                                        min_samples_split = 2, subsample = 1 )
-        
-        base_estimator=DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
-                                        max_depth=8, max_features=1, max_leaf_nodes=None,
-                                        min_impurity_decrease=0.0,
-                                        min_samples_leaf=1, min_samples_split=5,
-                                        min_weight_fraction_leaf=0.0,
-                                        random_state=5, splitter='random')
-
-        modelo2 = AdaBoostClassifier(estimator=base_estimator,n_estimators=1200, 
-                                        algorithm ='SAMME.R', learning_rate = 0.001, 
-                                        random_state=semilla)
-
-        modelo3 = ExtraTreesClassifier(n_estimators=300, max_features=None,bootstrap = False, 
-                                        max_depth = 11,min_samples_split = 4, 
-                                        min_samples_leaf = 1)
-
-        modelo4 = RandomForestClassifier (n_estimators=1100, max_features=None,
-                                        min_samples_split = 5, max_depth= 3, min_samples_leaf= 1)
-
-        model = DecisionTreeClassifier(criterion= 'gini', 
-                                        max_depth=6, 
-                                        max_features= None, 
-                                        min_samples_leaf= 9, 
-                                        min_samples_split = 2, 
-                                        random_state= 10, 
-                                        splitter= 'random')
-
-        modelo5 = BaggingClassifier(estimator=model, n_estimators=50, random_state=semilla,
-                                        bootstrap= True, bootstrap_features = False, 
-                                        max_features = 0.9, max_samples= 0.95)
-
-        modelo6 = DecisionTreeClassifier(criterion= 'gini', max_depth=6,max_features= None, 
-                                        min_samples_leaf= 9, min_samples_split = 2, 
-                                        random_state= 10, splitter= 'random')
+        modelo1 = GradientBoostingClassifier(**mejores_hiperparametros_GD)
+        base_estimator=DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo2 = AdaBoostClassifier(**mejores_hiperparametros_ADA)
+        modelo3 = ExtraTreesClassifier(**mejores_hiperparametros_extra)
+        modelo4 = RandomForestClassifier (**mejores_hiperparametros_random)
+        model = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo5 = BaggingClassifier(**mejores_hiperparametros_BG)
+        modelo6 = DecisionTreeClassifier(**mejores_hiperparametros_tree)
         metrica = 'accuracy'
         mejor_modelo = VotingClassifier(
         estimators=[('Gradient', modelo1), ('Adaboost', modelo2), ('Extratrees', modelo3),
@@ -1811,14 +1857,19 @@ async def procesar_datos(data: InputData):
         print("Rendimiento del modelo:") 
         print ("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean()*100," % ") 
         return mejor_modelo,mejores_hiperparametros_voting_soft
-
     # Cargar los datos
     #datos = cargar_datos(carrera, semestre)
     X_trn = X_trn
     Y_trn = Y_trn 
 
     # Entrenar el modelo KNN con transformación Yeo-Johnson
-    modelo_voting_soft,mejores_hiperparametros_voting_soft = entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn)
+    modelo_voting_soft,mejores_hiperparametros_voting_soft = entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn,
+                                                    mejores_hiperparametros_GD,
+                                                    mejores_hiperparametros_tree,
+                                                    mejores_hiperparametros_ADA,
+                                                    mejores_hiperparametros_extra,
+                                                    mejores_hiperparametros_random,
+                                                    mejores_hiperparametros_BG)
 
     resultados_df_voting_soft = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1837,6 +1888,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1844,11 +1896,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_voting_soft_entrenamiento = pd.concat([resultados_df_voting_soft, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_voting_soft_entrenamiento["MODELO"]='VotingSoft'
     resultados_df_voting_soft_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_voting_soft_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_voting_soft = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_voting_soft.predict(X_tst)
@@ -1866,6 +1921,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1873,9 +1929,11 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_voting_soft_prueba = pd.concat([resultados_df_voting_soft, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_voting_soft_prueba["MODELO"]='VotingSoft'
     resultados_df_voting_soft_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_voting_soft_prueba
 
     estimadores = modelo_voting_soft.estimators
@@ -1894,7 +1952,6 @@ async def procesar_datos(data: InputData):
         'TIPO_DE_DATOS': ['Hiperparametros del modelo']
     })
 
-
     resultados_df_voting_soft = pd.concat([resultados_df_voting_soft_prueba,resultados_df_voting_soft_entrenamiento,df_hiperparametros_voting_soft], ignore_index=True)
     resultados_df_voting_soft
 
@@ -1903,43 +1960,22 @@ async def procesar_datos(data: InputData):
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    STACKING LINEAL
 #------------------------------------------------------------------------------------------------------------------------------------------
-
-    def entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn):
+    def entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn,
+                                                    mejores_hiperparametros_tree,
+                                                    mejores_hiperparametros_ADA,
+                                                    mejores_hiperparametros_extra,
+                                                    mejores_hiperparametros_random,
+                                                    mejores_hiperparametros_BG):
         X_trn_transformado = X_trn
         semilla= 7 
         kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
-        base_estimator=DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
-                                        max_depth=8, max_features=1, max_leaf_nodes=None,
-                                        min_impurity_decrease=0.0,
-                                        min_samples_leaf=1, min_samples_split=5,
-                                        min_weight_fraction_leaf=0.0,
-                                        random_state=5, splitter='random')
-        modelo2 = AdaBoostClassifier(estimator=base_estimator,n_estimators=500, 
-                                        algorithm ='SAMME.R', learning_rate = 0.001, 
-                                        random_state=semilla)
-
-        modelo3 = ExtraTreesClassifier(n_estimators=300, max_features=None,bootstrap = False, 
-                                        max_depth = 11,min_samples_split = 4, 
-                                        min_samples_leaf = 1)
-
-        modelo4 = RandomForestClassifier (n_estimators=300, max_features=None,
-                                        min_samples_split = 5, max_depth= 3, min_samples_leaf= 1)
-        model = DecisionTreeClassifier(criterion= 'gini', 
-                                        max_depth=6, 
-                                        max_features= None, 
-                                        min_samples_leaf= 9, 
-                                        min_samples_split = 2, 
-                                        random_state= 10, 
-                                        splitter= 'random')
-
-        modelo5 = BaggingClassifier(estimator=model, n_estimators=50, random_state=semilla,
-                                        bootstrap= True, bootstrap_features = False, 
-                                        max_features = 0.9,
-                                        max_samples= 0.95)
-
-        modelo6 = DecisionTreeClassifier(criterion= 'gini', max_depth=6,max_features= None, 
-                                        min_samples_leaf= 9, 
-                                        min_samples_split = 2, random_state= 10, splitter= 'random')
+        base_estimator=DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo2 = AdaBoostClassifier(**mejores_hiperparametros_ADA)
+        modelo3 = ExtraTreesClassifier(**mejores_hiperparametros_extra)
+        modelo4 = RandomForestClassifier (**mejores_hiperparametros_random)
+        model = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo5 = BaggingClassifier(**mejores_hiperparametros_BG)
+        modelo6 = DecisionTreeClassifier(**mejores_hiperparametros_tree)
         estimador_final = LogisticRegression()
         metrica = 'accuracy'
         mejor_modelo = StackingClassifier(
@@ -1956,7 +1992,12 @@ async def procesar_datos(data: InputData):
     X_trn = X_trn
     Y_trn = Y_trn 
 
-    modelo_stacking_lineal,mejores_hiperparametros_stacking_lineal = entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn)
+    modelo_stacking_lineal,mejores_hiperparametros_stacking_lineal = entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn,
+                                                    mejores_hiperparametros_tree,
+                                                    mejores_hiperparametros_ADA,
+                                                    mejores_hiperparametros_extra,
+                                                    mejores_hiperparametros_random,
+                                                    mejores_hiperparametros_BG)
 
     resultados_df_stacking_lineal = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -1975,6 +2016,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -1982,11 +2024,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_stacking_lineal_entrenamiento = pd.concat([resultados_df_stacking_lineal, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_stacking_lineal_entrenamiento["MODELO"]='StackingLineal'
     resultados_df_stacking_lineal_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_stacking_lineal_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_stacking_lineal = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_stacking_lineal.predict(X_tst)
@@ -2004,6 +2049,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2011,9 +2057,11 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_stacking_lineal_prueba = pd.concat([resultados_df_stacking_lineal, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_stacking_lineal_prueba["MODELO"]='StackingLineal'
     resultados_df_stacking_lineal_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_stacking_lineal_prueba
 
     estimadores = modelo_stacking_lineal.estimators
@@ -2022,7 +2070,6 @@ async def procesar_datos(data: InputData):
         hiperparametros = estimador.get_params()
         hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
         hiperparametros_stacking_lineal.append(hiperparametros_estimador)
-        
 
     cadena_hiperparametros_stacking_lineal = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_stacking_lineal])
 
@@ -2033,6 +2080,7 @@ async def procesar_datos(data: InputData):
         'TIPO_DE_DATOS': ['Hiperparametros del modelo']
     })
 
+
     resultados_df_stacking_lineal = pd.concat([resultados_df_stacking_lineal_prueba,resultados_df_stacking_lineal_entrenamiento,df_hiperparametros_stacking_lineal], ignore_index=True)
     resultados_df_stacking_lineal
 
@@ -2042,35 +2090,24 @@ async def procesar_datos(data: InputData):
 ##                                                    STACKING NO LINEAL
 #------------------------------------------------------------------------------------------------------------------------------------------
 
-    def entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn):
+    def entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn,
+                                                    mejores_hiperparametros_tree,
+                                                    mejores_hiperparametros_extra,
+                                                    mejores_hiperparametros_random,
+                                                    mejores_hiperparametros_BG):
         X_trn_transformado = X_trn
         semilla= 7 
         kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
-        modelo3 = ExtraTreesClassifier(n_estimators=400, max_features=None,bootstrap = False, 
-                                        max_depth = 11,min_samples_split = 4, 
-                                        min_samples_leaf = 1)
-
-        modelo4 = RandomForestClassifier (n_estimators=500, max_features=None,
-                                        min_samples_split = 5, max_depth= 3, min_samples_leaf= 1)
-        model = DecisionTreeClassifier(criterion= 'gini', 
-                                        max_depth=6, max_features= None,  min_samples_leaf= 9, 
-                                        min_samples_split = 2, 
-                                        random_state= 10, splitter= 'random')
-
-        modelo5 = BaggingClassifier(estimator=model, n_estimators=50, random_state=semilla,
-                                        bootstrap= True, bootstrap_features = False, 
-                                        max_features = 0.9, max_samples= 0.95)
-
-        modelo6 = DecisionTreeClassifier(criterion= 'gini', max_depth=6,max_features= None, 
-                                        min_samples_leaf= 9, min_samples_split = 2, 
-                                        random_state= 10, splitter= 'random')
-        estimador_final = ExtraTreesClassifier(n_estimators=100, max_features=None,
-                                        bootstrap = False, max_depth = 11,min_samples_split = 4, 
-                                        min_samples_leaf = 1)
+        modelo1 = ExtraTreesClassifier(**mejores_hiperparametros_extra)
+        modelo2 = RandomForestClassifier (**mejores_hiperparametros_random)
+        model = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo3 = BaggingClassifier(**mejores_hiperparametros_BG)
+        modelo4 = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        estimador_final = ExtraTreesClassifier(**mejores_hiperparametros_extra)
         metrica = 'accuracy'
         mejor_modelo = StackingClassifier(
-        estimators=[  ('Extratrees', modelo3),('Random Forest',modelo4),('Bagging',modelo5),
-                                        ('Decision tree',modelo6)], 
+        estimators=[  ('Extratrees', modelo1),('Random Forest',modelo2),('Bagging',modelo3),
+                                        ('Decision tree',modelo4)], 
                                         final_estimator=estimador_final) 
         mejor_modelo.fit(X_trn_transformado, Y_trn)
         mejores_hiperparametros_stacking_nolineal=mejor_modelo.get_params
@@ -2078,12 +2115,13 @@ async def procesar_datos(data: InputData):
         print("Rendimiento del modelo:") 
         print ("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean()*100," % ") 
         return mejor_modelo,mejores_hiperparametros_stacking_nolineal
-
     X_trn = X_trn
     Y_trn = Y_trn 
-
-    modelo_stacking_nolineal,mejores_hiperparametros_stacking_nolineal = entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn)
-
+    modelo_stacking_nolineal,mejores_hiperparametros_stacking_nolineal = entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn,
+                                                    mejores_hiperparametros_tree,
+                                                    mejores_hiperparametros_extra,
+                                                    mejores_hiperparametros_random,
+                                                    mejores_hiperparametros_BG)
 
     resultados_df_stacking_nolineal = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -2102,6 +2140,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2109,15 +2148,16 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_stacking_nolineal_entrenamiento = pd.concat([resultados_df_stacking_nolineal, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_stacking_nolineal_entrenamiento["MODELO"]='Stackingnolineal'
     resultados_df_stacking_nolineal_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_stacking_nolineal_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_stacking_nolineal = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
-
     Y_pred_prueba = modelo_stacking_nolineal.predict(X_tst)
-
     precision = precision_score(Y_tst, Y_pred_prueba, average='weighted')
     recall = recall_score(Y_tst, Y_pred_prueba, average='weighted')
     f1 = f1_score(Y_tst, Y_pred_prueba, average='weighted')
@@ -2131,6 +2171,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2138,9 +2179,11 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_stacking_nolineal_prueba = pd.concat([resultados_df_stacking_nolineal, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_stacking_nolineal_prueba["MODELO"]='Stackingnolineal'
     resultados_df_stacking_nolineal_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_stacking_nolineal_prueba
 
     estimadores = modelo_stacking_nolineal.estimators
@@ -2149,7 +2192,7 @@ async def procesar_datos(data: InputData):
         hiperparametros = estimador.get_params()
         hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
         hiperparametros_stacking_nolineal.append(hiperparametros_estimador)
-        
+
     cadena_hiperparametros_stacking_nolineal = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_stacking_nolineal])
 
     df_hiperparametros_stacking_nolineal = pd.DataFrame({
@@ -2160,36 +2203,44 @@ async def procesar_datos(data: InputData):
     })
     resultados_df_stacking_nolineal = pd.concat([resultados_df_stacking_nolineal_prueba,resultados_df_stacking_nolineal_entrenamiento,df_hiperparametros_stacking_nolineal], ignore_index=True)
     resultados_df_stacking_nolineal
-#------------------------------------------------------------------------------------------------------------------------------------------
-#------------------------------------------------------------------------------------------------------------------------------------------
-#------------------------------------------------------------------------------------------------------------------------------------------
-##                                                    STACKING NO LINEAL
-#------------------------------------------------------------------------------------------------------------------------------------------
 
-    def weighted_voting_ensemble(X_trn, Y_trn):
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------
+##                                                    Voting Weighted
+#------------------------------------------------------------------------------------------------------------------------------------------
+    import numpy as np
+    from sklearn.model_selection import KFold, cross_val_score
+    from sklearn.metrics import accuracy_score
+    from sklearn.ensemble import GradientBoostingClassifier, AdaBoostClassifier, ExtraTreesClassifier, RandomForestClassifier, BaggingClassifier
+    from sklearn.tree import DecisionTreeClassifier
+    from xgboost import XGBClassifier
+
+    def weighted_voting_ensemble(X_trn, Y_trn, mejores_hiperparametros_GD,
+                                mejores_hiperparametros_tree,mejores_hiperparametros_ADA,
+                                mejores_hiperparametros_extra,mejores_hiperparametros_random,
+                                mejores_hiperparametros_BG,mejores_hiperparametros_XB):
         X_trn_transformado = X_trn
         modelos = [
-            GradientBoostingClassifier(random_state=7, n_estimators=800, learning_rate=0.01, max_depth=2, max_features=2, min_samples_leaf=9, min_samples_split=2, subsample=1),
-            AdaBoostClassifier(estimator=DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini', max_depth=8, max_features=1, max_leaf_nodes=None, min_impurity_decrease=0.0, min_samples_leaf=1, min_samples_split=5, min_weight_fraction_leaf=0.0, random_state=5, splitter='random'), n_estimators=1200, algorithm='SAMME.R', learning_rate=0.001, random_state=7),
-            ExtraTreesClassifier(n_estimators=300, max_features=None, bootstrap=False, max_depth=11, min_samples_split=4, min_samples_leaf=1),
-            RandomForestClassifier(n_estimators=300, max_features=None, min_samples_split=5, max_depth=3, min_samples_leaf=1),
-            BaggingClassifier(estimator=DecisionTreeClassifier(criterion='gini', max_depth=6, max_features=None, min_samples_leaf=9, min_samples_split=2, random_state=10, splitter='random'), n_estimators=50, random_state=7, bootstrap=True, bootstrap_features=False, max_features=0.9, max_samples=0.95),
-            DecisionTreeClassifier(criterion='gini', max_depth=6, max_features=None, min_samples_leaf=9, min_samples_split=2, random_state=10, splitter='random'),
-            XGBClassifier(n_estimators=40, random_state=7, colsample_bytree=1, subsample=1, reg_alpha=0.2, reg_lambda=1.35, learning_rate=0.3, max_depth=2, min_child_weight=6, gamma=0.05)
+            GradientBoostingClassifier(**mejores_hiperparametros_GD),
+            AdaBoostClassifier(**mejores_hiperparametros_ADA),
+            ExtraTreesClassifier(**mejores_hiperparametros_extra),
+            RandomForestClassifier(**mejores_hiperparametros_random),
+            BaggingClassifier(**mejores_hiperparametros_BG),
+            DecisionTreeClassifier(**mejores_hiperparametros_tree),
+            XGBClassifier(**mejores_hiperparametros_XB)
         ]
-        
         pesos = np.ones(len(modelos))
-        
         precisión_modelos = []
         for modelo in modelos:
-            modelo.fit(X_trn_transformado, Y_trn)  
+            modelo.fit(X_trn_transformado, Y_trn)
             precisión = np.mean(cross_val_score(modelo, X_trn_transformado, Y_trn, cv=KFold(n_splits=10, random_state=7, shuffle=True), scoring='accuracy'))
             precisión_modelos.append(precisión)
-        
         suma_precisión = sum(precisión_modelos)
         for i in range(len(precisión_modelos)):
             pesos[i] = suma_precisión / (precisión_modelos[i] * len(modelos))
-        
+
         return modelos, pesos
 
     def weighted_voting_predict(modelos, pesos, X_test):
@@ -2198,16 +2249,17 @@ async def procesar_datos(data: InputData):
         predicciones_ponderadas = np.zeros_like(predicciones_modelos[0], dtype=np.float64)
         for i, predicciones_modelo in enumerate(predicciones_modelos):
             predicciones_ponderadas += predicciones_modelo * pesos_float64[i]
-        
         predicciones_ponderadas /= len(modelos)
         predicciones_ponderadas = np.round(predicciones_ponderadas).astype(int)
         
         return predicciones_ponderadas
 
-    modelos, pesos = weighted_voting_ensemble(X_trn, Y_trn)
-
+    # Utilizar la función
+    modelos, pesos = weighted_voting_ensemble(X_trn, Y_trn, mejores_hiperparametros_GD,
+                                mejores_hiperparametros_tree,mejores_hiperparametros_ADA,
+                                mejores_hiperparametros_extra,mejores_hiperparametros_random,
+                                mejores_hiperparametros_BG,mejores_hiperparametros_XB)
     Y_pred = weighted_voting_predict(modelos, pesos, X_tst)
-
     precision = accuracy_score(Y_tst, Y_pred)
     recall = recall_score(Y_tst, Y_pred, average='weighted')
     f1 = f1_score(Y_tst, Y_pred, average='weighted')
@@ -2217,7 +2269,6 @@ async def procesar_datos(data: InputData):
     print("Puntuación F1: ", f1)
     print("Exactitud: ", accuracy)
     print("Precisión del modelo (Ensamblaje con voto ponderado): {:.2f}%".format(precision * 100))
-
 
     resultados_df_weighted_voting = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -2236,6 +2287,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2243,12 +2295,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_weighted_voting_entrenamiento = pd.concat([resultados_df_weighted_voting, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_weighted_voting_entrenamiento["MODELO"]='VotingWeighted'
     resultados_df_weighted_voting_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_weighted_voting_entrenamiento
 
-
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_weighted_voting = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba= weighted_voting_predict(modelos, pesos, X_tst)
@@ -2266,6 +2320,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2273,78 +2328,50 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_weighted_voting_prueba = pd.concat([resultados_df_weighted_voting, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_weighted_voting_prueba["MODELO"]='VotingWeighted'
     resultados_df_weighted_voting_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_weighted_voting_prueba
 
     resultados_df_weighted_voting = pd.concat([resultados_df_weighted_voting_prueba,resultados_df_weighted_voting_entrenamiento], ignore_index=True)
     resultados_df_weighted_voting
-
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    SUPER APRENDIZ
 #------------------------------------------------------------------------------------------------------------------------------------------
-
     Y_trn = Y_trn.astype(int)
-    def entrenar_modelo_super_aprendiz(X_trn, Y_trn):
+    def entrenar_modelo_super_aprendiz(X_trn, Y_trn, mejores_hiperparametros_GD,
+                                mejores_hiperparametros_tree,mejores_hiperparametros_extra,
+                                mejores_hiperparametros_random,mejores_hiperparametros_BG):
         X_trn_transformado = X_trn
         semilla = 7 
         kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
-        modelo3 = ExtraTreesClassifier(n_estimators=400, max_features=None, bootstrap=False, 
-                                    max_depth=11, min_samples_split=4, min_samples_leaf=1)
-
-        modelo4 = RandomForestClassifier(n_estimators=500, max_features=None,
-                                        min_samples_split=5, max_depth=3, min_samples_leaf=1)
-        model = DecisionTreeClassifier(criterion='gini', 
-                                    max_depth=6, max_features=None,  min_samples_leaf=9, 
-                                    min_samples_split=2, 
-                                    random_state=10, splitter='random')
-
-        modelo5 = BaggingClassifier(estimator=model, n_estimators=50, random_state=semilla,
-                                    bootstrap=True, bootstrap_features=False, 
-                                    max_features=0.9, max_samples=0.95)
-
-        modelo6 = DecisionTreeClassifier(criterion='gini', max_depth=6, max_features=None, 
-                                        min_samples_leaf=9, min_samples_split=2, 
-                                        random_state=10, splitter='random')
-        
-        modelo7 = GradientBoostingClassifier(n_estimators=50, random_state=semilla,
-                                        max_depth= 2,
-                                        min_samples_split= 13,
-                                        min_samples_leaf= 1,
-                                        subsample =1,
-                                        learning_rate= 0.06                                    
-                                        ) 
-
-        estimadores = [('Extratrees', modelo3), ('Random Forest', modelo4), 
-                    ('Bagging', modelo5), ('Decision tree', modelo6),('Gradient',modelo7)]
-        
+        modelo1 = ExtraTreesClassifier(**mejores_hiperparametros_extra)
+        modelo2 = RandomForestClassifier(**mejores_hiperparametros_random)
+        model = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo3 = BaggingClassifier(**mejores_hiperparametros_BG)
+        modelo4 = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo5 = GradientBoostingClassifier(**mejores_hiperparametros_GD) 
+        estimadores = [('Extratrees', modelo1), ('Random Forest', modelo2), 
+                    ('Bagging', modelo3), ('Decision tree', modelo4),('Gradient',modelo5)]
         super_learner = SuperLearner(folds=10, random_state=semilla, verbose=2)
         super_learner.add(estimadores)
-        
         estimador_final = ExtraTreesClassifier(n_estimators=100, max_features=None,
                                             bootstrap=False, max_depth=11, min_samples_split=4, 
                                             min_samples_leaf=1)
-        
         super_learner.add_meta(estimador_final)
-        
         super_learner.fit(X_trn_transformado, Y_trn)
         mejores_hiperparametros_super_learner=super_learner.get_params
         resultados = cross_val_score(super_learner, X_trn_transformado, Y_trn, cv=kfold, scoring='accuracy')
-        
         print("Rendimiento del modelo:") 
         print("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean() * 100, "%") 
         return super_learner,mejores_hiperparametros_super_learner,estimadores
-
-
-    X_trn = X_trn
-    Y_trn = Y_trn 
-
-    modelo_superaprendiz,mejores_hiperparametros_super_learner,estimadores = entrenar_modelo_super_aprendiz(X_trn, Y_trn)
-
-
+    modelo_superaprendiz,mejores_hiperparametros_super_learner,estimadores = entrenar_modelo_super_aprendiz(X_trn, Y_trn, mejores_hiperparametros_GD,
+                                mejores_hiperparametros_tree,mejores_hiperparametros_extra,
+                                mejores_hiperparametros_random,mejores_hiperparametros_BG)
 
     resultados_df_superaprendiz = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
@@ -2363,6 +2390,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2370,11 +2398,14 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_superaprendiz_entrenamiento = pd.concat([resultados_df_superaprendiz, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_superaprendiz_entrenamiento["MODELO"]='SuperAprendiz'
     resultados_df_superaprendiz_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_superaprendiz_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_superaprendiz = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_superaprendiz.predict(X_tst)
@@ -2392,6 +2423,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2399,9 +2431,11 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_superaprendiz_prueba = pd.concat([resultados_df_superaprendiz, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_superaprendiz_prueba["MODELO"]='SuperAprendiz'
     resultados_df_superaprendiz_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_superaprendiz_prueba
 
     hiperparametros_superaprendiz = []
@@ -2409,7 +2443,7 @@ async def procesar_datos(data: InputData):
         hiperparametros = estimador.get_params()
         hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
         hiperparametros_superaprendiz.append(hiperparametros_estimador)
-        
+
     cadena_hiperparametros_superaprendiz = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_superaprendiz])
 
     df_hiperparametros_superaprendiz = pd.DataFrame({
@@ -2420,61 +2454,45 @@ async def procesar_datos(data: InputData):
     })
     resultados_df_superaprendiz = pd.concat([resultados_df_superaprendiz_prueba,resultados_df_superaprendiz_entrenamiento,df_hiperparametros_superaprendiz], ignore_index=True)
     resultados_df_superaprendiz
+
+
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    SUPER APRENDIZ DOS CAPAS
 #------------------------------------------------------------------------------------------------------------------------------------------
-
     Y_trn = Y_trn.astype(int)
-    def entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn):
+    def entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn, mejores_hiperparametros_tree,
+                                                mejores_hiperparametros_extra,mejores_hiperparametros_random,
+                                                mejores_hiperparametros_BG):
         X_trn_transformado = X_trn
         semilla = 7 
         kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
-        modelo3 = ExtraTreesClassifier(n_estimators=400, max_features=None, bootstrap=False, 
-                                    max_depth=11, min_samples_split=4, min_samples_leaf=1)
-
-        modelo4 = RandomForestClassifier(n_estimators=500, max_features=None,
-                                        min_samples_split=5, max_depth=3, min_samples_leaf=1)
-        model = DecisionTreeClassifier(criterion='gini', 
-                                    max_depth=6, max_features=None,  min_samples_leaf=9, 
-                                    min_samples_split=2, 
-                                    random_state=10, splitter='random')
-
-        modelo5 = BaggingClassifier(estimator=model, n_estimators=50, random_state=semilla,
-                                    bootstrap=True, bootstrap_features=False, 
-                                    max_features=0.9, max_samples=0.95)
-
-        modelo6 = DecisionTreeClassifier(criterion='gini', max_depth=6, max_features=None, 
-                                        min_samples_leaf=9, min_samples_split=2, 
-                                        random_state=10, splitter='random')
-        
-        estimadores = [('Extratrees', modelo3), ('Random Forest', modelo4), 
-                    ('Bagging', modelo5), ('Decision tree', modelo6)]
-        
+        modelo1 = ExtraTreesClassifier(**mejores_hiperparametros_extra)
+        modelo2 = RandomForestClassifier(**mejores_hiperparametros_random)
+        model = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        modelo3 = BaggingClassifier(**mejores_hiperparametros_BG)
+        modelo4 = DecisionTreeClassifier(**mejores_hiperparametros_tree)
+        estimadores = [('Extratrees', modelo1), ('Random Forest', modelo2), 
+                    ('Bagging', modelo3), ('Decision tree', modelo4)]
         superaprendiz_dos_capas = SuperLearner(folds=10, random_state=semilla, verbose=2)
         superaprendiz_dos_capas.add(estimadores)
         superaprendiz_dos_capas.add(estimadores)
         estimador_final = ExtraTreesClassifier(n_estimators=100, max_features=None,
                                             bootstrap=False, max_depth=11, min_samples_split=4, 
                                             min_samples_leaf=1)
-        
         superaprendiz_dos_capas.add_meta(estimador_final)
         
         superaprendiz_dos_capas.fit(X_trn_transformado, Y_trn)
         mejores_hiperparametros_superaprendiz_dos_capas=superaprendiz_dos_capas.get_params
         resultados = cross_val_score(superaprendiz_dos_capas, X_trn_transformado, Y_trn, cv=kfold, scoring='accuracy')
-        
         print("Rendimiento del modelo:") 
         print("Promedio de Exactitud (DATOS ENTRENAMIENTO) usando k-fold:", resultados.mean() * 100, "%") 
         return superaprendiz_dos_capas,mejores_hiperparametros_superaprendiz_dos_capas,estimadores
-
-
-    X_trn = X_trn
-    Y_trn = Y_trn 
-
-    modelo_superaprendiz_dos_capas,mejores_hiperparametros_superaprendiz_dos_capas,estimadores = entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn)
-
+    modelo_superaprendiz_dos_capas,mejores_hiperparametros_superaprendiz_dos_capas,estimadores = entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn, mejores_hiperparametros_tree,
+                                                mejores_hiperparametros_extra,mejores_hiperparametros_random,mejores_hiperparametros_BG)
+    
+    
     resultados_df_superaprendiz_dos_capas = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_entrenamiento= modelo_superaprendiz_dos_capas.predict(X_trn)
@@ -2492,6 +2510,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2499,12 +2518,15 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_superaprendiz_dos_capas_entrenamiento = pd.concat([resultados_df_superaprendiz_dos_capas, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_superaprendiz_dos_capas_entrenamiento["MODELO"]='SuperAprendizdoscapas'
     resultados_df_superaprendiz_dos_capas_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
+    # Imprimir el DataFrame con los resultados
     resultados_df_superaprendiz_dos_capas_entrenamiento
 
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_superaprendiz_dos_capas = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
     Y_pred_prueba = modelo_superaprendiz_dos_capas.predict(X_tst)
@@ -2522,6 +2544,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100,2))
     print("Índice Kappa de Cohen:", round(kappa*100,2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2529,9 +2552,11 @@ async def procesar_datos(data: InputData):
     df_nmi=pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa=pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_superaprendiz_dos_capas_prueba = pd.concat([resultados_df_superaprendiz_dos_capas, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
     resultados_df_superaprendiz_dos_capas_prueba["MODELO"]='SuperAprendizdoscapas'
     resultados_df_superaprendiz_dos_capas_prueba["TIPO_DE_DATOS"]='Prueba'
+    # Imprimir el DataFrame con los resultados
     resultados_df_superaprendiz_dos_capas_prueba
 
     hiperparametros_superaprendiz_dos_capas = [] 
@@ -2539,6 +2564,7 @@ async def procesar_datos(data: InputData):
         hiperparametros = estimador.get_params()
         hiperparametros_estimador = {'Estimador': nombre, 'Hiperparametros': hiperparametros}
         hiperparametros_superaprendiz_dos_capas.append(hiperparametros_estimador)
+        
     cadena_hiperparametros_superaprendiz_dos_capas = ', '.join([', '.join([f"{key}: {value}" for key, value in estimador.items()]) for estimador in hiperparametros_superaprendiz_dos_capas])
 
     df_hiperparametros_superaprendiz_dos_capas = pd.DataFrame({
@@ -2549,11 +2575,6 @@ async def procesar_datos(data: InputData):
     })
     resultados_df_superaprendiz_dos_capas = pd.concat([resultados_df_superaprendiz_dos_capas_prueba,resultados_df_superaprendiz_dos_capas_entrenamiento,df_hiperparametros_superaprendiz_dos_capas], ignore_index=True)
     resultados_df_superaprendiz_dos_capas
-    
-    
-    
-    
-    
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
@@ -2591,7 +2612,6 @@ async def procesar_datos(data: InputData):
             # Forward pass y pérdida
             outputs = model(X_train_tensor)
             loss = criterion(outputs, y_train_tensor)
-            
             # Backward pass y optimización
             optimizer.zero_grad()
             loss.backward()
@@ -2632,11 +2652,14 @@ async def procesar_datos(data: InputData):
     # Supongamos que X_train, y_train, X_test, y_test son tus datos de entrenamiento y prueba
     modelo_red_reuronal,num_epochs,learning_rate = train_neural_network(X_train_array , Y_trn, input_size, hidden_size, num_classes)
     evaluate_model(modelo_red_reuronal, X_test_array , Y_tst)
-    
-    
-    
+
+    # Predecir las etiquetas para los datos de entrenamiento
     resultados_df_red_reuronal = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
+
+    # Convertir datos de entrenamiento a tensores de PyTorch
     X_train_tensor = torch.tensor(X_train_array, dtype=torch.float32)
+
+    # Obtener las predicciones del modelo
     outputs = modelo_red_reuronal(X_train_tensor)
     _, predicted = torch.max(outputs, 1)
     Y_pred_entrenamiento = predicted.numpy()
@@ -2655,6 +2678,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100, 2))
     print("Índice Kappa de Cohen:", round(kappa*100, 2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2662,13 +2686,21 @@ async def procesar_datos(data: InputData):
     df_nmi = pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa = pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_red_reuronal_entrenamiento = pd.concat([resultados_df_red_reuronal, df_precision, df_recall, df_f1, df_accuracy, df_nmi, df_kappa], ignore_index=True)
     resultados_df_red_reuronal_entrenamiento["MODELO"] = 'RedNeuronal'
     resultados_df_red_reuronal_entrenamiento["TIPO_DE_DATOS"] = 'Entrenamiento'
+
+    # Imprimir el DataFrame con los resultados
     resultados_df_red_reuronal_entrenamiento
 
+    # Predecir las etiquetas para los datos de prueba
     resultados_df_red_reuronal_prueba = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
+
+    # Convertir datos de prueba a tensores de PyTorch
     X_test_tensor = torch.tensor(X_test_array, dtype=torch.float32)
+
+    # Obtener las predicciones del modelo
     outputs = modelo_red_reuronal(X_test_tensor)
     _, predicted = torch.max(outputs, 1)
     Y_pred_prueba = predicted.numpy()
@@ -2687,6 +2719,7 @@ async def procesar_datos(data: InputData):
     print("Información Mutua Normalizada (NMI):", round(nmi*100, 2))
     print("Índice Kappa de Cohen:", round(kappa*100, 2))
 
+    # Crear un DataFrame para cada métrica
     df_precision = pd.DataFrame({'MÉTRICA': ['Precisión'], 'VALOR': [round(precision*100, 2)]})
     df_recall = pd.DataFrame({'MÉTRICA': ['Exhaustividad'], 'VALOR': [round(recall*100, 2)]})
     df_f1 = pd.DataFrame({'MÉTRICA': ['Puntuación F1'], 'VALOR': [round(f1*100, 2)]})
@@ -2694,12 +2727,15 @@ async def procesar_datos(data: InputData):
     df_nmi = pd.DataFrame({'MÉTRICA': ['Información Mutua Normalizada (NMI)'], 'VALOR': [round(nmi*100, 2)]})
     df_kappa = pd.DataFrame({'MÉTRICA': ['Índice Kappa de Cohen'], 'VALOR': [round(kappa*100, 2)]})
 
+    # Concatenar los DataFrames
     resultados_df_red_reuronal_prueba = pd.concat([resultados_df_red_reuronal_prueba, df_precision, df_recall, df_f1, df_accuracy, df_nmi, df_kappa], ignore_index=True)
     resultados_df_red_reuronal_prueba["MODELO"] = 'RedNeuronal'
     resultados_df_red_reuronal_prueba["TIPO_DE_DATOS"] = 'Prueba'
+
+    # Imprimir el DataFrame con los resultados
     resultados_df_red_reuronal_prueba
 
-
+    # Crear un diccionario con los hiperparámetros y sus valores
     hiperparametros = {
         "input_size": input_size,
         "hidden_size": hidden_size,
@@ -2707,18 +2743,19 @@ async def procesar_datos(data: InputData):
         "num_epochs": num_epochs,
         "learning_rate": learning_rate
     }
+
+    # Convertir el diccionario en una cadena formateada para mostrar en el dataframe
     cadena_hiperparametros = ', '.join([f"{key}={value}" for key, value in hiperparametros.items()])
 
+    # Crear un nuevo dataframe con los hiperparámetros
     df_hiperparametros_red_neuronal = pd.DataFrame({
         'MÉTRICA': ['Hiperparámetros'],
         'VALOR': [cadena_hiperparametros],
         'MODELO': ['RedNeuronal'],
         'TIPO_DE_DATOS': ['Entrenamiento']
     })
-
     resultados_df_red_reuronal = pd.concat([resultados_df_red_reuronal_prueba,resultados_df_red_reuronal_entrenamiento,df_hiperparametros_red_neuronal], ignore_index=True)
     resultados_df_red_reuronal
-
 
     Metricas_Modelos=pd.concat([resultados_df_knn,resultados_df_svc,resultados_df_tree,
                                 resultados_df_gaussian,resultados_df_LDA,resultados_df_BG,
