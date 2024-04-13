@@ -1,153 +1,25 @@
-#---------------------------------------------------------------
-#---------------------------------------------------------------
-# LIBRERIAS
-#---------------------------------------------------------------
-
-
-
 import warnings
 warnings.filterwarnings('ignore')
 from numpy import set_printoptions
 from pandas.plotting import scatter_matrix
-import matplotlib.pyplot as plt
-import numpy as np 
 import pandas as pd 
 pd.options.display.max_columns=None
 import seaborn as sns 
 from pandas import read_csv
 import io
-import base64
-import json
-from openpyxl import Workbook
-from openpyxl.drawing.image import Image as XLImage
-
 import os
 import os.path
 from unidecode import unidecode
-
 from urllib.error import HTTPError
-
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
-from googleapiclient.errors import HttpError
-from googleapiclient.http import MediaIoBaseDownload
-from sklearn.model_selection import StratifiedKFold
-
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import Normalizer
-from sklearn.preprocessing import RobustScaler
-from sklearn.preprocessing import PowerTransformer
-
-from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import KFold
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import cross_val_score
-
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.naive_bayes import GaussianNB
-from sklearn.linear_model import LogisticRegression 
-from catboost import CatBoostClassifier
-from xgboost import XGBClassifier
-from sklearn.svm import SVC
-from lightgbm import LGBMClassifier
-from mlens.ensemble import SuperLearner
-
-
-from sklearn.ensemble import AdaBoostClassifier 
-from sklearn.ensemble import ExtraTreesClassifier
-from sklearn.ensemble import BaggingClassifier
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.ensemble import VotingClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import StackingClassifier
-
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
-from sklearn.metrics import normalized_mutual_info_score
-from sklearn.metrics import cohen_kappa_score
-
-
-import warnings
-warnings.filterwarnings('ignore')
-from numpy import set_printoptions
-from pandas.plotting import scatter_matrix
-import matplotlib.pyplot as plt
-import numpy as np 
-import pandas as pd 
-pd.options.display.max_columns=None
-import seaborn as sns 
-from pandas import read_csv
-import io
-import base64
-import json
-from openpyxl import Workbook
-from openpyxl.drawing.image import Image as XLImage
-
-import os
-import os.path
-from unidecode import unidecode
-
-from urllib.error import HTTPError
-
 from fastapi import FastAPI, Request
 from typing import List
 from pydantic import BaseModel
-
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaIoBaseDownload
-
-
-from sklearn.preprocessing import LabelEncoder
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.preprocessing import StandardScaler
-from sklearn.preprocessing import Normalizer
-from sklearn.preprocessing import RobustScaler
-from sklearn.preprocessing import PowerTransformer
-
-from sklearn.model_selection import GridSearchCV
-from sklearn.model_selection import KFold
-from sklearn.model_selection import train_test_split
-from sklearn.model_selection import cross_val_score
-from sklearn.model_selection import StratifiedKFold
-
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
-from sklearn.naive_bayes import GaussianNB
-from sklearn.linear_model import LogisticRegression 
-from catboost import CatBoostClassifier
-from xgboost import XGBClassifier
-from sklearn.svm import SVC
-from lightgbm import LGBMClassifier
-from mlens.ensemble import SuperLearner
-
-
-from sklearn.ensemble import AdaBoostClassifier 
-from sklearn.ensemble import ExtraTreesClassifier
-from sklearn.ensemble import BaggingClassifier
-from sklearn.ensemble import GradientBoostingClassifier
-from sklearn.ensemble import VotingClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.ensemble import StackingClassifier
-from sklearn.metrics import accuracy_score
-import torch
-import torch.nn as nn
-import torch.optim as optim
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
-
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, classification_report
-from sklearn.metrics import normalized_mutual_info_score
-from sklearn.metrics import cohen_kappa_score
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -196,16 +68,14 @@ def download_folder(folder_id, save_path):
 
 # Descargar archivos de la carpeta
 download_folder(folder_id, save_path)
-from sklearn.metrics import accuracy_score
 # Listar archivos descargados
 files = os.listdir(save_path)
 print("Archivos descargados:")
 for file in files:
     print(file)
-    
+
 
 app = FastAPI()
-from sklearn.metrics import accuracy_score
 carrera = ""
 semestre = ""
 modelos_seleccionados=[]
@@ -222,12 +92,73 @@ async def procesar_datos(data: InputData):
     modelos_seleccionados= data.modelos_seleccionados
     carrera = data.carrera
     semestre = data.semestre
-    
-    
     print("Diccionario seleccion actualizado:", modelos_seleccionados)
     print("Carrera actualizada:", carrera)
     print("Semestre actualizado:", semestre)
     
+#------------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------
+##                                                    Librerias
+#------------------------------------------------------------------------------------------------------------------------------------------
+
+    from sklearn.metrics import accuracy_score
+    import warnings
+    warnings.filterwarnings('ignore')
+    from numpy import set_printoptions
+    from pandas.plotting import scatter_matrix
+    import matplotlib.pyplot as plt
+    import numpy as np 
+    import pandas as pd 
+    pd.options.display.max_columns=None
+    import seaborn as sns 
+    from pandas import read_csv
+    import io
+    import base64
+    import json
+    from openpyxl import Workbook
+    from openpyxl.drawing.image import Image as XLImage
+    from sklearn.metrics import accuracy_score
+    import os
+    import os.path
+    from unidecode import unidecode
+    from sklearn.preprocessing import LabelEncoder
+    from sklearn.preprocessing import PowerTransformer
+
+    from sklearn.model_selection import GridSearchCV
+    from sklearn.model_selection import KFold
+    from sklearn.model_selection import train_test_split
+    from sklearn.model_selection import cross_val_score
+    from sklearn.model_selection import StratifiedKFold
+
+    from sklearn.neighbors import KNeighborsClassifier
+    from sklearn.tree import DecisionTreeClassifier
+    from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+    from sklearn.naive_bayes import GaussianNB
+    from sklearn.linear_model import LogisticRegression 
+    from catboost import CatBoostClassifier
+    from xgboost import XGBClassifier
+    from sklearn.svm import SVC
+    from lightgbm import LGBMClassifier
+    from mlens.ensemble import SuperLearner
+    from sklearn.ensemble import AdaBoostClassifier 
+    from sklearn.ensemble import ExtraTreesClassifier
+    from sklearn.ensemble import BaggingClassifier
+    from sklearn.ensemble import GradientBoostingClassifier
+    from sklearn.ensemble import VotingClassifier
+    from sklearn.ensemble import RandomForestClassifier
+    from sklearn.ensemble import StackingClassifier
+    import torch
+    import torch.nn as nn
+    import torch.optim as optim
+    from sklearn.metrics import accuracy_score
+    from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+    from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
+    from sklearn.metrics import normalized_mutual_info_score
+    from sklearn.metrics import cohen_kappa_score
+#------------------------------------------------------------------------------------------------------------------------------------------
+#------------------------------------------------------------------------------------------------------------------------------------------
+
     variables_por_carrera = {
     'industrial': {
         '1': ['PG_ICFES', 'CON_MAT_ICFES', 'FISICA_ICFES','QUIMICA_ICFES','IDIOMA_ICFES','LOCALIDAD','RENDIMIENTO_UNO'],
@@ -236,7 +167,7 @@ async def procesar_datos(data: InputData):
         '4': ['PROMEDIO_UNO', 'NOTA_EE_UNO', 'PROMEDIO_DOS', 'NOTA_ALGEBRA', 'NOTA_INTEGRAL', 'NOTA_MATERIALES', 'NOTA_EE_DOS', 'NAA_TRES', 'NOTA_MULTIVARIADO', 'NOTA_ESTADISTICA_UNO', 'NOTA_TERMODINAMICA', 'NOTA_TGS', 'NOTA_EE_TRES','RENDIMIENTO_CUATRO'],
         '5': ['PROMEDIO_UNO', 'PROMEDIO_DOS', 'NOTA_ALGEBRA', 'NOTA_INTEGRAL', 'NOTA_MATERIALES', 'NOTA_EE_DOS','PROMEDIO_TRES', 'NAA_TRES', 'NOTA_MULTIVARIADO', 'NOTA_TERMODINAMICA', 'NOTA_ECUACIONES', 'NOTA_ESTADISTICA_DOS', 'NOTA_FISICA_DOS', 'NOTA_MECANICA', 'NOTA_PROCESOSQ', 'RENDIMIENTO_CINCO'],
         '6': ['PROMEDIO_UNO', 'PROMEDIO_DOS', 'NOTA_MATERIALES', 'NOTA_EE_DOS', 'PROMEDIO_TRES', 'NOTA_MULTIVARIADO', 'NOTA_FISICA_DOS', 'NOTA_EE_CUATRO', 'PROMEDIO_CINCO', 'NOTA_PROCESOSM', 'NOTA_ADMINISTRACION', 'NOTA_LENGUA_UNO', 'NOTA_EI_UNO', 'NOTA_EI_DOS', 'RENDIMIENTO_SEIS'],
-        '7': ['PROMEDIO_UNO', 'PROMEDIO_DOS', 'NOTA_EE_DOS', 'PROMEDIO_TRES', 'NOTA_MULTIVARIADO', 'NOTA_FISICA_DOS', 'PROMEDIO_CINCO', 'NOTA_PROCESOSM', 'NOTA_LENGUA_UNO', 'NOTA_EI_DOS', 'PROMEDIO_SEIS', 'NCA_SEIS', 'NOTA_PLINEAL', 'NOTA_DISE O', 'NOTA_EI_TRES','RENDIMIENTO_SIETE'],
+        '7': ['PROMEDIO_UNO', 'PROMEDIO_DOS', 'NOTA_EE_DOS', 'PROMEDIO_TRES', 'NOTA_MULTIVARIADO', 'NOTA_FISICA_DOS', 'PROMEDIO_CINCO', 'NOTA_PROCESOSM', 'NOTA_LENGUA_UNO', 'NOTA_EI_DOS', 'PROMEDIO_SEIS', 'NCA_SEIS', 'NOTA_PLINEAL', 'NOTA_DISENO', 'NOTA_EI_TRES','RENDIMIENTO_SIETE'],
         '8': ['PROMEDIO_DOS', 'NOTA_EE_CUATRO', 'PROMEDIO_CINCO', 'NOTA_LENGUA_UNO','PROMEDIO_SEIS', 'NOTA_IECONOMICA', 'PROMEDIO_SIETE', 'NAA_SIETE', 'NOTA_GRAFOS', 'NOTA_CALIDAD_UNO', 'NOTA_ERGONOMIA', 'NOTA_EI_CINCO', 'RENDIMIENTO_OCHO'],
         '9': ['PROMEDIO_DOS', 'NOTA_EE_CUATRO', 'PROMEDIO_CINCO', 'PROMEDIO_SEIS', 'NOTA_IECONOMICA', 'PROMEDIO_SIETE', 'NAA_SIETE', 'NOTA_GRAFOS', 'NOTA_CALIDAD_UNO', 'NOTA_ERGONOMIA', 'NOTA_EI_CINCO', 'PROMEDIO_OCHO', 'NCC_OCHO', 'NOTA_LOG_UNO', 'NOTA_GOPERACIONES','NOTA_CALIDAD_DOS', 'NOTA_LENGUA_DOS', 'NOTA_CONTEXTO', 'RENDIMIENTO_NUEVE'],
         '10': ['PROMEDIO_SEIS', 'PROMEDIO_SIETE', 'PROMEDIO_OCHO', 'NOTA_CALIDAD_DOS', 'PROMEDIO_NUEVE', 'NAA_NUEVE', 'NOTA_GRADO_UNO', 'NOTA_LOG_DOS', 'NOTA_FINANZAS', 'NOTA_HISTORIA', 'RENDIMIENTO_DIEZ']
@@ -302,6 +233,7 @@ async def procesar_datos(data: InputData):
 #------------------------------------------------------------------------------------------------------------------------------------------
 ##                                                    MODELO KNeighbors
 #------------------------------------------------------------------------------------------------------------------------------------------
+
     def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn):
         X_trn_transformado = X_trn
         parameters = {
@@ -364,7 +296,7 @@ async def procesar_datos(data: InputData):
     # Imprimir el DataFrame con los resultados
     resultados_df_knn_entrenamiento   
     
-        
+    
     # Predecir las etiquetas para los datos de prueba
     resultados_df_knn = pd.DataFrame(columns=['MÉTRICA', 'VALOR'])
 
