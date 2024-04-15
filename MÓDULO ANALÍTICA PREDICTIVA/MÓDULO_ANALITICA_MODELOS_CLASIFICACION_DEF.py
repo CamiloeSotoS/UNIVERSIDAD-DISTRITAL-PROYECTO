@@ -2780,10 +2780,10 @@ async def procesar_datos(data: InputData):
                 
             }
         ]
-    with open("Metricas_Modelos.json", "w") as json_file:
+    with open("Metricas_Modelos_Clasificacion.json", "w") as json_file:
         json.dump({"data": diccionario_dataframes}, json_file, indent=4)
 
-        print("Los DataFrames han sido guardados en 'Metricas_Modelos.json'.")
+        print("Los DataFrames han sido guardados en 'Metricas_Modelos_Clasificacion.json'.")
 #AdaBoost
 #Bagging
 #CatBoost
@@ -2806,7 +2806,7 @@ async def procesar_datos(data: InputData):
 #VotingWeighted
 #XGB
 
-    Metricas_Modelos.to_csv('Metricas_Modelos.csv',sep="|",index=False,encoding='utf-8')
+    Metricas_Modelos.to_csv('Metricas_Modelos_Clasificacion.csv',sep="|",index=False,encoding='utf-8')
 @app.get("/")
 async def read_root():
     return {"message": "¡Bienvenido a la API!", "modelo": modelos_seleccionados, "carrera": carrera, "semestre": semestre}
