@@ -1413,7 +1413,7 @@ async def procesar_datos(data: InputData):
 
     # Concatenar los DataFrames
     resultados_df_XB_entrenamiento = pd.concat([resultados_df_XB, df_precision, df_recall, df_f1, df_accuracy,df_nmi,df_kappa], ignore_index=True)
-    resultados_df_XB_entrenamiento["MODELO"]=' XGB'
+    resultados_df_XB_entrenamiento["MODELO"]='XGB'
     resultados_df_XB_entrenamiento["TIPO_DE_DATOS"]='Entrenamiento'
     # Imprimir el DataFrame con los resultados
     resultados_df_XB_entrenamiento
