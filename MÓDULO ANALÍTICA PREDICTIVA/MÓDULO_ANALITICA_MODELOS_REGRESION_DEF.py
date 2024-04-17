@@ -92,7 +92,7 @@ if not creds or not creds.valid:
         
 drive_service = build('drive', 'v3', credentials=creds)
 folder_id = '1hQeetmO4XIObUefS_nzePqKqq3VksUEC'
-save_path = 'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MÓDULO ANALÍTICA PREDICTIVA/DATOS'  # Reemplazar con la ruta deseada
+save_path = 'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PREDICTIVA/DATOS'  # Reemplazar con la ruta deseada
 
 def download_folder(folder_id, save_path):
     results = drive_service.files().list(
@@ -171,7 +171,7 @@ async def procesar_datos(data: InputData):
     }
     
     def cargar_datos(carrera, semestre):
-        ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MÓDULO ANALÍTICA PREDICTIVA/DATOS/{carrera}{semestre}.csv'
+        ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PREDICTIVA/DATOS/{carrera}{semestre}.csv'
         datos = pd.read_csv(ruta_archivo,sep=";")
         return datos
     
@@ -189,8 +189,8 @@ async def procesar_datos(data: InputData):
     semestre_en_letras = numero_a_letras(semestre)
     print(semestre_en_letras)
     
-    X = df.loc[:, ~df.columns.str.contains(f'RENDIMIENTO_{semestre_en_letras.upper()}')]
-    Y = df.loc[:, df.columns.str.contains(f'RENDIMIENTO_{semestre_en_letras.upper()}')]                                                     
+    X = df.loc[:, ~df.columns.str.contains(f'PROMEDIO_{semestre_en_letras.upper()}')]
+    Y = df.loc[:, df.columns.str.contains(f'PROMEDIO_{semestre_en_letras.upper()}')]                                                     
     print("Separación de datos usando Pandas") 
     print(X.shape, Y.shape)
     Y = LabelEncoder().fit_transform(Y.astype('str'))                
@@ -327,7 +327,7 @@ async def procesar_datos(data: InputData):
     rmse = np.sqrt(mse)
     mae = mean_absolute_error(Y_trn, Y_pred)
     r2 = r2_score(Y_trn, Y_pred)
-    msle = mean_squared_log_error(Y_trn, Y_pred)
+    #msle = mean_squared_log_error(Y_trn, Y_pred)
     rmsle = np.sqrt(msle)
     n = len(Y_trn)
     k = X_trn.shape[1]
@@ -337,7 +337,7 @@ async def procesar_datos(data: InputData):
     df_MAE = pd.DataFrame({'MÉTRICA': ['Error Absoluto Medio (MAE)'], 'VALOR': [round(mae, 2)]})
     df_R2 = pd.DataFrame({'MÉTRICA': ['Coeficiente de Determinación'], 'VALOR': [round(r2*100, 2)]})
     df_R2A = pd.DataFrame({'MÉTRICA': ['Coeficiente de Determinación Ajustado'], 'VALOR': [round(r2_ajustado*100, 2)]})
-    df_MSLE=pd.DataFrame({'MÉTRICA': ['Error Logarítmico Cuadrático Medio (MSLE)'], 'VALOR': [round(msle*100, 2)]})
+    df_MSLE=pd.DataFrame({'MÉTRICA': ['Error Logarítmico Cuadrático Medio (MSLE)'], 'VALOR':['Sin Valor']})
     df_RMSLE=pd.DataFrame({'MÉTRICA': ['Raíz del Error Logarítmico Cuadrático Medio (RMSLE)'], 'VALOR': [round(rmsle*100, 2)]})
     resultados_df_svc_entrenamiento = pd.concat([resultados_df_svc, df_MSE,df_RMSE,df_MAE,df_R2,df_R2A,df_MSLE,df_RMSLE], ignore_index=True)
     resultados_df_svc_entrenamiento["MODELO"]='SVR'
@@ -350,7 +350,7 @@ async def procesar_datos(data: InputData):
     rmse = np.sqrt(mse)
     mae = mean_absolute_error(Y_tst, Y_pred)
     r2 = r2_score(Y_tst, Y_pred)
-    msle = mean_squared_log_error(Y_tst, Y_pred)
+    #msle = mean_squared_log_error(Y_tst, Y_pred)
     rmsle = np.sqrt(msle)
     n = len(Y_tst)
     k = X_tst.shape[1]
@@ -360,7 +360,7 @@ async def procesar_datos(data: InputData):
     df_MAE = pd.DataFrame({'MÉTRICA': ['Error Absoluto Medio (MAE)'], 'VALOR': [round(mae, 2)]})
     df_R2 = pd.DataFrame({'MÉTRICA': ['Coeficiente de Determinación'], 'VALOR': [round(r2*100, 2)]})
     df_R2A = pd.DataFrame({'MÉTRICA': ['Coeficiente de Determinación Ajustado'], 'VALOR': [round(r2_ajustado*100, 2)]})
-    df_MSLE=pd.DataFrame({'MÉTRICA': ['Error Logarítmico Cuadrático Medio (MSLE)'], 'VALOR': [round(msle*100, 2)]})
+    df_MSLE=pd.DataFrame({'MÉTRICA': ['Error Logarítmico Cuadrático Medio (MSLE)'], 'VALOR': ['Sin Valor']})
     df_RMSLE=pd.DataFrame({'MÉTRICA': ['Raíz del Error Logarítmico Cuadrático Medio (RMSLE)'], 'VALOR': [round(rmsle*100, 2)]})
     resultados_df_svc_prueba = pd.concat([resultados_df_svc, df_MSE,df_RMSE,df_MAE,df_R2,df_R2A,df_MSLE,df_RMSLE], ignore_index=True)
     resultados_df_svc_prueba["MODELO"]='SVR'
@@ -976,6 +976,19 @@ async def procesar_datos(data: InputData):
     resultados_df_ADA_prueba["MODELO"]='AdaBoost'
     resultados_df_ADA_prueba["TIPO_DE_DATOS"]='Prueba'
     resultados_df_ADA_prueba
+    
+    mejores_hiperparametros_ADA = modelo_ADA.get_params()
+    mejores_hiperparametros_ADA
+
+    cadena_hiperparametros_ADA = ', '.join([f"{key}: {value}" for key, value in mejores_hiperparametros_ADA.items()])
+    df_hiperparametros_ADA = pd.DataFrame({
+        'MÉTRICA': ['Mejores Hiperparametros'],
+        'VALOR': [cadena_hiperparametros_ADA],
+        'MODELO': ['AdaBoost'],
+        'TIPO_DE_DATOS': ['Hiperparametros del modelo']
+    })
+    resultados_df_ADA = pd.concat([resultados_df_ADA_prueba,resultados_df_ADA_entrenamiento,df_hiperparametros_ADA], ignore_index=True)
+    resultados_df_ADA
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
 #------------------------------------------------------------------------------------------------------------------------------------------
