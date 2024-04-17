@@ -1,0 +1,46 @@
+METRICA|VALOR|MODELO|TIPO_DE_DATOS
+Error Cuadratico Medio (MSE)|22.14|Bagging|Prueba
+Raiz del Error Cuadratico Medio (RMSE)|4.71|Bagging|Prueba
+Error Absoluto Medio (MAE)|3.32|Bagging|Prueba
+Coeficiente de Determinacion|76.12|Bagging|Prueba
+Coeficiente de Determinacion Ajustado|75.32|Bagging|Prueba
+Error Logaritmico Cuadratico Medio (MSLE)|76.47|Bagging|Prueba
+Raiz del Error Logaritmico Cuadratico Medio (RMSLE)|87.45|Bagging|Prueba
+Error Cuadratico Medio (MSE)|3.93|Bagging|Entrenamiento
+Raiz del Error Cuadratico Medio (RMSE)|1.98|Bagging|Entrenamiento
+Error Absoluto Medio (MAE)|1.44|Bagging|Entrenamiento
+Coeficiente de Determinacion|95.3|Bagging|Entrenamiento
+Coeficiente de Determinacion Ajustado|95.23|Bagging|Entrenamiento
+Error Logaritmico Cuadratico Medio (MSLE)|24.26|Bagging|Entrenamiento
+Raiz del Error Logaritmico Cuadratico Medio (RMSLE)|49.26|Bagging|Entrenamiento
+Mejores Hiperparametros|bootstrap: True, bootstrap_features: True, estimator: None, max_features: 0.75, max_samples: 0.85, n_estimators: 750, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|Bagging|Hiperparametros del modelo
+Error Cuadratico Medio (MSE)|24.45|AdaBoost|Prueba
+Raiz del Error Cuadratico Medio (RMSE)|4.94|AdaBoost|Prueba
+Error Absoluto Medio (MAE)|3.42|AdaBoost|Prueba
+Coeficiente de Determinacion|73.63|AdaBoost|Prueba
+Coeficiente de Determinacion Ajustado|72.75|AdaBoost|Prueba
+Error Logaritmico Cuadratico Medio (MSLE)|75.22|AdaBoost|Prueba
+Raiz del Error Logaritmico Cuadratico Medio (RMSLE)|86.73|AdaBoost|Prueba
+Error Cuadratico Medio (MSE)|18.8|AdaBoost|Entrenamiento
+Raiz del Error Cuadratico Medio (RMSE)|4.34|AdaBoost|Entrenamiento
+Error Absoluto Medio (MAE)|3.11|AdaBoost|Entrenamiento
+Coeficiente de Determinacion|77.48|AdaBoost|Entrenamiento
+Coeficiente de Determinacion Ajustado|77.16|AdaBoost|Entrenamiento
+Error Logaritmico Cuadratico Medio (MSLE)|49.86|AdaBoost|Entrenamiento
+Raiz del Error Logaritmico Cuadratico Medio (RMSLE)|70.61|AdaBoost|Entrenamiento
+Mejores Hiperparametros|estimator: None, learning_rate: 0.001, loss: linear, n_estimators: 22, random_state: None|AdaBoost|Hiperparametros del modelo
+Error Cuadratico Medio (MSE)|24.48|CatBoost|Prueba
+Raiz del Error Cuadratico Medio (RMSE)|4.95|CatBoost|Prueba
+Error Absoluto Medio (MAE)|3.4|CatBoost|Prueba
+Coeficiente de Determinacion|73.6|CatBoost|Prueba
+Coeficiente de Determinacion Ajustado|72.71|CatBoost|Prueba
+Error Logaritmico Cuadratico Medio (MSLE)|Sin valor|CatBoost|Prueba
+Raiz del Error Logaritmico Cuadratico Medio (RMSLE)|86.73|CatBoost|Prueba
+Error Cuadratico Medio (MSE)|1.89|CatBoost|Entrenamiento
+Raiz del Error Cuadratico Medio (RMSE)|1.37|CatBoost|Entrenamiento
+Error Absoluto Medio (MAE)|1.06|CatBoost|Entrenamiento
+Coeficiente de Determinacion|97.74|CatBoost|Entrenamiento
+Coeficiente de Determinacion Ajustado|97.71|CatBoost|Entrenamiento
+Error Logaritmico Cuadratico Medio (MSLE)|Sin valor|CatBoost|Entrenamiento
+Raiz del Error Logaritmico Cuadratico Medio (RMSLE)|86.73|CatBoost|Entrenamiento
+Mejores Hiperparametros|loss_function: RMSE, verbose: 0|CatBoost|Hiperparametros del modelo

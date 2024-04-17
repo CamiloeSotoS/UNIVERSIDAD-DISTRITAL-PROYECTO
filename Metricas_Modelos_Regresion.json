@@ -4,535 +4,85 @@
             "dataTransformacion": [
                 {
                     "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 23.45,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.84,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.35,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 74.71,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 73.86,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 71.06,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 84.3,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 16.16,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.02,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 2.79,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 80.63,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 80.36,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 44.16,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 66.45,
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "algorithm: auto, leaf_size: 30, metric: euclidean, metric_params: None, n_jobs: None, n_neighbors: 14, p: 1, weights: uniform",
-                    "MODELO": "KNeighbors",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 79.19,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 8.9,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 7.98,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 14.6,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 11.73,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin Valor",
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 84.3,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 78.21,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 8.84,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 8.01,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 6.29,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 4.96,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin Valor",
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 84.3,
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "C: 0.0011, cache_size: 200, coef0: 0.0, degree: 3, epsilon: 0.1, gamma: 1.05, kernel: poly, max_iter: 2, shrinking: True, tol: 0.001, verbose: False",
-                    "MODELO": "SVR",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 25.89,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 5.09,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.57,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 72.08,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 71.14,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 70.31,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 83.85,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 16.9,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.11,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 2.97,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 79.74,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 79.46,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 41.06,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 64.08,
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "ccp_alpha: 0.0, criterion: squared_error, max_depth: 5, max_features: 6, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 2, min_samples_split: 2, min_weight_fraction_leaf: 0.0, monotonic_cst: None, random_state: 4, splitter: random",
-                    "MODELO": "DecisionTree",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 32.71,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 5.72,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.95,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 64.72,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 63.54,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 83.85,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 2.2,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 1.48,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 1.1,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 97.37,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 97.33,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 83.85,
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "alpha: 0.1, copy_X_train: True, kernel: None, n_restarts_optimizer: 0, n_targets: None, normalize_y: True, optimizer: fmin_l_bfgs_b, random_state: None",
-                    "MODELO": "NaiveBayes",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 26.53,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 5.15,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.27,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 71.38,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 70.42,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 76.09,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 87.23,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 24.56,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.96,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.04,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 70.58,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 70.16,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 61.79,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 78.61,
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "covariance_estimator: None, n_components: 1, priors: None, shrinkage: auto, solver: lsqr, store_covariance: False, tol: 0.0001",
-                    "MODELO": "LDA",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 21.77,
+                    "VALOR": 22.14,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.67,
+                    "VALOR": 4.71,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.3,
+                    "VALOR": 3.32,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 76.53,
+                    "VALOR": 76.12,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 75.74,
+                    "VALOR": 75.32,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 76.01,
+                    "VALOR": 76.47,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 87.19,
+                    "VALOR": 87.45,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 3.87,
+                    "VALOR": 3.93,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 1.97,
+                    "VALOR": 1.98,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 1.43,
+                    "VALOR": 1.44,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 95.37,
-                    "MODELO": "Bagging",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
                     "VALOR": 95.3,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
+                    "METRICA": "Coeficiente de Determinacion Ajustado",
+                    "VALOR": 95.23,
+                    "MODELO": "Bagging",
+                    "TIPO_DE_DATOS": "Entrenamiento"
+                },
+                {
                     "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 24.12,
+                    "VALOR": 24.26,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 49.11,
+                    "VALOR": 49.26,
                     "MODELO": "Bagging",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
@@ -544,187 +94,7 @@
                 },
                 {
                     "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 23.01,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.8,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.25,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 75.19,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 74.35,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 69.96,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 83.64,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 6.69,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 2.59,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 1.78,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 91.98,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 91.87,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 28.38,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 53.28,
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "bootstrap: True, ccp_alpha: 0.0, criterion: squared_error, max_depth: None, max_features: 1.0, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 3, min_samples_split: 2, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False",
-                    "MODELO": "RandomForest",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 23.89,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.89,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.38,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 74.24,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 73.38,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 69.62,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 83.44,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 1.79,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 1.34,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 0.66,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 97.86,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 97.83,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 17.93,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 42.34,
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "bootstrap: False, ccp_alpha: 0.0, criterion: poisson, max_depth: None, max_features: 1.0, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 1, min_samples_split: 3, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False",
-                    "MODELO": "ExtraTrees",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 24.39,
+                    "VALOR": 24.45,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Prueba"
                 },
@@ -736,260 +106,80 @@
                 },
                 {
                     "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.49,
+                    "VALOR": 3.42,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 73.69,
+                    "VALOR": 73.63,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 72.81,
+                    "VALOR": 72.75,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 77.59,
+                    "VALOR": 75.22,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 88.08,
+                    "VALOR": 86.73,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Prueba"
                 },
                 {
                     "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 18.66,
+                    "VALOR": 18.8,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.32,
+                    "VALOR": 4.34,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.17,
+                    "VALOR": 3.11,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 77.64,
+                    "VALOR": 77.48,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 77.32,
+                    "VALOR": 77.16,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 50.54,
+                    "VALOR": 49.86,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 71.09,
+                    "VALOR": 70.61,
                     "MODELO": "AdaBoost",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
                 {
                     "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "estimator: None, learning_rate: 0.001, loss: linear, n_estimators: 15, random_state: None",
+                    "VALOR": "estimator: None, learning_rate: 0.001, loss: linear, n_estimators: 22, random_state: None",
                     "MODELO": "AdaBoost",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 23.93,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.89,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.43,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 74.19,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 73.32,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 88.08,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 8.42,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 2.9,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 2.19,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 89.91,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 89.77,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 88.08,
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "alpha: 0.9, ccp_alpha: 0.0, criterion: friedman_mse, init: None, learning_rate: 0.1, loss: squared_error, max_depth: 3, max_features: None, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 1, min_samples_split: 2, min_weight_fraction_leaf: 0.0, n_estimators: 100, n_iter_no_change: None, random_state: None, subsample: 1.0, tol: 0.0001, validation_fraction: 0.1, verbose: 0, warm_start: False",
-                    "MODELO": "GradientBoosting",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 27.68,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 5.26,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.53,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 70.14,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 69.14,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 88.08,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 0.04,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 0.19,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 0.13,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 99.96,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 99.96,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 88.08,
-                    "MODELO": "XGB",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "objective: reg:squarederror, base_score: None, booster: None, callbacks: None, colsample_bylevel: None, colsample_bynode: None, colsample_bytree: 0.6, device: None, early_stopping_rounds: None, enable_categorical: False, eval_metric: None, feature_types: None, gamma: None, grow_policy: None, importance_type: None, interaction_constraints: None, learning_rate: None, max_bin: None, max_cat_threshold: None, max_cat_to_onehot: None, max_delta_step: None, max_depth: None, max_leaves: None, min_child_weight: None, missing: nan, monotone_constraints: None, multi_strategy: None, n_estimators: None, n_jobs: None, num_parallel_tree: None, random_state: None, reg_alpha: 0.1, reg_lambda: 0.125, sampling_method: None, scale_pos_weight: None, subsample: None, tree_method: None, validate_parameters: None, verbosity: None, max_features: sqrt",
-                    "MODELO": "XGB",
                     "TIPO_DE_DATOS": "Hiperparametros del modelo"
                 },
                 {
@@ -1030,7 +220,7 @@
                 },
                 {
                     "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 88.08,
+                    "VALOR": 86.73,
                     "MODELO": "CatBoost",
                     "TIPO_DE_DATOS": "Prueba"
                 },
@@ -1072,7 +262,7 @@
                 },
                 {
                     "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 88.08,
+                    "VALOR": 86.73,
                     "MODELO": "CatBoost",
                     "TIPO_DE_DATOS": "Entrenamiento"
                 },
@@ -1080,546 +270,6 @@
                     "METRICA": "Mejores Hiperparametros",
                     "VALOR": "loss_function: RMSE, verbose: 0",
                     "MODELO": "CatBoost",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 353.73,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 18.81,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 16.43,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": -281.49,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": -294.29,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 221.05,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 379.98,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 19.49,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 17.36,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": -355.31,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": -361.73,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 221.05,
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "boosting_type: goss, class_weight: None, colsample_bytree: 0.6, importance_type: split, learning_rate: 0.1, max_depth: -1, min_child_samples: 1, min_child_weight: 0.001, min_split_gain: 0.0, n_estimators: 100, n_jobs: None, num_leaves: 31, objective: binary, random_state: 42, reg_alpha: 0.0, reg_lambda: 0.0, subsample: 1.0, subsample_for_bin: 200000, subsample_freq: 0, verbose: -1",
-                    "MODELO": "LGBM",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 22.31,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.72,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.25,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 75.94,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 75.13,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 221.05,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 5.32,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 2.31,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 1.69,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 93.63,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 93.54,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 221.05,
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "Estimador: Gradient, Hiperparametros: {'alpha': 0.9, 'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'squared_error', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}, Estimador: Adaboost, Hiperparametros: {'estimator': None, 'learning_rate': 0.001, 'loss': 'linear', 'n_estimators': 15, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'criterion': 'poisson', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.85, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': 5, 'max_features': 6, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}, Estimador: XGB, Hiperparametros: {'objective': 'reg:squarederror', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.6, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': None, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': None, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': 0.1, 'reg_lambda': 0.125, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': None, 'validate_parameters': None, 'verbosity': None, 'max_features': 'sqrt'}",
-                    "MODELO": "Voting",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 23.15,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 4.81,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.3,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 75.03,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 74.19,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 221.05,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 3.72,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 1.93,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 1.25,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 95.54,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 95.48,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": "Sin valor",
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 221.05,
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "Estimador: Adaboost, Hiperparametros: {'estimator': None, 'learning_rate': 0.001, 'loss': 'linear', 'n_estimators': 15, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'criterion': 'poisson', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': 5, 'max_features': 6, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}",
-                    "MODELO": "StackingLineal",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 26.96,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 5.19,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.66,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 70.93,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 69.95,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 77.66,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 88.13,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 7.76,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 2.79,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 1.97,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 90.7,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 90.57,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 28.23,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 53.13,
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "Estimador: Adaboost, Hiperparametros: {'estimator': None, 'learning_rate': 0.001, 'loss': 'linear', 'n_estimators': 15, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'criterion': 'poisson', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': 5, 'max_features': 6, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}",
-                    "MODELO": "Stackingnolineal",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 26.15,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 5.11,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.47,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 71.8,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 70.85,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 76.82,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 87.64,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 7.02,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 2.65,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 1.82,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 91.59,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 91.47,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 22.24,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 47.16,
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'criterion': 'poisson', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': 5, 'max_features': 6, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}, Estimador: Gradient, Hiperparametros: {'alpha': 0.9, 'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.1, 'loss': 'squared_error', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}",
-                    "MODELO": "SuperAprendiz",
-                    "TIPO_DE_DATOS": "Hiperparametros del modelo"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 26.72,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 5.17,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 3.54,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 71.18,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 70.21,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 77.96,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 88.3,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Prueba"
-                },
-                {
-                    "METRICA": "Error Cuadratico Medio (MSE)",
-                    "VALOR": 7.35,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Cuadratico Medio (RMSE)",
-                    "VALOR": 2.71,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Absoluto Medio (MAE)",
-                    "VALOR": 1.92,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion",
-                    "VALOR": 91.19,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Coeficiente de Determinacion Ajustado",
-                    "VALOR": 91.07,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Error Logaritmico Cuadratico Medio (MSLE)",
-                    "VALOR": 26.42,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Raiz del Error Logaritmico Cuadratico Medio (RMSLE)",
-                    "VALOR": 51.4,
-                    "MODELO": "SuperAprendizdoscapas",
-                    "TIPO_DE_DATOS": "Entrenamiento"
-                },
-                {
-                    "METRICA": "Mejores Hiperparametros",
-                    "VALOR": "Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'criterion': 'poisson', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': None, 'max_features': 1.0, 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'squared_error', 'max_depth': 5, 'max_features': 6, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}",
-                    "MODELO": "SuperAprendizdoscapas",
                     "TIPO_DE_DATOS": "Hiperparametros del modelo"
                 }
             ]
