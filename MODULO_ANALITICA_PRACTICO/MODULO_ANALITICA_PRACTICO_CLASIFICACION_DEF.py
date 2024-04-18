@@ -61,6 +61,10 @@ from sklearn.metrics import accuracy_score
 import pandas as pd
 import pickle
 from sklearn.tree import DecisionTreeClassifier
+
+import torch
+import torch.nn as nn
+import torch.optim as optim
 # -------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 # CARGUE DE DATOS
@@ -616,7 +620,6 @@ def entrenar_modelo_voting_hard_con_transformacion(X_trn, Y_trn,X_tst, Y_tst,
     accuracy = mejor_modelo.score(X_tst, Y_tst) 
     return mejor_modelo, accuracy
 
-
 def entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn,X_tst, Y_tst,
                                                 mejores_hiperparametros_GD,
                                                 mejores_hiperparametros_tree,
@@ -692,8 +695,6 @@ def entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn,X_tst, Y_t
     accuracy = mejor_modelo.score(X_tst, Y_tst) 
     return mejor_modelo, accuracy
 
-
-
 def entrenar_modelo_super_aprendiz(X_trn, Y_trn,X_tst, Y_tst,
                             mejores_hiperparametros_tree,mejores_hiperparametros_extra,
                             mejores_hiperparametros_random):
@@ -736,7 +737,6 @@ def entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn,X_tst, Y_tst, mejores_
     predictions = mejor_modelo.predict(X_tst)
     accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy
-
 
 @app.get("/")
 def read_root():
