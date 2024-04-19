@@ -70,7 +70,7 @@ import torch.optim as optim
 # CARGUE DE DATOS
 # -------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
-"""
+
 SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
 creds = None
@@ -120,7 +120,6 @@ files = os.listdir(save_path)
 print("Archivos descargados:")
 for file in files:
     print(file)
-"""
 
 
 
@@ -720,7 +719,7 @@ def entrenar_modelo_super_aprendiz(X_trn, Y_trn,X_tst, Y_tst,
 def entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn,X_tst, Y_tst, mejores_hiperparametros_tree,
                                             mejores_hiperparametros_extra,mejores_hiperparametros_random
                                             ):
-    semilla = 7 
+    semilla = 5 
     kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
     modelo1 = ExtraTreesClassifier(**mejores_hiperparametros_extra)
     modelo2 = RandomForestClassifier(**mejores_hiperparametros_random)
