@@ -184,7 +184,7 @@ def predict(data: dict):
         raise HTTPException(status_code=404, detail="No hay modelo entrenado")
     
 def cargar_datos(carrera, semestre):
-    ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PREDICTIVA/DATOS/{carrera}{semestre}.csv'
+    ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PRACTICO/DATOS/{carrera}{semestre}.csv'
     datos = pd.read_csv(ruta_archivo, sep=";")
     return datos
 
