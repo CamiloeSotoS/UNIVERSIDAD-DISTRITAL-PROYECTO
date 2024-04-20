@@ -247,11 +247,16 @@ def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     grid_resultado = grid.fit(X_trn, Y_trn)
     mejores_hiperparametros_knn = grid_resultado.best_params_
     mejor_modelo = KNeighborsRegressor(**grid_resultado.best_params_)
-    print(mejores_hiperparametros_knn)
     mejor_modelo.fit(X_trn, Y_trn)
     predicciones = mejor_modelo.predict(X_tst)
     r2_knn = r2_score(Y_tst, predicciones)
     return mejor_modelo, r2_knn, mejores_hiperparametros_knn
+
+
+
+
+
+
 
 @app.get("/")
 def read_root():

@@ -307,7 +307,8 @@ def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = KNeighborsClassifier(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy, mejores_hiperparametros_knn
 
 def entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
@@ -330,7 +331,8 @@ def entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = SVC(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst)  
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy
 
     
@@ -356,7 +358,8 @@ def entrenar_modelo_tree_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = DecisionTreeClassifier(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst)  
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean()  
     return mejor_modelo, accuracy,mejores_hiperparametros_tree
 
 def entrenar_modelo_gaussian_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
@@ -374,7 +377,8 @@ def entrenar_modelo_gaussian_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = GaussianNB(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst)  
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean()  
     return mejor_modelo, accuracy
 
 def entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
@@ -395,7 +399,8 @@ def entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = LinearDiscriminantAnalysis(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst)  
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean()  
     return mejor_modelo, accuracy
 
 def entrenar_modelo_BG_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,mejores_hiperparametros_tree):
@@ -420,7 +425,8 @@ def entrenar_modelo_BG_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,mejores_hip
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = BaggingClassifier(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst)  
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean()  
     return mejor_modelo, accuracy, mejores_hiperparametros_BG
 
 def entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
@@ -442,7 +448,8 @@ def entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = RandomForestClassifier(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean()
     return mejor_modelo, accuracy,mejores_hiperparametros_random
 
 
@@ -467,7 +474,8 @@ def entrenar_modelo_extra_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = ExtraTreesClassifier(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy, mejores_hiperparametros_extra
 
 def entrenar_modelo_ADA_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
@@ -487,7 +495,8 @@ def entrenar_modelo_ADA_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = AdaBoostClassifier(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy, mejores_hiperparametros_ADA
 
 def entrenar_modelo_GD_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
@@ -513,7 +522,8 @@ def entrenar_modelo_GD_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = GradientBoostingClassifier(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy, mejores_hiperparametros_GD
 
 def entrenar_modelo_XB_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
@@ -561,7 +571,8 @@ def entrenar_modelo_CB_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
     print("Mejor valor PARAMETRO usando k-fold:", grid_resultado.best_params_)
     mejor_modelo = CatBoostClassifier(**grid_resultado.best_params_)
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy
 
 def entrenar_modelo_LIGHT_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
@@ -616,7 +627,8 @@ def entrenar_modelo_voting_hard_con_transformacion(X_trn, Y_trn,X_tst, Y_tst,
                                     ('Bagging',modelo5),('Decision tree',modelo6),
                                     ('XGB',modelo7)],voting='hard') 
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean()
     return mejor_modelo, accuracy
 
 def entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn,X_tst, Y_tst,
@@ -643,7 +655,8 @@ def entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn,X_tst, Y_tst,
                                     ('Bagging',modelo5),('Decision tree',modelo6)],
     voting='soft',weights=[0.9,0.7,0.9,0.9,0.9,0.9]) 
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean()
     return mejor_modelo, accuracy
 
 
@@ -669,7 +682,8 @@ def entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn,X_tst, Y_tst
                                     ('Bagging',modelo5),('Decision tree',modelo6)], 
                                     final_estimator=estimador_final) 
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy
 
 def entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn,X_tst, Y_tst,
@@ -691,7 +705,8 @@ def entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn,X_tst, Y_t
                                     ('Decision tree',modelo4)], 
                                     final_estimator=estimador_final) 
     mejor_modelo.fit(X_trn, Y_trn)
-    accuracy = mejor_modelo.score(X_tst, Y_tst) 
+    predictions = mejor_modelo.predict(X_tst)
+    accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy
 
 def entrenar_modelo_super_aprendiz(X_trn, Y_trn,X_tst, Y_tst,
