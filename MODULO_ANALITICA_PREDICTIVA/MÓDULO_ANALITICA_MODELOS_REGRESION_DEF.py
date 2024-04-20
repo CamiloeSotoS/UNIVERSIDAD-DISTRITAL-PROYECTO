@@ -192,8 +192,7 @@ async def procesar_datos(data: InputData):
     X = df.loc[:, ~df.columns.str.contains(f'PROMEDIO_{semestre_en_letras.upper()}')]
     Y = df.loc[:, df.columns.str.contains(f'PROMEDIO_{semestre_en_letras.upper()}')]                                                     
     print("Separación de datos usando Pandas") 
-    print(X.shape, Y.shape)
-    Y = LabelEncoder().fit_transform(Y.astype('str'))                
+    print(X.shape, Y.shape)              
     print(X.shape, Y.shape)
     
     X_T_JOHNSON1 = X.copy(deep=True)
