@@ -656,7 +656,6 @@ def entrenar_modelo_voting_soft_con_transformacion(X_trn, Y_trn,X_tst, Y_tst,
     accuracy = (predictions == Y_tst).mean()
     return mejor_modelo, accuracy
 
-
 def entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn,X_tst, Y_tst,
                                                 mejores_hiperparametros_tree,
                                                 mejores_hiperparametros_ADA,
