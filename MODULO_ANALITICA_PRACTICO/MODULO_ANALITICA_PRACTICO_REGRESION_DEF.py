@@ -677,7 +677,7 @@ def entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn, X_tst, Y_tst,
     predicciones = mejor_modelo.predict(X_tst)
     r2 = r2_score(Y_tst, predicciones)
     return mejor_modelo, r2
-
+#f
 @app.get("/")
 def read_root():
     return {"message": "API para predecir calificación de estudiantes"}
