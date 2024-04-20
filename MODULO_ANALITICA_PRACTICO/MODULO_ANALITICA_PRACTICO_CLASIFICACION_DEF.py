@@ -121,8 +121,6 @@ print("Archivos descargados:")
 for file in files:
     print(file)
 
-
-
 app = FastAPI()
 carrera = ""
 semestre = ""
@@ -456,7 +454,6 @@ def entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
 def entrenar_modelo_extra_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = {'min_samples_split' : [i for i in range(1,10,1)], 
                 'min_samples_leaf' : [i for i in range(0,10,1)],
-                'min_samples_leaf':[i for i in range(0,10,1)],
                 'min_samples_split':[i for i in range(0,10,1)],
                 'criterion':('gini','entropy','log_loss')}
     semilla=5            
@@ -578,7 +575,7 @@ def entrenar_modelo_CB_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
 def entrenar_modelo_LIGHT_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
     parameters = {
     'min_child_samples' : [i for i in range(200, 10000, 100)],'colsample_bytree': [0.6, 0.8, 1.0],
-    'boosting_type': ['gbdt', 'dart', 'goss'],'objective': ['binary', 'multiclass'],'random_state': [42]}
+    'boosting_type': ['gbdt', 'dart', 'goss'],'objective': ['binary', 'multiclass'],'random_state': [40, 42, 44]}
     semilla=7
     modelo = LGBMClassifier(random_state=semilla,                           
                             num_leaves =  10,max_depth = 1, n_estimators = 100,    
