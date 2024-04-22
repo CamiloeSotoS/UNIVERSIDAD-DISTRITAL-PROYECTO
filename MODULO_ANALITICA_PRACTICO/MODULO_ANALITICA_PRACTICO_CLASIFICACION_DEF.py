@@ -281,6 +281,7 @@ def cargar_entrenar_modelo():
         mejor_modelo, mejor_precision = modelos[mejor_modelo_nombre]
         print("Mejor modelo:", mejor_modelo_nombre)
         print("Exactitud del modelo:", mejor_precision)
+        
     except Exception as e:
         print("Error al cargar y entrenar el modelo:", e)
         
