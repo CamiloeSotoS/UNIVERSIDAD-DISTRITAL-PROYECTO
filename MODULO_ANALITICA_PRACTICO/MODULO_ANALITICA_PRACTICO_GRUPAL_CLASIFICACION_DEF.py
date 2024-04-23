@@ -70,7 +70,7 @@ import torch.optim as optim
 # CARGUE DE DATOS
 # -------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
-"""
+
 SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
 creds = None
@@ -120,7 +120,7 @@ files = os.listdir(save_path)
 print("Archivos descargados:")
 for file in files:
     print(file)
-"""
+
 app = FastAPI()
 carrera = ""
 semestre = ""
@@ -156,7 +156,6 @@ variables_por_carrera = {
         '2': ['variable4_catastral', 'variable5_catastral', 'variable6_catastral']
     }
 }
-
 variables_por_carrera2 = { 
     'industrial': {
         '1': ['PG_ICFES', 'CON_MAT_ICFES', 'FISICA_ICFES','QUIMICA_ICFES','IDIOMA_ICFES','LOCALIDAD'],
@@ -187,7 +186,6 @@ variables_por_carrera2 = {
         '2': ['variable4_catastral', 'variable5_catastral', 'variable6_catastral']
     }
 }
-
 class InputData(BaseModel):
     carrera: str
     semestre: str
@@ -230,7 +228,6 @@ def cargar_entrenar_modelo():
         print("DataFrame con columnas filtradas:")
         df=df.astype(int)
         df
-
         datos,datos_prediccion = cargar_datos(carrera, semestre)
         columnas_filtradas = variables_por_carrera2[carrera][semestre]
         df_prediccion = datos_prediccion[columnas_filtradas]
@@ -285,19 +282,15 @@ def cargar_entrenar_modelo():
                                                 mejores_hiperparametros_extra,
                                                 mejores_hiperparametros_random,
                                                 mejores_hiperparametros_BG)
-        
         modelo_stacking_nolineal, accuracy_stacking_nolineal=entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn,X_tst, Y_tst,
                                                 mejores_hiperparametros_tree,
                                                 mejores_hiperparametros_extra,
                                                 mejores_hiperparametros_random,
                                                 mejores_hiperparametros_BG)
-
         modelo_super_aprendiz, accuracy_super_aprendiz=entrenar_modelo_super_aprendiz(X_trn, Y_trn,X_tst, Y_tst,
                             mejores_hiperparametros_tree,mejores_hiperparametros_extra,mejores_hiperparametros_random)
-
         modelo_super_aprendiz_dos_capas, accuracy_super_aprendiz_dos_capas=entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn,X_tst, Y_tst, 
                                                 mejores_hiperparametros_tree,mejores_hiperparametros_extra,mejores_hiperparametros_random)
-        
         exactitudes = {
             'KNEIGHBORSCLASSIFIER': accuracy_knn,
             'SVC': accuracy_svc,
@@ -317,9 +310,7 @@ def cargar_entrenar_modelo():
             'STACKING_LINEAL':accuracy_stacking_lineal,
             'STACKING_NO_LINEAL':accuracy_stacking_nolineal,
             'SUPER_APRENDIZ':accuracy_super_aprendiz,
-            'SUPER_APRENDIZ_DOS_CAPAS':accuracy_super_aprendiz_dos_capas
-        }       
-        
+            'SUPER_APRENDIZ_DOS_CAPAS':accuracy_super_aprendiz_dos_capas}       
         modelos_entrenados = {
             'KNEIGHBORSCLASSIFIER': modelo_knn,
             'SVC': modelo_svc,
@@ -339,9 +330,7 @@ def cargar_entrenar_modelo():
             'STACKING_LINEAL':modelo_stacking_lineal,
             'STACKING_NO_LINEAL':modelo_stacking_nolineal,
             'SUPER_APRENDIZ':modelo_super_aprendiz,
-            'SUPER_APRENDIZ_DOS_CAPAS':modelo_super_aprendiz_dos_capas
-        }
-        
+            'SUPER_APRENDIZ_DOS_CAPAS':modelo_super_aprendiz_dos_capas}
         mejor_modelo = max(exactitudes, key=exactitudes.get)
         modelo_seleccionado = modelos_entrenados.get(mejor_modelo)
         print("Mejor modelo:", mejor_modelo)
@@ -351,12 +340,10 @@ def cargar_entrenar_modelo():
             df_prediccion[f'RENDIMIENTO_{semestre_en_letras.upper()}']=predicciones_nuevos_datos
             df_prediccion
             df_prediccion.to_csv(f'Prediccion_Clasificacion_{carrera}_{semestre}.csv',sep=";",index=False)
-            
             data_with_columns = df_prediccion.to_dict(orient='records')
             diccionario_dataframes = [
                     {
                         'dataTransformacion': data_with_columns,
-                        
                     }
                 ]
             with open("Prediccion_Clasificacion.json", "w") as json_file:
@@ -367,7 +354,6 @@ def cargar_entrenar_modelo():
             
     except Exception as e:
         print("Error al cargar y entrenar el modelo:", e)
-
 
 def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = {
@@ -393,7 +379,6 @@ def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy, mejores_hiperparametros_knn
 
-
 def entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = { 'kernel':   ['rbf', 'poly', 'sigmoid','linear'], 
                 'C': [i/10000 for i in range(8,12,1)],
@@ -418,7 +403,6 @@ def entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy
 
-    
 def entrenar_modelo_tree_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = {          
             'max_depth':[i for i in range(1,7,1)],
@@ -426,8 +410,7 @@ def entrenar_modelo_tree_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
             'min_samples_leaf' : [i for i in range(1,7,1)], 
             'max_features' : [i for i in range(1,7,1)], 
             'splitter': ["best", "random"],
-            'random_state': [i for i in range(1,5,1)],
-            }
+            'random_state': [i for i in range(1,5,1)]}
     modelo = DecisionTreeClassifier()
     semilla=5
     num_folds=10
@@ -516,8 +499,7 @@ def entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = { 
                 'min_samples_split' : [1, 2 , 3,  4 , 6 , 8 , 10 , 15, 20 ],  
                 'min_samples_leaf' : [ 1 , 3 , 5 , 7 , 9, 12, 15 ],
-                'criterion':('gini','entropy','log_loss')
-            }
+                'criterion':('gini','entropy','log_loss')}
     modelo = RandomForestClassifier()
     semilla=5
     num_folds=10
@@ -534,7 +516,6 @@ def entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     predictions = mejor_modelo.predict(X_tst)
     accuracy = (predictions == Y_tst).mean()
     return mejor_modelo, accuracy,mejores_hiperparametros_random
-
 
 def entrenar_modelo_extra_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = {'min_samples_split' : [i for i in range(1,10,1)], 
@@ -586,8 +567,7 @@ def entrenar_modelo_GD_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
                 'learning_rate' : [0.01, 0.05, 0.1,0.15],
                 'n_estimators': [i for i in range(100,1200,100)],
                 'loss':('log_loss','exponential'),
-                'criterion':['friedman_mse']     
-            }
+                'criterion':['friedman_mse']}
     semilla=5
     modelo = GradientBoostingClassifier(random_state=semilla,
                                     n_estimators= 100,learning_rate= 0.1,max_depth= 2,
@@ -615,8 +595,7 @@ def entrenar_modelo_XB_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
                 'colsample_bytree': [0.1,0.3, 0.5,0.6,0.7,0.8, 0.9, 1,1.1],
                 'objective' : ('binary:logistic', 'Multi: softprob'),
                 'loss': ['log_loss'],
-                'max_features':('sqrt','log2')
-                }
+                'max_features':('sqrt','log2')}
     semilla=5
     modelo = XGBClassifier(random_state=semilla,subsample =1,max_depth =2)
     semilla=5
@@ -637,8 +616,7 @@ def entrenar_modelo_XB_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
 
 def entrenar_modelo_CB_con_transformacion(X_trn, Y_trn,X_tst, Y_tst):
     parameters = {'border_count':[53],'l2_leaf_reg': [42],'learning_rate': [0.01],
-                'depth': [4, 6, 8],'thread_count': [4, 8, 12]
-                } 
+                'depth': [4, 6, 8],'thread_count': [4, 8, 12]} 
     semilla=5
     modelo = CatBoostClassifier(random_state=semilla, verbose =0)
     semilla=5
@@ -832,7 +810,6 @@ def entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn,X_tst, Y_tst, mejores_
     predictions = mejor_modelo.predict(X_tst)
     accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy
-
 
 @app.get("/")
 def read_root():
