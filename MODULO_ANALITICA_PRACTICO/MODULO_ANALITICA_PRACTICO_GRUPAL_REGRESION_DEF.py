@@ -379,7 +379,6 @@ def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     r2 = r2_score(Y_tst, predicciones)
     return mejor_modelo, r2, mejores_hiperparametros_knn
 
-
 def entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = { 'kernel':  ['rbf', 'poly', 'sigmoid','linear'], 
             'C': [i/10000 for i in range(8,12,1)],
@@ -753,7 +752,6 @@ def entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn, X_tst, Y_tst,
     predicciones = mejor_modelo.predict(X_tst)
     r2 = r2_score(Y_tst, predicciones)
     return mejor_modelo, r2
-
 
 @app.get("/")
 def read_root():
