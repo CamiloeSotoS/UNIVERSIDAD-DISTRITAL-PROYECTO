@@ -350,7 +350,7 @@ def cargar_entrenar_modelo():
             predicciones_nuevos_datos = modelo_seleccionado.predict(transformacion_johnson(X_prediccion))
             df_prediccion[f'RENDIMIENTO_{semestre_en_letras.upper()}']=predicciones_nuevos_datos
             df_prediccion
-            df_prediccion.to_csv(f'Prediccion_{carrera}_{semestre}.csv',sep=";",index=False)
+            df_prediccion.to_csv(f'Prediccion_Clasificacion_{carrera}_{semestre}.csv',sep=";",index=False)
             
             data_with_columns = df_prediccion.to_dict(orient='records')
             diccionario_dataframes = [
