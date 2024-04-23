@@ -1,0 +1,2969 @@
+{
+    "data": [
+        {
+            "dataTransformacion": [
+                {
+                    "PG_ICFES": 419,
+                    "CON_MAT_ICFES": 65,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 425,
+                    "CON_MAT_ICFES": 72,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 15,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 425,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 454,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 62,
+                    "QUIMICA_ICFES": 65,
+                    "IDIOMA_ICFES": 83,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 523,
+                    "CON_MAT_ICFES": 99,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 78,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 528,
+                    "CON_MAT_ICFES": 88,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 78,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 478,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 69,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 505,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 75,
+                    "QUIMICA_ICFES": 72,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 491,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 73,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 482,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 498,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 93,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 447,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 478,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 466,
+                    "CON_MAT_ICFES": 71,
+                    "FISICA_ICFES": 79,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 516,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 93,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 442,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 54,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 484,
+                    "CON_MAT_ICFES": 83,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 492,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 468,
+                    "CON_MAT_ICFES": 72,
+                    "FISICA_ICFES": 82,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 67,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 525,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 93,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 498,
+                    "CON_MAT_ICFES": 66,
+                    "FISICA_ICFES": 86,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 79,
+                    "LOCALIDAD": 13,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 480,
+                    "CON_MAT_ICFES": 66,
+                    "FISICA_ICFES": 73,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 496,
+                    "CON_MAT_ICFES": 71,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 72,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 358,
+                    "CON_MAT_ICFES": 58,
+                    "FISICA_ICFES": 53,
+                    "QUIMICA_ICFES": 54,
+                    "IDIOMA_ICFES": 48,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 489,
+                    "CON_MAT_ICFES": 72,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 488,
+                    "CON_MAT_ICFES": 72,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 78,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 455,
+                    "CON_MAT_ICFES": 71,
+                    "FISICA_ICFES": 76,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 94,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 478,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 82,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 491,
+                    "CON_MAT_ICFES": 71,
+                    "FISICA_ICFES": 73,
+                    "QUIMICA_ICFES": 82,
+                    "IDIOMA_ICFES": 73,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 491,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 82,
+                    "IDIOMA_ICFES": 79,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 506,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 75,
+                    "QUIMICA_ICFES": 93,
+                    "IDIOMA_ICFES": 85,
+                    "LOCALIDAD": 15,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 477,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 78,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 508,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 473,
+                    "CON_MAT_ICFES": 83,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 59,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 490,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 468,
+                    "CON_MAT_ICFES": 89,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 48,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 504,
+                    "CON_MAT_ICFES": 88,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 78,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 428,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 54,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 474,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 72,
+                    "IDIOMA_ICFES": 70,
+                    "LOCALIDAD": 12,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 496,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 86,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 486,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 47,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 491,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 73,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 88,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 491,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 87,
+                    "IDIOMA_ICFES": 73,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 518,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 86,
+                    "IDIOMA_ICFES": 79,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 500,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 73,
+                    "QUIMICA_ICFES": 82,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 516,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 82,
+                    "IDIOMA_ICFES": 89,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 494,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 73,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 81,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 427,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 485,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 79,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 88,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 474,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 76,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 6,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 471,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 76,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 523,
+                    "CON_MAT_ICFES": 88,
+                    "FISICA_ICFES": 76,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 88,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 489,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 72,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 79,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 480,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 14,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 517,
+                    "CON_MAT_ICFES": 82,
+                    "FISICA_ICFES": 86,
+                    "QUIMICA_ICFES": 82,
+                    "IDIOMA_ICFES": 62,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 480,
+                    "CON_MAT_ICFES": 65,
+                    "FISICA_ICFES": 76,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 85,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 478,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 73,
+                    "QUIMICA_ICFES": 78,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 492,
+                    "CON_MAT_ICFES": 98,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 62,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 464,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 79,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 466,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 75,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 51,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 480,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 82,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 17,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 472,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 64,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 507,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 474,
+                    "CON_MAT_ICFES": 98,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 492,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 72,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 518,
+                    "CON_MAT_ICFES": 65,
+                    "FISICA_ICFES": 75,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 544,
+                    "CON_MAT_ICFES": 89,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 82,
+                    "IDIOMA_ICFES": 71,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 475,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 73,
+                    "QUIMICA_ICFES": 71,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 6,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 514,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 87,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 490,
+                    "CON_MAT_ICFES": 66,
+                    "FISICA_ICFES": 72,
+                    "QUIMICA_ICFES": 78,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 475,
+                    "CON_MAT_ICFES": 83,
+                    "FISICA_ICFES": 72,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 64,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 492,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 486,
+                    "CON_MAT_ICFES": 82,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 69,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 504,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 86,
+                    "IDIOMA_ICFES": 59,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 491,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 82,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 462,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 75,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 71,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 492,
+                    "CON_MAT_ICFES": 72,
+                    "FISICA_ICFES": 76,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 523,
+                    "CON_MAT_ICFES": 82,
+                    "FISICA_ICFES": 72,
+                    "QUIMICA_ICFES": 103,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 489,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 73,
+                    "QUIMICA_ICFES": 71,
+                    "IDIOMA_ICFES": 85,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 475,
+                    "CON_MAT_ICFES": 82,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 72,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 478,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 78,
+                    "IDIOMA_ICFES": 85,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 489,
+                    "CON_MAT_ICFES": 71,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 81,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 475,
+                    "CON_MAT_ICFES": 71,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 71,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 481,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 490,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 64,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 466,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 57,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 478,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 73,
+                    "QUIMICA_ICFES": 86,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 447,
+                    "CON_MAT_ICFES": 77,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 62,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 439,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 61,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 89,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 79,
+                    "LOCALIDAD": 14,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 440,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 49,
+                    "QUIMICA_ICFES": 57,
+                    "IDIOMA_ICFES": 64,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 68,
+                    "IDIOMA_ICFES": 79,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 413,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 62,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 60,
+                    "IDIOMA_ICFES": 57,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 425,
+                    "CON_MAT_ICFES": 73,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 438,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 61,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 59,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 412,
+                    "CON_MAT_ICFES": 67,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 421,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 64,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 431,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 58,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 72,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 413,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 57,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 415,
+                    "CON_MAT_ICFES": 67,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 59,
+                    "LOCALIDAD": 15,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 416,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 81,
+                    "LOCALIDAD": 3,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 407,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 46,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 410,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 49,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 6,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 420,
+                    "CON_MAT_ICFES": 67,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 71,
+                    "LOCALIDAD": 15,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 411,
+                    "CON_MAT_ICFES": 70,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 405,
+                    "CON_MAT_ICFES": 67,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 414,
+                    "CON_MAT_ICFES": 66,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 62,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 406,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 398,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 54,
+                    "IDIOMA_ICFES": 40,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 385,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 58,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 418,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 79,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 430,
+                    "CON_MAT_ICFES": 61,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 76,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 411,
+                    "CON_MAT_ICFES": 67,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 403,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 384,
+                    "CON_MAT_ICFES": 84,
+                    "FISICA_ICFES": 49,
+                    "QUIMICA_ICFES": 48,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 392,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 427,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 64,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 407,
+                    "CON_MAT_ICFES": 66,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 403,
+                    "CON_MAT_ICFES": 79,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 79,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 399,
+                    "CON_MAT_ICFES": 73,
+                    "FISICA_ICFES": 50,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 399,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 51,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 12,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 394,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 61,
+                    "QUIMICA_ICFES": 57,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 401,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 57,
+                    "IDIOMA_ICFES": 59,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 405,
+                    "CON_MAT_ICFES": 62,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 383,
+                    "CON_MAT_ICFES": 70,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 54,
+                    "IDIOMA_ICFES": 83,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 398,
+                    "CON_MAT_ICFES": 73,
+                    "FISICA_ICFES": 49,
+                    "QUIMICA_ICFES": 54,
+                    "IDIOMA_ICFES": 85,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 422,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 404,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 57,
+                    "IDIOMA_ICFES": 49,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 403,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 54,
+                    "IDIOMA_ICFES": 72,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 403,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 401,
+                    "CON_MAT_ICFES": 66,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 416,
+                    "CON_MAT_ICFES": 58,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 54,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 399,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 404,
+                    "CON_MAT_ICFES": 78,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 41,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 401,
+                    "CON_MAT_ICFES": 47,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 395,
+                    "CON_MAT_ICFES": 55,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 473,
+                    "CON_MAT_ICFES": 101,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 14,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 491,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 74,
+                    "IDIOMA_ICFES": 49,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 469,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 70,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 474,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 62,
+                    "IDIOMA_ICFES": 83,
+                    "LOCALIDAD": 14,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 461,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 68,
+                    "QUIMICA_ICFES": 62,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 455,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 435,
+                    "CON_MAT_ICFES": 102,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 444,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 453,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 68,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 457,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 447,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 12,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 454,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 452,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 74,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 456,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 450,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 442,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 75,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 462,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 43,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 467,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 74,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 458,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 12,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 450,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 62,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 462,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 431,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 74,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 446,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 449,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 428,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 447,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 442,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 62,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 423,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 75,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 433,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 47,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 466,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 439,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 450,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 47,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 14,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 456,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 12,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 426,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 432,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 447,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 439,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 47,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 449,
+                    "CON_MAT_ICFES": 59,
+                    "FISICA_ICFES": 70,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 427,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 70,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 47,
+                    "LOCALIDAD": 6,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 451,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 444,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 461,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 47,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 455,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 452,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 80,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 422,
+                    "CON_MAT_ICFES": 59,
+                    "FISICA_ICFES": 76,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 433,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 438,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 395,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 75,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 68,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 49,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 426,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 43,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 417,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 75,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 43,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 446,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 418,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 423,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 49,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 458,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 446,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 461,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 453,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 74,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 441,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 80,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 387,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 431,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 49,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 417,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 47,
+                    "IDIOMA_ICFES": 43,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 431,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 47,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 430,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 427,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 432,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 43,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 401,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 68,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 83,
+                    "LOCALIDAD": 13,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 427,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 70,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 415,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 49,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 434,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 49,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 431,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 448,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 45,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 419,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 75,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 431,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 446,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 437,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 45,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 417,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 433,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 428,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 51,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 396,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 51,
+                    "FISICA_ICFES": 48,
+                    "QUIMICA_ICFES": 48,
+                    "IDIOMA_ICFES": 45,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 350,
+                    "CON_MAT_ICFES": 47,
+                    "FISICA_ICFES": 49,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 427,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 45,
+                    "QUIMICA_ICFES": 47,
+                    "IDIOMA_ICFES": 66,
+                    "LOCALIDAD": 17,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 447,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 431,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 457,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 47,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 47,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 430,
+                    "CON_MAT_ICFES": 59,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 461,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 62,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 464,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 442,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 68,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 436,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 441,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 427,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 49,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 445,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 74,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 432,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 443,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 440,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 68,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 43,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 450,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 6,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 443,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 62,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 410,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 46,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 424,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 39,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 421,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 45,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 398,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 41,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 403,
+                    "CON_MAT_ICFES": 86,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 44,
+                    "IDIOMA_ICFES": 43,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 442,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 71,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 425,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 71,
+                    "LOCALIDAD": 13,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 408,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 12,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 431,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 49,
+                    "IDIOMA_ICFES": 60,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 416,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 419,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 413,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 427,
+                    "CON_MAT_ICFES": 77,
+                    "FISICA_ICFES": 53,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 408,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 41,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 407,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 402,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 43,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 415,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 413,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 431,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 49,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 49,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 405,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 68,
+                    "QUIMICA_ICFES": 47,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 392,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 44,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 410,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 14,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 413,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 83,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 402,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 69,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 45,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 412,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 45,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 454,
+                    "CON_MAT_ICFES": 59,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 49,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 426,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 49,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 415,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 44,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 418,
+                    "CON_MAT_ICFES": 60,
+                    "FISICA_ICFES": 63,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 47,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 405,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 409,
+                    "CON_MAT_ICFES": 75,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 428,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 425,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 51,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 442,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 68,
+                    "IDIOMA_ICFES": 71,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 432,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 74,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 411,
+                    "CON_MAT_ICFES": 69,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 47,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 424,
+                    "CON_MAT_ICFES": 55,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 416,
+                    "CON_MAT_ICFES": 59,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 44,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 3,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 409,
+                    "CON_MAT_ICFES": 68,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 53,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 386,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 424,
+                    "CON_MAT_ICFES": 55,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 384,
+                    "CON_MAT_ICFES": 52,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 63,
+                    "IDIOMA_ICFES": 70,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 387,
+                    "CON_MAT_ICFES": 55,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 48,
+                    "IDIOMA_ICFES": 94,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 413,
+                    "CON_MAT_ICFES": 55,
+                    "FISICA_ICFES": 49,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 47,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 422,
+                    "CON_MAT_ICFES": 55,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 43,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 401,
+                    "CON_MAT_ICFES": 63,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 50,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 409,
+                    "CON_MAT_ICFES": 55,
+                    "FISICA_ICFES": 56,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 18,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 388,
+                    "CON_MAT_ICFES": 61,
+                    "FISICA_ICFES": 58,
+                    "QUIMICA_ICFES": 57,
+                    "IDIOMA_ICFES": 52,
+                    "LOCALIDAD": 5,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 377,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 47,
+                    "QUIMICA_ICFES": 52,
+                    "IDIOMA_ICFES": 45,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 479,
+                    "CON_MAT_ICFES": 108,
+                    "FISICA_ICFES": 61,
+                    "QUIMICA_ICFES": 68,
+                    "IDIOMA_ICFES": 70,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 464,
+                    "CON_MAT_ICFES": 77,
+                    "FISICA_ICFES": 78,
+                    "QUIMICA_ICFES": 73,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 471,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 460,
+                    "CON_MAT_ICFES": 77,
+                    "FISICA_ICFES": 70,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 459,
+                    "CON_MAT_ICFES": 80,
+                    "FISICA_ICFES": 70,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 72,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 467,
+                    "CON_MAT_ICFES": 91,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 62,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 452,
+                    "CON_MAT_ICFES": 80,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 441,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 6,
+                    "RENDIMIENTO_UNO": 1
+                },
+                {
+                    "PG_ICFES": 461,
+                    "CON_MAT_ICFES": 91,
+                    "FISICA_ICFES": 53,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 80,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 442,
+                    "CON_MAT_ICFES": 90,
+                    "FISICA_ICFES": 62,
+                    "QUIMICA_ICFES": 64,
+                    "IDIOMA_ICFES": 70,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 446,
+                    "CON_MAT_ICFES": 80,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 77,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 449,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 66,
+                    "IDIOMA_ICFES": 59,
+                    "LOCALIDAD": 1,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 450,
+                    "CON_MAT_ICFES": 81,
+                    "FISICA_ICFES": 64,
+                    "QUIMICA_ICFES": 60,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 421,
+                    "CON_MAT_ICFES": 90,
+                    "FISICA_ICFES": 66,
+                    "QUIMICA_ICFES": 53,
+                    "IDIOMA_ICFES": 58,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 450,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 419,
+                    "CON_MAT_ICFES": 90,
+                    "FISICA_ICFES": 70,
+                    "QUIMICA_ICFES": 54,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 452,
+                    "CON_MAT_ICFES": 73,
+                    "FISICA_ICFES": 70,
+                    "QUIMICA_ICFES": 55,
+                    "IDIOMA_ICFES": 70,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 426,
+                    "CON_MAT_ICFES": 90,
+                    "FISICA_ICFES": 59,
+                    "QUIMICA_ICFES": 54,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 452,
+                    "CON_MAT_ICFES": 73,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 64,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 451,
+                    "CON_MAT_ICFES": 64,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 65,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 449,
+                    "CON_MAT_ICFES": 70,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 83,
+                    "LOCALIDAD": 12,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 426,
+                    "CON_MAT_ICFES": 90,
+                    "FISICA_ICFES": 55,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 16,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 435,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 60,
+                    "IDIOMA_ICFES": 70,
+                    "LOCALIDAD": 13,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 435,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 51,
+                    "LOCALIDAD": 7,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 439,
+                    "CON_MAT_ICFES": 80,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 10,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 435,
+                    "CON_MAT_ICFES": 81,
+                    "FISICA_ICFES": 61,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 4,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 425,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 12,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 447,
+                    "CON_MAT_ICFES": 70,
+                    "FISICA_ICFES": 62,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 70,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 423,
+                    "CON_MAT_ICFES": 80,
+                    "FISICA_ICFES": 65,
+                    "QUIMICA_ICFES": 61,
+                    "IDIOMA_ICFES": 80,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 443,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 60,
+                    "QUIMICA_ICFES": 64,
+                    "IDIOMA_ICFES": 55,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 447,
+                    "CON_MAT_ICFES": 70,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 57,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 20,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 432,
+                    "CON_MAT_ICFES": 84,
+                    "FISICA_ICFES": 61,
+                    "QUIMICA_ICFES": 62,
+                    "IDIOMA_ICFES": 61,
+                    "LOCALIDAD": 14,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 444,
+                    "CON_MAT_ICFES": 76,
+                    "FISICA_ICFES": 57,
+                    "QUIMICA_ICFES": 67,
+                    "IDIOMA_ICFES": 75,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 441,
+                    "CON_MAT_ICFES": 77,
+                    "FISICA_ICFES": 61,
+                    "QUIMICA_ICFES": 69,
+                    "IDIOMA_ICFES": 51,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 436,
+                    "CON_MAT_ICFES": 85,
+                    "FISICA_ICFES": 54,
+                    "QUIMICA_ICFES": 62,
+                    "IDIOMA_ICFES": 94,
+                    "LOCALIDAD": 9,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 435,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 67,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 63,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 451,
+                    "CON_MAT_ICFES": 67,
+                    "FISICA_ICFES": 64,
+                    "QUIMICA_ICFES": 65,
+                    "IDIOMA_ICFES": 83,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 437,
+                    "CON_MAT_ICFES": 74,
+                    "FISICA_ICFES": 62,
+                    "QUIMICA_ICFES": 57,
+                    "IDIOMA_ICFES": 56,
+                    "LOCALIDAD": 19,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 77,
+                    "FISICA_ICFES": 62,
+                    "QUIMICA_ICFES": 59,
+                    "IDIOMA_ICFES": 68,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 429,
+                    "CON_MAT_ICFES": 90,
+                    "FISICA_ICFES": 52,
+                    "QUIMICA_ICFES": 58,
+                    "IDIOMA_ICFES": 50,
+                    "LOCALIDAD": 8,
+                    "RENDIMIENTO_UNO": 2
+                },
+                {
+                    "PG_ICFES": 439,
+                    "CON_MAT_ICFES": 77,
+                    "FISICA_ICFES": 61,
+                    "QUIMICA_ICFES": 56,
+                    "IDIOMA_ICFES": 57,
+                    "LOCALIDAD": 11,
+                    "RENDIMIENTO_UNO": 2
+                }
+            ]
+        }
+    ]
+}
