@@ -359,9 +359,9 @@ def cargar_entrenar_modelo():
                         
                     }
                 ]
-            with open("Prediccion.json", "w") as json_file:
+            with open("Prediccion_Clasificacion.json", "w") as json_file:
                 json.dump({"data": diccionario_dataframes}, json_file, indent=4)
-                print("Los DataFrames han sido guardados en 'Prediccion.json'.")
+                print("Los DataFrames han sido guardados en 'Prediccion_Clasificacion.json'.")
         else:
             print("El modelo seleccionado no está disponible.")
             
