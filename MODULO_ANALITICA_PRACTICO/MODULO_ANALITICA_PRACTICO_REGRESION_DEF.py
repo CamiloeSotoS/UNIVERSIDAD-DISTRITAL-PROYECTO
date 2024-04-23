@@ -221,6 +221,7 @@ def cargar_entrenar_modelo():
         modelo_knn, r2_knn, mejores_hiperparametros_knn = entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
         modelo_svc, r2_svc, mejores_hiperparametros_svc= entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
         modelo_tree, r2_tree, mejores_hiperparametros_tree=entrenar_modelo_tree_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_gaussian, r2_gaussian, mejores_hiperparametros_gaussian=entrenar_modelo_gaussian_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
         modelo_LDA, r2_LDA, mejores_hiperparametros_LDA=entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
         modelo_BG, r2_BG, mejores_hiperparametros_BG=entrenar_modelo_BG_con_transformacion(X_trn, Y_trn, X_tst, Y_tst, mejores_hiperparametros_tree)
         modelo_random, r2_random, mejores_hiperparametros_random=entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
@@ -260,6 +261,7 @@ def cargar_entrenar_modelo():
             'KNeighbors': (modelo_knn, r2_knn),
             'SVC':(modelo_svc, r2_svc),
             'DecisionTree':(modelo_tree, r2_tree),
+            'NaiveBayes':(modelo_gaussian,r2_gaussian),
             'LDA': (modelo_LDA, r2_LDA),
             'Bagging':(modelo_BG, r2_BG),
             'RandomForest': (modelo_random, r2_random),

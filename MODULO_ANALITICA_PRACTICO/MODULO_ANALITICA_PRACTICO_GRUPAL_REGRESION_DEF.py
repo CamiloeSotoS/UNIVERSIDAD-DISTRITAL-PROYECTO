@@ -255,26 +255,64 @@ def cargar_entrenar_modelo():
         print(X_prediccion.shape, Y_prediccion.shape)
         
         modelo_knn, r2_knn, mejores_hiperparametros_knn = entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_svc, r2_svc, mejores_hiperparametros_svc= entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_tree, r2_tree, mejores_hiperparametros_tree=entrenar_modelo_tree_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_LDA, r2_LDA, mejores_hiperparametros_LDA=entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_BG, r2_BG, mejores_hiperparametros_BG=entrenar_modelo_BG_con_transformacion(X_trn, Y_trn, X_tst, Y_tst, mejores_hiperparametros_tree)
+        modelo_random, r2_random, mejores_hiperparametros_random=entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_extra, r2_extra, mejores_hiperparametros_extra= entrenar_modelo_extra_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_ADA, r2_ADA, mejores_hiperparametros_ADA= entrenar_modelo_ADA_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_GD, r2_GD, mejores_hiperparametros_GD= entrenar_modelo_GD_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_XB, r2_XB, mejores_hiperparametros_XB= entrenar_modelo_XB_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_CB, r2_CB, mejores_hiperparametros_CB=entrenar_modelo_CB_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_LIGHT, r2_LIGHT, mejores_hiperparametros_LIGHT= entrenar_modelo_LIGHT_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        
+        modelo_voting, r2_voting= entrenar_modelo_voting_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,
+                                                mejores_hiperparametros_GD,
+                                                mejores_hiperparametros_tree,
+                                                mejores_hiperparametros_ADA,
+                                                mejores_hiperparametros_extra,
+                                                mejores_hiperparametros_random,
+                                                mejores_hiperparametros_BG,
+                                                mejores_hiperparametros_XB)
+        modelo_stacking_lineal, r2_stacking_lineal, mejores_hiperparametros_stacking_lineal=entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,
+                                                mejores_hiperparametros_tree,
+                                                mejores_hiperparametros_ADA,
+                                                mejores_hiperparametros_extra,
+                                                mejores_hiperparametros_random)
+        modelo_stacking_nolineal, r2_stacking_nolineal, mejores_hiperparametros_stacking_nolineal=entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,
+                                                mejores_hiperparametros_tree,
+                                                mejores_hiperparametros_ADA,
+                                                mejores_hiperparametros_extra,
+                                                mejores_hiperparametros_random)
+        modelo_super_aprendiz, r2_super_aprendiz=entrenar_modelo_super_aprendiz_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,
+                                mejores_hiperparametros_GD,
+                            mejores_hiperparametros_tree,mejores_hiperparametros_extra,
+                            mejores_hiperparametros_random)
+        modelo_super_aprendiz_dos_capas, r2_super_aprendiz_dos_capas=entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn, X_tst, Y_tst, mejores_hiperparametros_tree,
+                                            mejores_hiperparametros_extra,mejores_hiperparametros_random)
+
+        
         
         exactitudes = {
             'KNEIGHBORSCLASSIFIER': r2_knn,
-            #'SVC': accuracy_svc,
-            #'DECISION_TREE': accuracy_tree,
-            #'NAIVE_BAYES':accuracy_gaussian,
-            #'LDA':accuracy_LDA,
-            #'BAGGING':accuracy_BG,
-            #'RANDOM_FOREST':accuracy_random,
-            #'EXTRATREE':accuracy_extra,
-            #'ADA':accuracy_ADA,
-            #'GRADIENTBOOST': accuracy_GD,
-            #'XGBOOST':accuracy_XB,
-            #'CATBOOST':accuracy_CB,
-            #'LIGHT':accuracy_LIGHT,
-            #'VOTING':accuracy_voting,
-            #'STACKING_LINEAL':accuracy_stacking_lineal,
-            #'STACKING_NO_LINEAL':accuracy_stacking_nolineal,
-            #'SUPER_APRENDIZ':accuracy_super_aprendiz,
-            #'SUPER_APRENDIZ_DOS_CAPAS':accuracy_super_aprendiz_dos_capas
+            'SVC': r2_svc,
+            'DECISION_TREE': r2_tree,
+            'NAIVE_BAYES':r2_gaussian,
+            'LDA':r2_LDA,
+            'BAGGING':r2_BG,
+            'RANDOM_FOREST':r2_random,
+            'EXTRATREE':r2_extra,
+            'ADA':r2_ADA,
+            'GRADIENTBOOST': r2_GD,
+            'XGBOOST':r2_XB,
+            'CATBOOST':r2_CB,
+            'LIGHT':r2_LIGHT,
+            'VOTING':r2_voting,
+            'STACKING_LINEAL':r2_stacking_lineal,
+            'STACKING_NO_LINEAL':r2_stacking_nolineal,
+            'SUPER_APRENDIZ':r2_super_aprendiz,
+            'SUPER_APRENDIZ_DOS_CAPAS':r2_super_aprendiz_dos_capas
             }       
         modelos_entrenados = {
             'KNEIGHBORSCLASSIFIER': modelo_knn,
@@ -302,7 +340,7 @@ def cargar_entrenar_modelo():
         print(exactitudes)
         if modelo_seleccionado is not None:
             predicciones_nuevos_datos = modelo_seleccionado.predict(transformacion_johnson(X_prediccion))
-            df_prediccion[f'´PROMEDIO_{semestre_en_letras.upper()}']=predicciones_nuevos_datos
+            df_prediccion[f'PROMEDIO_{semestre_en_letras.upper()}']=predicciones_nuevos_datos
             df_prediccion
             df_prediccion.to_csv(f'Prediccion_Regresion_{carrera}_{semestre}.csv',sep=";",index=False)
             data_with_columns = df_prediccion.to_dict(orient='records')
@@ -341,6 +379,382 @@ def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     predicciones = mejor_modelo.predict(X_tst)
     r2 = r2_score(Y_tst, predicciones)
     return mejor_modelo, r2, mejores_hiperparametros_knn
+
+
+def entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = { 'kernel':  ['rbf', 'poly', 'sigmoid','linear'], 
+            'C': [i/10000 for i in range(8,12,1)],
+            'max_iter':[i for i in range(1,3,1)],
+            'gamma' : [i/100 for i in range(90,110,5)]}
+    modelo = SVR()
+    semilla=5
+    num_folds=10
+    kfold =StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica = 'neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejores_hiperparametros_svc = grid_resultado.best_params_
+    mejor_modelo = SVR(**grid_resultado.best_params_)
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_svc
+
+def entrenar_modelo_tree_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = {          
+            'max_depth':[i for i in range(1,7,1)], 
+            'min_samples_leaf' : [i for i in range(1,7,1)], 
+            'max_features' : [i for i in range(1,7,1)], 
+            'splitter': ["best", "random"],
+            'random_state': [i for i in range(1,7,1)]}
+    modelo = DecisionTreeRegressor()
+    semilla=5
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica = 'neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejores_hiperparametros_tree = grid_resultado.best_params_
+    mejor_modelo = DecisionTreeRegressor(**grid_resultado.best_params_)
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_tree
+
+def entrenar_modelo_gaussian_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = {
+        'alpha': [1e-10, 1e-5, 1e-2, 1e-1],
+        'n_restarts_optimizer': [0, 1, 2, 3],
+        'normalize_y': [True, False],
+        'optimizer': ['fmin_l_bfgs_b']
+    }
+    modelo = GaussianProcessRegressor()
+    semilla=5
+    num_folds=10
+    kfold =StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica = 'neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejor_modelo = GaussianProcessRegressor(**grid_resultado.best_params_)
+    mejores_hiperparametros_gaussian=grid_resultado.best_params_
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_gaussian
+
+def entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = { 'solver':  ['svd','lsqr','eigen'],
+            'n_components':[1,2,3,4,5,6,7,8,9,10],
+            'shrinkage': ['auto', 0.001, 0.01, 0.1, 0.5,1,10,100,1000]
+            }
+    modelo = LinearDiscriminantAnalysis()
+    semilla=5
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica= 'neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejor_modelo = LinearDiscriminantAnalysis(**grid_resultado.best_params_)
+    mejores_hiperparametros_LDA=grid_resultado.best_params_
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_LDA
+
+def entrenar_modelo_BG_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,mejores_hiperparametros_tree):
+    parameters = {'n_estimators': [i for i in range(750,760,5)],
+            'max_samples' : [i/100.0 for i in range(70,90,5)],
+            'max_features': [i/100.0 for i in range(75,85,5)],
+            'bootstrap': [True], 
+            'bootstrap_features': [True]}
+    base_estimator= DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    semilla=5
+    modelo = BaggingRegressor(estimator=base_estimator,n_estimators=750, random_state=semilla,
+                            bootstrap= True, bootstrap_features = True, max_features = 0.7,
+                            max_samples= 0.5)
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica =  'neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejores_hiperparametros_BG=grid_resultado.best_params_
+    mejor_modelo = BaggingRegressor(**grid_resultado.best_params_)
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_BG
+    
+def entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = { 
+                'min_samples_split' : [1, 2 , 3,  4 , 6 , 8 , 10 , 15, 20 ],  
+                'min_samples_leaf' : [ 1 , 3 , 5 , 7 , 9, 12, 15 ],
+            }
+    modelo = RandomForestRegressor()
+    semilla=5
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica =  'neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejores_hiperparametros_random=grid_resultado.best_params_
+    mejor_modelo = RandomForestRegressor(**grid_resultado.best_params_)
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_random
+
+def entrenar_modelo_extra_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = {'min_samples_split' : [i for i in range(1,10,1)], 
+                'criterion':('absolute_error', 'squared_error', 'friedman_mse', 'poisson')}
+    semilla=5            
+    modelo = ExtraTreesRegressor(random_state=semilla, 
+                                n_estimators=40,
+                                bootstrap=True) 
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica ='neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejores_hiperparametros_extra=grid_resultado.best_params_
+    mejor_modelo = ExtraTreesRegressor(**grid_resultado.best_params_)
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_extra
+
+def entrenar_modelo_ADA_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = {'learning_rate' : [i/10000.0 for i in range(5,20,5)],
+                'n_estimators':[i for i in range(1,50,1)]}
+    semilla=5            
+    modelo = AdaBoostRegressor(estimator = None,random_state= None) 
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica ='neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejores_hiperparametros_ADA=grid_resultado.best_params_
+    mejor_modelo = AdaBoostRegressor(**grid_resultado.best_params_)
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_ADA
+
+def entrenar_modelo_GD_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = { 
+                'learning_rate' : [0.01, 0.05, 0.1,0.15],
+                'loss':('absolute_error', 'squared_error', 'quantile', 'huber'),
+                'criterion':['friedman_mse']}
+    semilla=5
+    modelo = GradientBoostingRegressor(random_state=semilla,
+                                    n_estimators= 100,learning_rate= 0.1,max_depth= 2,
+                                    min_samples_split= 2, min_samples_leaf= 3,max_features= 2)
+    semilla=5
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica ='neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejores_hiperparametros_GD=grid_resultado.best_params_
+    mejor_modelo = GradientBoostingRegressor(**grid_resultado.best_params_)
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_GD
+
+def entrenar_modelo_XB_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = {'reg_alpha': [0,0.1,0.2,0.3,0.4,0.5],
+                'reg_lambda':  [i/1000.0 for i in range(100,150,5)],
+                'colsample_bytree': [0.1,0.3, 0.5,0.6,0.7,0.8, 0.9, 1,1.1],
+                'max_features':('sqrt','log2')
+                }
+    semilla=5
+    modelo = XGBRegressor(random_state=semilla,subsample =1,max_depth =2)
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica ='neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejor_modelo= XGBRegressor(**grid_resultado.best_params_)
+    mejores_hiperparametros_XB=grid_resultado.best_params_
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_XB
+
+def entrenar_modelo_CB_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = {} 
+    semilla=5
+    modelo = CatBoostRegressor(random_state=semilla, verbose =0)
+    semilla=5
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica ='neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejores_hiperparametros_CB=grid_resultado.best_params_
+    mejor_modelo = CatBoostRegressor(verbose=0,**grid_resultado.best_params_)
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_CB
+
+def entrenar_modelo_LIGHT_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
+    parameters = {
+    'min_child_samples' : [i for i in range(1, 1000, 100)],'colsample_bytree': [0.6, 0.8, 1.0,1.5],
+    'boosting_type': ['gbdt', 'dart', 'goss'],'objective': ['binary', 'multiclass'],'random_state': [42]}
+    semilla=5
+    modelo = LGBMRegressor(random_state=semilla,                           
+                            num_leaves =  10,max_depth = 1, n_estimators = 100,    
+                            learning_rate = 0.1 ,class_weight=  None, subsample = 1,
+                            colsample_bytree= 1, reg_alpha=  0, reg_lambda = 0,
+                            min_split_gain = 0, boosting_type = 'gbdt')
+    semilla=5
+    num_folds=10
+    kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
+    metrica ='neg_mean_squared_error'
+    grid = GridSearchCV(estimator=modelo, param_grid=parameters, scoring=metrica, cv=kfold, n_jobs=-1)
+    grid_resultado = grid.fit(X_trn, Y_trn)
+    mejores_hiperparametros_LIGHT=grid_resultado.best_params_
+    mejor_modelo = LGBMRegressor(verbose=-1,**grid_resultado.best_params_)
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_LIGHT
+
+def entrenar_modelo_voting_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,
+                                                mejores_hiperparametros_GD,
+                                                mejores_hiperparametros_tree,
+                                                mejores_hiperparametros_ADA,
+                                                mejores_hiperparametros_extra,
+                                                mejores_hiperparametros_random,
+                                                mejores_hiperparametros_BG,
+                                                mejores_hiperparametros_XB):
+    semilla= 5 
+    kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
+    modelo1 = GradientBoostingRegressor(**mejores_hiperparametros_GD)
+    base_estimator=DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo2 = AdaBoostRegressor(**mejores_hiperparametros_ADA)
+    modelo3 = ExtraTreesRegressor(**mejores_hiperparametros_extra)
+    modelo4 = RandomForestRegressor(**mejores_hiperparametros_random)
+    model = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo5 = BaggingRegressor(**mejores_hiperparametros_BG)
+    modelo6 = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo7 = XGBRegressor(**mejores_hiperparametros_XB)
+    metrica ='neg_mean_squared_error'
+    mejor_modelo = VotingRegressor(
+    estimators=[('Gradient', modelo1), ('Adaboost', modelo2), 
+                                    ('Extratrees', modelo3),('Random Forest',modelo4),
+                                    ('Bagging',modelo5),('Decision tree',modelo6),
+                                    ('XGB',modelo7)]) 
+    mejor_modelo.fit(X_trn, Y_trn)
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2
+
+def entrenar_modelo_stacking_lineal_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,
+                                                mejores_hiperparametros_tree,
+                                                mejores_hiperparametros_ADA,
+                                                mejores_hiperparametros_extra,
+                                                mejores_hiperparametros_random):
+    semilla= 5 
+    kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
+    base_estimator=DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo2 = AdaBoostRegressor(**mejores_hiperparametros_ADA)
+    modelo3 = ExtraTreesRegressor(**mejores_hiperparametros_extra)
+    modelo4 = RandomForestRegressor (**mejores_hiperparametros_random)
+    model = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo5 = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    estimador_final = LinearRegression()
+    metrica ='neg_mean_squared_error'
+    mejor_modelo = StackingRegressor(
+    estimators=[ ('Adaboost', modelo2), ('Extratrees', modelo3),
+                ('Random Forest',modelo4),
+                ('Decision tree',modelo5)
+                ], final_estimator=estimador_final) 
+    mejor_modelo.fit(X_trn, Y_trn)
+    mejores_hiperparametros_stacking_lineal=mejor_modelo.get_params
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_stacking_lineal
+
+def entrenar_modelo_stacking_nolineal_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,
+                                                mejores_hiperparametros_tree,
+                                                mejores_hiperparametros_ADA,
+                                                mejores_hiperparametros_extra,
+                                                mejores_hiperparametros_random):
+    semilla= 5 
+    kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
+    base_estimator=DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo2 = AdaBoostRegressor(**mejores_hiperparametros_ADA)
+    modelo3 = ExtraTreesRegressor(**mejores_hiperparametros_extra)
+    modelo4 = RandomForestRegressor (**mejores_hiperparametros_random)
+    model = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo5 = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    estimador_final = ExtraTreesRegressor()
+    metrica ='neg_mean_squared_error'
+    mejor_modelo = StackingRegressor(
+    estimators=[ ('Adaboost', modelo2), ('Extratrees', modelo3),
+                ('Random Forest',modelo4),
+                ('Decision tree',modelo5)
+                ], final_estimator=estimador_final) 
+    mejor_modelo.fit(X_trn, Y_trn)
+    mejores_hiperparametros_stacking_nolineal=mejor_modelo.get_params
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2, mejores_hiperparametros_stacking_nolineal
+
+def entrenar_modelo_super_aprendiz_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,
+                            mejores_hiperparametros_GD,
+                            mejores_hiperparametros_tree,mejores_hiperparametros_extra,
+                            mejores_hiperparametros_random):
+    semilla = 5 
+    kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
+    modelo1 = ExtraTreesRegressor(**mejores_hiperparametros_extra)
+    modelo2 = RandomForestRegressor(**mejores_hiperparametros_random)
+    model = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo4 = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo5 = GradientBoostingRegressor(**mejores_hiperparametros_GD) 
+    estimadores = [('Extratrees', modelo1), 
+                ('Random Forest', modelo2), 
+                ('Decision tree', modelo4),
+                ('Gradient',modelo5)]
+    mejor_modelo = SuperLearner(folds=10, random_state=semilla, verbose=2)
+    mejor_modelo.add(estimadores)
+    estimador_final = ExtraTreesRegressor(n_estimators=100, max_features=None,
+                                        bootstrap=False, max_depth=11, min_samples_split=4, 
+                                        min_samples_leaf=1)
+    mejor_modelo.add_meta(estimador_final)
+    mejor_modelo.fit(X_trn, Y_trn)
+    mejores_hiperparametros_super_learner=mejor_modelo.get_params
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2
+
+def entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn, X_tst, Y_tst, 
+                                            mejores_hiperparametros_tree,mejores_hiperparametros_extra,
+                                            mejores_hiperparametros_random):
+    semilla = 5 
+    kfold = StratifiedKFold(n_splits=10, random_state=semilla, shuffle=True)
+    modelo1 = ExtraTreesRegressor(**mejores_hiperparametros_extra)
+    modelo2 = RandomForestRegressor(**mejores_hiperparametros_random)
+    model = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    modelo3 = DecisionTreeRegressor(**mejores_hiperparametros_tree)
+    estimadores = [('Extratrees', modelo1), 
+                ('Random Forest', modelo2), 
+                ('Decision tree', modelo3)]
+    mejor_modelo = SuperLearner(folds=10, random_state=semilla, verbose=2)
+    mejor_modelo.add(estimadores)
+    mejor_modelo.add(estimadores)
+    estimador_final = ExtraTreesRegressor(n_estimators=100, max_features=None,
+                                        bootstrap=False, max_depth=11, min_samples_split=4, 
+                                        min_samples_leaf=1)
+    mejor_modelo.add_meta(estimador_final)
+    mejor_modelo.fit(X_trn, Y_trn)
+    mejores_hiperparametros_superaprendiz_dos_capas=mejor_modelo.get_params
+    predicciones = mejor_modelo.predict(X_tst)
+    r2 = r2_score(Y_tst, predicciones)
+    return mejor_modelo, r2
+
 
 @app.get("/")
 def read_root():
