@@ -257,6 +257,7 @@ def cargar_entrenar_modelo():
         modelo_knn, r2_knn, mejores_hiperparametros_knn = entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
         modelo_svc, r2_svc, mejores_hiperparametros_svc= entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
         modelo_tree, r2_tree, mejores_hiperparametros_tree=entrenar_modelo_tree_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
+        modelo_gaussian, r2_gaussian, mejores_hiperparametros_gaussian=entrenar_modelo_gaussian_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
         modelo_LDA, r2_LDA, mejores_hiperparametros_LDA=entrenar_modelo_LDA_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
         modelo_BG, r2_BG, mejores_hiperparametros_BG=entrenar_modelo_BG_con_transformacion(X_trn, Y_trn, X_tst, Y_tst, mejores_hiperparametros_tree)
         modelo_random, r2_random, mejores_hiperparametros_random=entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
@@ -292,8 +293,6 @@ def cargar_entrenar_modelo():
         modelo_super_aprendiz_dos_capas, r2_super_aprendiz_dos_capas=entrenar_modelo_super_aprendiz_dos_capas(X_trn, Y_trn, X_tst, Y_tst, mejores_hiperparametros_tree,
                                             mejores_hiperparametros_extra,mejores_hiperparametros_random)
 
-        
-        
         exactitudes = {
             'KNEIGHBORSCLASSIFIER': r2_knn,
             'SVC': r2_svc,
@@ -316,23 +315,23 @@ def cargar_entrenar_modelo():
             }       
         modelos_entrenados = {
             'KNEIGHBORSCLASSIFIER': modelo_knn,
-            #'SVC': modelo_svc,
-            #'DECISION_TREE': modelo_tree,
-            #'NAIVE_BAYES': modelo_gaussian,
-            #'LDA': modelo_LDA,
-            #'BAGGING': modelo_BG,
-            #'RANDOM_FOREST':modelo_random,
-            #'EXTRATREE': modelo_extra,
-            #'ADA': modelo_ADA,
-            #'GRADIENTBOOST': modelo_GD,
-            #'XGBOOST':modelo_XB,
-            #'CATBOOST':modelo_CB,
-            #'LIGHT':modelo_LIGHT,
-            #'VOTING':modelo_voting,
-            #'STACKING_LINEAL':modelo_stacking_lineal,
-            #'STACKING_NO_LINEAL':modelo_stacking_nolineal,
-            #'SUPER_APRENDIZ':modelo_super_aprendiz,
-            #'SUPER_APRENDIZ_DOS_CAPAS':modelo_super_aprendiz_dos_capas
+            'SVC': modelo_svc,
+            'DECISION_TREE': modelo_tree,
+            'NAIVE_BAYES': modelo_gaussian,
+            'LDA': modelo_LDA,
+            'BAGGING': modelo_BG,
+            'RANDOM_FOREST':modelo_random,
+            'EXTRATREE': modelo_extra,
+            'ADA': modelo_ADA,
+            'GRADIENTBOOST': modelo_GD,
+            'XGBOOST':modelo_XB,
+            'CATBOOST':modelo_CB,
+            'LIGHT':modelo_LIGHT,
+            'VOTING':modelo_voting,
+            'STACKING_LINEAL':modelo_stacking_lineal,
+            'STACKING_NO_LINEAL':modelo_stacking_nolineal,
+            'SUPER_APRENDIZ':modelo_super_aprendiz,
+            'SUPER_APRENDIZ_DOS_CAPAS':modelo_super_aprendiz_dos_capas
             }
         mejor_modelo = max(exactitudes, key=exactitudes.get)
         modelo_seleccionado = modelos_entrenados.get(mejor_modelo)
