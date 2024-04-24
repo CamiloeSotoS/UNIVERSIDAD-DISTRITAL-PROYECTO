@@ -1259,8 +1259,8 @@ async def procesar_datos(data: InputData):
         # Aplicar la transformación Yeo-Johnson
         X_trn_transformado = X_trn
         parameters = {
-        'min_child_samples' : [i for i in range(1, 1000, 100)],'colsample_bytree': [0.6, 0.8, 1.0,1.5],
-        'boosting_type': ['gbdt', 'dart', 'goss'],'objective': ['binary', 'multiclass'],'random_state': [42]}
+        'min_child_samples' : [i for i in range(1, 1000, 100)],'colsample_bytree': [0.6, 0.8],
+        'boosting_type': ['gbdt'],'objective': ['multiclass'],'random_state': [42]}
         semilla=7
         modelo = LGBMRegressor(random_state=semilla,                           
                                 num_leaves =  10,max_depth = 1, n_estimators = 100,    
