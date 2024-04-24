@@ -1,0 +1,40 @@
+METRICA|VALOR|MODELO|TIPO_DE_DATOS
+Precision|52.2|SVC|Prueba
+Exhaustividad|60.07|SVC|Prueba
+Puntuacion F1|52.46|SVC|Prueba
+Exactitud|60.07|SVC|Prueba
+Informacion Mutua Normalizada (NMI)|1.1|SVC|Prueba
+Indice Kappa de Cohen|0.58|SVC|Prueba
+Precision|48.66|SVC|Entrenamiento
+Exhaustividad|58.11|SVC|Entrenamiento
+Puntuacion F1|49.13|SVC|Entrenamiento
+Exactitud|58.11|SVC|Entrenamiento
+Informacion Mutua Normalizada (NMI)|0.43|SVC|Entrenamiento
+Indice Kappa de Cohen|-0.44|SVC|Entrenamiento
+Mejores Hiperparametros|C: 0.0008, break_ties: False, cache_size: 200, class_weight: None, coef0: 0.0, decision_function_shape: ovr, degree: 3, gamma: 1.0, kernel: rbf, max_iter: 1, probability: False, random_state: 1, shrinking: True, tol: 0.001, verbose: False|SVC|Hiperparametros del modelo
+Precision|39.87|LDA|Prueba
+Exhaustividad|62.87|LDA|Prueba
+Puntuacion F1|48.79|LDA|Prueba
+Exactitud|62.87|LDA|Prueba
+Informacion Mutua Normalizada (NMI)|0.38|LDA|Prueba
+Indice Kappa de Cohen|-0.63|LDA|Prueba
+Precision|58.67|LDA|Entrenamiento
+Exhaustividad|61.16|LDA|Entrenamiento
+Puntuacion F1|46.95|LDA|Entrenamiento
+Exactitud|61.16|LDA|Entrenamiento
+Informacion Mutua Normalizada (NMI)|0.25|LDA|Entrenamiento
+Indice Kappa de Cohen|0.75|LDA|Entrenamiento
+Mejores Hiperparametros|covariance_estimator: None, n_components: 1, priors: None, shrinkage: 1, solver: lsqr, store_covariance: False, tol: 0.001|LDA|Hiperparametros del modelo
+Precision|55.3|XGB|Prueba
+Exhaustividad|62.87|XGB|Prueba
+Puntuacion F1|51.47|XGB|Prueba
+Exactitud|62.87|XGB|Prueba
+Informacion Mutua Normalizada (NMI)|0.49|XGB|Prueba
+Indice Kappa de Cohen|1.99|XGB|Prueba
+Precision|61.97|XGB|Entrenamiento
+Exhaustividad|62.37|XGB|Entrenamiento
+Puntuacion F1|50.53|XGB|Entrenamiento
+Exactitud|62.37|XGB|Entrenamiento
+Informacion Mutua Normalizada (NMI)|1.83|XGB|Entrenamiento
+Indice Kappa de Cohen|5.49|XGB|Entrenamiento
+Mejores Hiperparametros|objective: multi:softprob, base_score: None, booster: None, callbacks: None, colsample_bylevel: None, colsample_bynode: None, colsample_bytree: 0.1, device: None, early_stopping_rounds: None, enable_categorical: False, eval_metric: None, feature_types: None, gamma: None, grow_policy: None, importance_type: None, interaction_constraints: None, learning_rate: None, max_bin: None, max_cat_threshold: None, max_cat_to_onehot: None, max_delta_step: None, max_depth: None, max_leaves: None, min_child_weight: None, missing: nan, monotone_constraints: None, multi_strategy: None, n_estimators: 1, n_jobs: None, num_parallel_tree: None, random_state: None, reg_alpha: 0, reg_lambda: 0.1, sampling_method: None, scale_pos_weight: None, subsample: None, tree_method: None, validate_parameters: None, verbosity: None, loss: log_loss, max_features: sqrt|XGB|Hiperparametros del modelo
