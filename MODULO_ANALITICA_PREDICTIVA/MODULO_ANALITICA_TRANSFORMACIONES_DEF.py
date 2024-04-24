@@ -60,7 +60,7 @@ drive_service = build('drive', 'v3', credentials=creds)
 folder_id = '1hQeetmO4XIObUefS_nzePqKqq3VksUEC'
 
 # Ruta de destino para guardar los archivos descargados
-save_path = 'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_DIAGNOSTICA/DATOS'  # Reemplazar con la ruta deseada
+save_path = 'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PREDICTIVA/DATOS'  # Reemplazar con la ruta deseada
 
 # Función para descargar archivos de la carpeta de Drive
 def download_folder(folder_id, save_path):
@@ -117,7 +117,7 @@ async def procesar_datos(data: InputData):
     
     # Definir la función de carga de datos
     def cargar_datos(carrera, semestre):
-        ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_DIAGNOSTICA/DATOS/{carrera}{semestre}.csv'
+        ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PREDICTIVA/DATOS/{carrera}{semestre}.csv'
         datos = pd.read_csv(ruta_archivo,sep=";")
         return datos
     df = cargar_datos(carrera, semestre)
