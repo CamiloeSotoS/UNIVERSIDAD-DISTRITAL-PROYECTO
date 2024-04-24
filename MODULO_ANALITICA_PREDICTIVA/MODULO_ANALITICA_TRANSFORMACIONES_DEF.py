@@ -361,9 +361,9 @@ async def procesar_datos(data: InputData):
 
         print(f"El código Base64 de la imagen {nombre_figura} ha sido guardado.")
 
-    with open("imagenes_base64.json", "w") as json_file:
+    with open("Imagenes_Transformacion.json", "w") as json_file:
         json.dump({"data": imagenes_base64}, json_file)
-    print("Los códigos Base64 de las imágenes han sido guardados en 'imagenes_base64.json'.")
+    print("Los códigos Base64 de las imágenes han sido guardados en 'Imagenes_Transformacion.json'.")
 
     X1["TRANSFORMACION"]="SIN TRANSFORMACION"
     Xpandas_R1["TRANSFORMACION"]="REESCALADO"
@@ -389,10 +389,10 @@ async def procesar_datos(data: InputData):
     ]
 
     # Guardar en archivo JSON
-    with open("dataframes.json", "w") as json_file:
+    with open("Dataframe_Transformacion.json", "w") as json_file:
         json.dump({"data": diccionario_dataframes}, json_file, indent=4)
 
-    print("Los DataFrames han sido guardados en 'dataframes.json'.")
+    print("Los DataFrames han sido guardados en 'Dataframe_Transformacion.json'.")
 
 
 @app.get("/")
