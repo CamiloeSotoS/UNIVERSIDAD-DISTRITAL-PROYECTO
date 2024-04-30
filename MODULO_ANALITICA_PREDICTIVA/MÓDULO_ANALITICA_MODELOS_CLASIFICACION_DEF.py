@@ -2607,6 +2607,8 @@ async def procesar_datos(data: InputData):
     Metricas_Modelos = Metricas_Modelos.rename(columns={'MÉTRICA': 'METRICA'})
     Metricas_Modelos ['METRICA'] = Metricas_Modelos ['METRICA'].apply(lambda x: unidecode(x))
     Metricas_Modelos= Metricas_Modelos[Metricas_Modelos["MODELO"].isin(modelos_seleccionados)]
+    Metricas_Modelos['CARRERA']='INDUSTRIAL'
+    Metricas_Modelos['SEMESTRE']='SEGUNDO_SEMESTRE'
 
     data_with_columns = Metricas_Modelos.to_dict(orient='records')
 

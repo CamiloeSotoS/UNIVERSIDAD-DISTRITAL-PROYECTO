@@ -1,40 +1,260 @@
-METRICA|VALOR|MODELO|TIPO_DE_DATOS
-Precision|52.2|SVC|Prueba
-Exhaustividad|60.07|SVC|Prueba
-Puntuacion F1|52.46|SVC|Prueba
-Exactitud|60.07|SVC|Prueba
-Informacion Mutua Normalizada (NMI)|1.1|SVC|Prueba
-Indice Kappa de Cohen|0.58|SVC|Prueba
-Precision|48.66|SVC|Entrenamiento
-Exhaustividad|58.11|SVC|Entrenamiento
-Puntuacion F1|49.13|SVC|Entrenamiento
-Exactitud|58.11|SVC|Entrenamiento
-Informacion Mutua Normalizada (NMI)|0.43|SVC|Entrenamiento
-Indice Kappa de Cohen|-0.44|SVC|Entrenamiento
-Mejores Hiperparametros|C: 0.0008, break_ties: False, cache_size: 200, class_weight: None, coef0: 0.0, decision_function_shape: ovr, degree: 3, gamma: 1.0, kernel: rbf, max_iter: 1, probability: False, random_state: 1, shrinking: True, tol: 0.001, verbose: False|SVC|Hiperparametros del modelo
-Precision|39.87|LDA|Prueba
-Exhaustividad|62.87|LDA|Prueba
-Puntuacion F1|48.79|LDA|Prueba
-Exactitud|62.87|LDA|Prueba
-Informacion Mutua Normalizada (NMI)|0.38|LDA|Prueba
-Indice Kappa de Cohen|-0.63|LDA|Prueba
-Precision|58.67|LDA|Entrenamiento
-Exhaustividad|61.16|LDA|Entrenamiento
-Puntuacion F1|46.95|LDA|Entrenamiento
-Exactitud|61.16|LDA|Entrenamiento
-Informacion Mutua Normalizada (NMI)|0.25|LDA|Entrenamiento
-Indice Kappa de Cohen|0.75|LDA|Entrenamiento
-Mejores Hiperparametros|covariance_estimator: None, n_components: 1, priors: None, shrinkage: 1, solver: lsqr, store_covariance: False, tol: 0.001|LDA|Hiperparametros del modelo
-Precision|55.3|XGB|Prueba
-Exhaustividad|62.87|XGB|Prueba
-Puntuacion F1|51.47|XGB|Prueba
-Exactitud|62.87|XGB|Prueba
-Informacion Mutua Normalizada (NMI)|0.49|XGB|Prueba
-Indice Kappa de Cohen|1.99|XGB|Prueba
-Precision|61.97|XGB|Entrenamiento
-Exhaustividad|62.37|XGB|Entrenamiento
-Puntuacion F1|50.53|XGB|Entrenamiento
-Exactitud|62.37|XGB|Entrenamiento
-Informacion Mutua Normalizada (NMI)|1.83|XGB|Entrenamiento
-Indice Kappa de Cohen|5.49|XGB|Entrenamiento
-Mejores Hiperparametros|objective: multi:softprob, base_score: None, booster: None, callbacks: None, colsample_bylevel: None, colsample_bynode: None, colsample_bytree: 0.1, device: None, early_stopping_rounds: None, enable_categorical: False, eval_metric: None, feature_types: None, gamma: None, grow_policy: None, importance_type: None, interaction_constraints: None, learning_rate: None, max_bin: None, max_cat_threshold: None, max_cat_to_onehot: None, max_delta_step: None, max_depth: None, max_leaves: None, min_child_weight: None, missing: nan, monotone_constraints: None, multi_strategy: None, n_estimators: 1, n_jobs: None, num_parallel_tree: None, random_state: None, reg_alpha: 0, reg_lambda: 0.1, sampling_method: None, scale_pos_weight: None, subsample: None, tree_method: None, validate_parameters: None, verbosity: None, loss: log_loss, max_features: sqrt|XGB|Hiperparametros del modelo
+METRICA|VALOR|MODELO|TIPO_DE_DATOS|CARRERA|SEMESTRE
+Precision|78.18|KNeighbors|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|77.78|KNeighbors|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|75.7|KNeighbors|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|77.78|KNeighbors|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|41.11|KNeighbors|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|62.05|KNeighbors|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|74.79|KNeighbors|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|78.67|KNeighbors|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|76.28|KNeighbors|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|78.67|KNeighbors|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|44.05|KNeighbors|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|63.21|KNeighbors|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|algorithm: auto, leaf_size: 30, metric: manhattan, metric_params: None, n_jobs: None, n_neighbors: 16, p: 2, weights: uniform|KNeighbors|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|47.39|SVC|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|46.34|SVC|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|46.5|SVC|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|46.34|SVC|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|3.27|SVC|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|14.12|SVC|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|45.79|SVC|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|45.32|SVC|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|45.31|SVC|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|45.32|SVC|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|3.33|SVC|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|11.81|SVC|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|C: 0.0008, break_ties: False, cache_size: 200, class_weight: None, coef0: 0.0, decision_function_shape: ovr, degree: 3, gamma: 0.8, kernel: sigmoid, max_iter: 2, probability: False, random_state: 1, shrinking: True, tol: 0.001, verbose: False|SVC|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|73.96|DecisionTree|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|77.15|DecisionTree|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|75.37|DecisionTree|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|77.15|DecisionTree|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|39.74|DecisionTree|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|61.58|DecisionTree|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|75.7|DecisionTree|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|79.53|DecisionTree|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|77.38|DecisionTree|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|79.53|DecisionTree|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|45.17|DecisionTree|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|65.06|DecisionTree|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|ccp_alpha: 0.0, class_weight: None, criterion: gini, max_depth: 6, max_features: 2, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 6, min_samples_split: 2, min_weight_fraction_leaf: 0.0, monotonic_cst: None, random_state: 1, splitter: best|DecisionTree|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|73.33|LDA|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|75.88|LDA|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|74.34|LDA|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|75.88|LDA|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|36.13|LDA|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|59.3|LDA|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|71.72|LDA|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|74.66|LDA|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|72.91|LDA|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|74.66|LDA|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|35.66|LDA|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|56.89|LDA|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|covariance_estimator: None, n_components: 1, priors: None, shrinkage: 0.1, solver: lsqr, store_covariance: False, tol: 0.001|LDA|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|80.17|Bagging|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|81.31|Bagging|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|79.64|Bagging|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|81.31|Bagging|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|47.82|Bagging|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|68.36|Bagging|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|100.0|Bagging|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|100.0|Bagging|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|100.0|Bagging|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|100.0|Bagging|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|100.0|Bagging|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|100.0|Bagging|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|bootstrap: True, bootstrap_features: True, estimator: None, max_features: 0.8, max_samples: 0.7, n_estimators: 750, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|Bagging|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|78.47|RandomForest|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|81.44|RandomForest|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|79.62|RandomForest|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|81.44|RandomForest|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|47.8|RandomForest|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|68.54|RandomForest|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|86.99|RandomForest|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|86.36|RandomForest|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|84.43|RandomForest|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|86.36|RandomForest|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|59.46|RandomForest|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|76.76|RandomForest|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|bootstrap: True, ccp_alpha: 0.0, class_weight: None, criterion: entropy, max_depth: None, max_features: sqrt, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 7, min_samples_split: 3, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|RandomForest|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|80.49|ExtraTrees|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|81.57|ExtraTrees|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|80.0|ExtraTrees|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|81.57|ExtraTrees|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|48.27|ExtraTrees|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|68.81|ExtraTrees|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|97.52|ExtraTrees|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|97.46|ExtraTrees|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|97.37|ExtraTrees|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|97.46|ExtraTrees|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|89.42|ExtraTrees|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|95.83|ExtraTrees|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|bootstrap: False, ccp_alpha: 0.0, class_weight: None, criterion: gini, max_depth: None, max_features: sqrt, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 2, min_samples_split: 5, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|ExtraTrees|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|52.56|AdaBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|65.53|AdaBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|58.22|AdaBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|65.53|AdaBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|23.71|AdaBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|39.7|AdaBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|50.6|AdaBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|63.83|AdaBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|56.33|AdaBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|63.83|AdaBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|23.66|AdaBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|36.14|AdaBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|algorithm: SAMME.R, estimator: None, learning_rate: 0.0005, n_estimators: 1, random_state: None|AdaBoost|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|77.6|GradientBoosting|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|78.66|GradientBoosting|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|78.04|GradientBoosting|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|78.66|GradientBoosting|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|44.58|GradientBoosting|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|64.86|GradientBoosting|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|99.04|GradientBoosting|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|99.03|GradientBoosting|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|99.02|GradientBoosting|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|99.03|GradientBoosting|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|95.8|GradientBoosting|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|98.42|GradientBoosting|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|ccp_alpha: 0.0, criterion: friedman_mse, init: None, learning_rate: 0.05, loss: log_loss, max_depth: 3, max_features: None, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 1, min_samples_split: 2, min_weight_fraction_leaf: 0.0, n_estimators: 600, n_iter_no_change: None, random_state: None, subsample: 1.0, tol: 0.0001, validation_fraction: 0.1, verbose: 0, warm_start: False|GradientBoosting|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|78.17|XGB|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|79.29|XGB|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|77.91|XGB|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|79.29|XGB|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|44.17|XGB|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|65.16|XGB|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|90.88|XGB|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|90.47|XGB|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|89.63|XGB|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|90.47|XGB|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|70.5|XGB|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|83.93|XGB|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|objective: multi:softprob, base_score: None, booster: None, callbacks: None, colsample_bylevel: None, colsample_bynode: None, colsample_bytree: 0.7, device: None, early_stopping_rounds: None, enable_categorical: False, eval_metric: None, feature_types: None, gamma: None, grow_policy: None, importance_type: None, interaction_constraints: None, learning_rate: None, max_bin: None, max_cat_threshold: None, max_cat_to_onehot: None, max_delta_step: None, max_depth: None, max_leaves: None, min_child_weight: None, missing: nan, monotone_constraints: None, multi_strategy: None, n_estimators: 9, n_jobs: None, num_parallel_tree: None, random_state: None, reg_alpha: 0.4, reg_lambda: 0.14, sampling_method: None, scale_pos_weight: None, subsample: None, tree_method: None, validate_parameters: None, verbosity: None, loss: log_loss, max_features: sqrt|XGB|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|79.3|CatBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|81.94|CatBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|80.15|CatBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|81.94|CatBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|48.74|CatBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|69.12|CatBoost|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|77.12|CatBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|80.62|CatBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|78.52|CatBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|80.62|CatBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|47.3|CatBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|66.69|CatBoost|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|learning_rate: 0.01, depth: 6, l2_leaf_reg: 42, border_count: 53, thread_count: 4, verbose: 0|CatBoost|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|79.23|LGBM|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|80.56|LGBM|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|79.51|LGBM|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|80.56|LGBM|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|46.49|LGBM|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|67.53|LGBM|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|100.0|LGBM|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|100.0|LGBM|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|100.0|LGBM|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|100.0|LGBM|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|100.0|LGBM|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|100.0|LGBM|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|boosting_type: gbdt, class_weight: None, colsample_bytree: 0.6, importance_type: split, learning_rate: 0.1, max_depth: -1, min_child_samples: 50, min_child_weight: 0.001, min_split_gain: 0.0, n_estimators: 100, n_jobs: None, num_leaves: 31, objective: multiclass, random_state: 42, reg_alpha: 0.0, reg_lambda: 0.0, subsample: 1.0, subsample_for_bin: 200000, subsample_freq: 0, verbose: -1|LGBM|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|80.37|VotingHard|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|81.44|VotingHard|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|79.88|VotingHard|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|81.44|VotingHard|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|48.51|VotingHard|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|68.63|VotingHard|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|92.53|VotingHard|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|92.2|VotingHard|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|91.26|VotingHard|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|92.2|VotingHard|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|75.16|VotingHard|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|86.89|VotingHard|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|Estimador: Gradient, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.05, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 600, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}, Estimador: Adaboost, Hiperparametros: {'algorithm': 'SAMME.R', 'estimator': None, 'learning_rate': 0.0005, 'n_estimators': 1, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 7, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.8, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 2, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 1, 'splitter': 'best'}, Estimador: XGB, Hiperparametros: {'objective': 'multi:softprob', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.7, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': None, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 9, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': 0.4, 'reg_lambda': 0.14, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': None, 'validate_parameters': None, 'verbosity': None, 'loss': 'log_loss', 'max_features': 'sqrt'}|VotingHard|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|80.71|VotingSoft|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|81.69|VotingSoft|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|80.13|VotingSoft|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|81.69|VotingSoft|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|48.72|VotingSoft|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|68.97|VotingSoft|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|93.25|VotingSoft|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|92.91|VotingSoft|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|92.22|VotingSoft|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|92.91|VotingSoft|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|77.35|VotingSoft|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|88.08|VotingSoft|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|Estimador: Gradient, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.05, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 600, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}, Estimador: Adaboost, Hiperparametros: {'algorithm': 'SAMME.R', 'estimator': None, 'learning_rate': 0.0005, 'n_estimators': 1, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 7, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.8, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 2, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 1, 'splitter': 'best'}|VotingSoft|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|81.65|StackingLineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|82.2|StackingLineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|80.72|StackingLineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|82.2|StackingLineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|49.74|StackingLineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|69.94|StackingLineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|94.87|StackingLineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|94.96|StackingLineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|94.82|StackingLineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|94.96|StackingLineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|81.92|StackingLineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|91.73|StackingLineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|Estimador: Adaboost, Hiperparametros: {'algorithm': 'SAMME.R', 'estimator': None, 'learning_rate': 0.0005, 'n_estimators': 1, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 7, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.8, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 2, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 1, 'splitter': 'best'}|StackingLineal|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|81.11|Stackingnolineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|81.69|Stackingnolineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|80.66|Stackingnolineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|81.69|Stackingnolineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|48.61|Stackingnolineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|69.49|Stackingnolineal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|92.87|Stackingnolineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|92.69|Stackingnolineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|92.24|Stackingnolineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|92.69|Stackingnolineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|76.12|Stackingnolineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|87.79|Stackingnolineal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 7, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.8, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 2, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 1, 'splitter': 'best'}|Stackingnolineal|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|79.87|VotingWeighted|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|80.81|VotingWeighted|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|79.32|VotingWeighted|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|80.81|VotingWeighted|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|47.33|VotingWeighted|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|67.55|VotingWeighted|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|91.6|VotingWeighted|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|91.72|VotingWeighted|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|90.77|VotingWeighted|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|91.72|VotingWeighted|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|74.99|VotingWeighted|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|86.1|VotingWeighted|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|80.54|SuperAprendiz|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|81.69|SuperAprendiz|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|80.24|SuperAprendiz|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|81.69|SuperAprendiz|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|48.38|SuperAprendiz|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|69.33|SuperAprendiz|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|97.5|SuperAprendiz|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|97.56|SuperAprendiz|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|97.47|SuperAprendiz|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|97.56|SuperAprendiz|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|91.42|SuperAprendiz|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|96.05|SuperAprendiz|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 7, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.8, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 2, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 1, 'splitter': 'best'}, Estimador: Gradient, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.05, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 600, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}|SuperAprendiz|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|78.89|SuperAprendizdoscapas|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|81.94|SuperAprendizdoscapas|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|80.09|SuperAprendizdoscapas|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|81.94|SuperAprendizdoscapas|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|49.48|SuperAprendizdoscapas|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|69.44|SuperAprendizdoscapas|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|87.23|SuperAprendizdoscapas|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|91.34|SuperAprendizdoscapas|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|89.18|SuperAprendizdoscapas|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|91.34|SuperAprendizdoscapas|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|74.48|SuperAprendizdoscapas|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|85.5|SuperAprendizdoscapas|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Mejores Hiperparametros|Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 5, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 7, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.8, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 2, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 1, 'splitter': 'best'}|SuperAprendizdoscapas|Hiperparametros del modelo|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|75.09|RedNeuronal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|78.16|RedNeuronal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|75.94|RedNeuronal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|78.16|RedNeuronal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|40.8|RedNeuronal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|62.47|RedNeuronal|Prueba|INDUSTRIAL|SEGUNDO_SEMESTRE
+Precision|74.18|RedNeuronal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exhaustividad|78.02|RedNeuronal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Puntuacion F1|75.66|RedNeuronal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Exactitud|78.02|RedNeuronal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Informacion Mutua Normalizada (NMI)|41.45|RedNeuronal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Indice Kappa de Cohen|62.02|RedNeuronal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
+Hiperparametros|input_size=18, hidden_size=155, num_classes=5, num_epochs=100, learning_rate=0.0015|RedNeuronal|Entrenamiento|INDUSTRIAL|SEGUNDO_SEMESTRE
