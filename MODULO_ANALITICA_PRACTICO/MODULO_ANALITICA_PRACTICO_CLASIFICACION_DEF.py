@@ -20,19 +20,19 @@ from unidecode import unidecode
 
 from urllib.error import HTTPError
 
-from google.auth.transport.requests import Request
+from google.auth.transport.requests import Request as Resquest2
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 from googleapiclient.http import MediaIoBaseDownload
 
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, HTTPException
+from starlette.middleware.cors import CORSMiddleware
 from typing import List
 from pydantic import BaseModel
 import pickle 
 
-from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
@@ -62,66 +62,76 @@ import pandas as pd
 import pickle
 from sklearn.tree import DecisionTreeClassifier
 
-import torch
-import torch.nn as nn
-import torch.optim as optim
+# import torch
+# import torch.nn as nn
+# import torch.optim as optim
 # -------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 # CARGUE DE DATOS
 # -------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
-SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
+# SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
-creds = None
-if os.path.exists('token.json'):
-    creds = Credentials.from_authorized_user_file('token.json', SCOPES)
-if not creds or not creds.valid:
-    if creds and creds.expired and creds.refresh_token:
-        creds.refresh(Request())
-    else:
-        flow = InstalledAppFlow.from_client_secrets_file('C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/credentials.json', SCOPES) # Reemplazar con la ruta correcta
-        creds = flow.run_local_server(port=0)
-    with open('C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/token.json', 'w') as token:
-        token.write(creds.to_json())
+# creds = None
+
+# if os.path.exists('token.json'):
+#     creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+# if not creds or not creds.valid:
+#     if creds and creds.expired and creds.refresh_token:
+#         creds.refresh(Resquest2())
+#     else:
+#         flow = InstalledAppFlow.from_client_secrets_file('../credentials.json', SCOPES) # Reemplazar con la ruta correcta
+#         creds = flow.run_local_server(port=0)
+#     with open('../token.json', 'w') as token:
+#         token.write(creds.to_json())
         
-# Crear una instancia de la API de Drive
-drive_service = build('drive', 'v3', credentials=creds)
+# # Crear una instancia de la API de Drive
+# drive_service = build('drive', 'v3', credentials=creds)
 
-# ID de la carpeta de Google Drive
-folder_id = '1hQeetmO4XIObUefS_nzePqKqq3VksUEC'
+# # ID de la carpeta de Google Drive
+# folder_id = '1hQeetmO4XIObUefS_nzePqKqq3VksUEC'
 
-# Ruta de destino para guardar los archivos descargados
-save_path = 'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PRACTICO/DATOS'  # Reemplazar con la ruta deseada
+# # Ruta de destino para guardar los archivos descargados
+# cwd = os.getcwd()
+# save_path = os.path.join(cwd, 'DATOS')  # Reemplazar con la ruta deseada
 
-# Función para descargar archivos de la carpeta de Drive
-def download_folder(folder_id, save_path):
-    results = drive_service.files().list(
-        q=f"'{folder_id}' in parents and trashed=false",
-        fields='files(id, name)').execute()
-    items = results.get('files', [])
-    for item in items:
-        file_id = item['id']
-        file_name = item['name']
-        request = drive_service.files().get_media(fileId=file_id)
-        fh = io.FileIO(os.path.join(save_path, file_name), 'wb')
-        downloader = MediaIoBaseDownload(fh, request)
-        done = False
-        while done is False:
-            status, done = downloader.next_chunk()
-            print(f"Descargando {file_name}: {int(status.progress() * 100)}%")
-    print("Descarga completa")
+# # Función para descargar archivos de la carpeta de Drive
+# def download_folder(folder_id, save_path):
+#     results = drive_service.files().list(
+#         q=f"'{folder_id}' in parents and trashed=false",
+#         fields='files(id, name)').execute()
+#     items = results.get('files', [])
+#     for item in items:
+#         file_id = item['id']
+#         file_name = item['name']
+#         request = drive_service.files().get_media(fileId=file_id)
+#         fh = io.FileIO(os.path.join(save_path, file_name), 'wb')
+#         downloader = MediaIoBaseDownload(fh, request)
+#         done = False
+#         while done is False:
+#             status, done = downloader.next_chunk()
+#             print(f"Descargando {file_name}: {int(status.progress() * 100)}%")
+#     print("Descarga completa")
 
-# Descargar archivos de la carpeta
-download_folder(folder_id, save_path)
+# # Descargar archivos de la carpeta
+# download_folder(folder_id, save_path)
 
 # Listar archivos descargados
-files = os.listdir(save_path)
-print("Archivos descargados:")
-for file in files:
-    print(file)
+# files = os.listdir(save_path)
+# print("Archivos descargados:")
+# for file in files:
+#     print(file)
 
 app = FastAPI()
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"]
+)
+
 carrera = ""
 semestre = ""
 mejor_modelo = None
@@ -156,10 +166,12 @@ variables_por_carrera = {
         '2': ['variable4_catastral', 'variable5_catastral', 'variable6_catastral']
     }
 }
+
 class InputData(BaseModel):
     carrera: str
     semestre: str
     from sklearn.metrics import accuracy_score
+    
 @app.post("/procesar_datos/")
 async def procesar_datos(data: InputData):
     global carrera, semestre
