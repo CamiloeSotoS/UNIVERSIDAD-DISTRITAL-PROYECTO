@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "MODULO_ANALITICA_DESCRIPTIVA_VISUALIZACION"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "92dd7529-6c42-414b-8d21-7efd8f954319"
+  }
+}
