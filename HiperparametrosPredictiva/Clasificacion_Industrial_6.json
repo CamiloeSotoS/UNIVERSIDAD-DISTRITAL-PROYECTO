@@ -1,0 +1,1636 @@
+{
+  "dataTransformacion": [
+    {
+      "METRICA": "Precision",
+      "VALOR": 76.31,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 78.0,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 74.59,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 78.0,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 38.3,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 59.94,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 79.95,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 81.61,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 78.74,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 81.61,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 43.2,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 63.78,
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "algorithm: auto, leaf_size: 30, metric: manhattan, metric_params: None, n_jobs: None, n_neighbors: 9, p: 2, weights: uniform",
+      "MODELO": "KNeighbors",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 32.6,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 47.71,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 38.67,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 47.71,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 6.46,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": -10.0,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 40.1,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 55.18,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 46.43,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 55.18,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 3.94,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": -6.64,
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "C: 0.0008, break_ties: False, cache_size: 200, class_weight: None, coef0: 0.0, decision_function_shape: ovr, degree: 3, gamma: 0.95, kernel: sigmoid, max_iter: 1, probability: False, random_state: 1, shrinking: True, tol: 0.001, verbose: False",
+      "MODELO": "SVC",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 65.65,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 74.95,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 68.54,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 74.95,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 34.07,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 52.91,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 72.85,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 78.99,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 73.73,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 78.99,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 39.93,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 57.28,
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "ccp_alpha: 0.0, class_weight: None, criterion: gini, max_depth: 6, max_features: 4, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 6, min_samples_split: 2, min_weight_fraction_leaf: 0.0, monotonic_cst: None, random_state: 4, splitter: random",
+      "MODELO": "DecisionTree",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 76.46,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 58.39,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 65.62,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 58.39,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 30.63,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 38.48,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 77.45,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 61.72,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 67.98,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 61.72,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 29.79,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 38.93,
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "No tiene Hiperparametros",
+      "VALOR": "No tiene hiperparametros",
+      "MODELO": "NaiveBayes",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 75.12,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 76.03,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 73.59,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 76.03,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 38.26,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 57.1,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 75.85,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 77.31,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 74.59,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 77.31,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 38.37,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 56.0,
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "covariance_estimator: None, n_components: 1, priors: None, shrinkage: 0.5, solver: lsqr, store_covariance: False, tol: 0.001",
+      "MODELO": "LDA",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 74.95,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 77.78,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 74.05,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 77.78,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 38.66,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 59.05,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 100.0,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 100.0,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 100.0,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 100.0,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 100.0,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 100.0,
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "bootstrap: True, bootstrap_features: True, estimator: None, max_features: 0.75, max_samples: 0.75, n_estimators: 755, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False",
+      "MODELO": "Bagging",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 75.34,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 78.43,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 74.73,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 78.43,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 39.16,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 60.05,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 99.72,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 99.72,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 99.72,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 99.72,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 98.45,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 99.48,
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "bootstrap: True, ccp_alpha: 0.0, class_weight: None, criterion: gini, max_depth: None, max_features: sqrt, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 1, min_samples_split: 3, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False",
+      "MODELO": "RandomForest",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 72.37,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 77.12,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 70.9,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 77.12,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 36.7,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 56.25,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 84.61,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 82.63,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 78.5,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 82.63,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 47.69,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 64.3,
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "bootstrap: False, ccp_alpha: 0.0, class_weight: None, criterion: gini, max_depth: None, max_features: sqrt, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 4, min_samples_split: 9, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False",
+      "MODELO": "ExtraTrees",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 61.4,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 73.86,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 66.61,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 73.86,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 35.27,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 51.74,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 64.39,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 76.47,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 69.46,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 76.47,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 38.06,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 52.44,
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "algorithm: SAMME.R, estimator: None, learning_rate: 0.0005, n_estimators: 1, random_state: None",
+      "MODELO": "AdaBoost",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 71.85,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 74.73,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 72.42,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 74.73,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 31.6,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 53.87,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 94.73,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 94.49,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 94.17,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 94.49,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 79.13,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 89.44,
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "ccp_alpha: 0.0, criterion: friedman_mse, init: None, learning_rate: 0.01, loss: log_loss, max_depth: 3, max_features: None, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 1, min_samples_split: 2, min_weight_fraction_leaf: 0.0, n_estimators: 900, n_iter_no_change: None, random_state: None, subsample: 1.0, tol: 0.0001, validation_fraction: 0.1, verbose: 0, warm_start: False",
+      "MODELO": "GradientBoosting",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 75.98,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 76.69,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 71.35,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 76.69,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 35.44,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 54.87,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 88.98,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 87.77,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 86.11,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 87.77,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 58.98,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 75.24,
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "objective: multi:softprob, base_score: None, booster: None, callbacks: None, colsample_bylevel: None, colsample_bynode: None, colsample_bytree: 0.3, device: None, early_stopping_rounds: None, enable_categorical: False, eval_metric: None, feature_types: None, gamma: None, grow_policy: None, importance_type: None, interaction_constraints: None, learning_rate: None, max_bin: None, max_cat_threshold: None, max_cat_to_onehot: None, max_delta_step: None, max_depth: None, max_leaves: None, min_child_weight: None, missing: nan, monotone_constraints: None, multi_strategy: None, n_estimators: 7, n_jobs: None, num_parallel_tree: None, random_state: None, reg_alpha: 0.2, reg_lambda: 0.12, sampling_method: None, scale_pos_weight: None, subsample: None, tree_method: None, validate_parameters: None, verbosity: None, loss: log_loss, max_features: sqrt",
+      "MODELO": "XGB",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 70.2,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 76.47,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 71.35,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 76.47,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 35.03,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 55.6,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 77.48,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 80.58,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 75.58,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 80.58,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 42.2,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 59.86,
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "learning_rate: 0.01, depth: 6, l2_leaf_reg: 42, border_count: 53, thread_count: 4, verbose: 0",
+      "MODELO": "CatBoost",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 72.14,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 75.38,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 72.93,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 75.38,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 34.66,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 55.41,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 100.0,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 100.0,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 100.0,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 100.0,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 100.0,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 100.0,
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "boosting_type: gbdt, class_weight: None, colsample_bytree: 0.6, importance_type: split, learning_rate: 0.1, max_depth: -1, min_child_samples: 1, min_child_weight: 0.001, min_split_gain: 0.0, n_estimators: 100, n_jobs: None, num_leaves: 31, objective: multiclass, random_state: 42, reg_alpha: 0.0, reg_lambda: 0.0, subsample: 1.0, subsample_for_bin: 200000, subsample_freq: 0, verbose: -1",
+      "MODELO": "LGBM",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 76.0,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 76.47,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 71.25,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 76.47,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 35.06,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 55.89,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 90.74,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 89.54,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 88.33,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 89.54,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 65.55,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 79.5,
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "Estimador: Gradient, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.01, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 900, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}, Estimador: Adaboost, Hiperparametros: {'algorithm': 'SAMME.R', 'estimator': None, 'learning_rate': 0.0005, 'n_estimators': 1, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 4, 'min_samples_split': 9, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.75, 'n_estimators': 755, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 4, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}, Estimador: XGB, Hiperparametros: {'objective': 'multi:softprob', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.3, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': None, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 7, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': 0.2, 'reg_lambda': 0.12, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': None, 'validate_parameters': None, 'verbosity': None, 'loss': 'log_loss', 'max_features': 'sqrt'}",
+      "MODELO": "VotingHard",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 72.67,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 76.25,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 70.37,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 76.25,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 35.75,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 55.07,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 90.94,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 89.82,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 88.88,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 89.82,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 65.43,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 80.08,
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "Estimador: Gradient, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.01, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 900, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}, Estimador: Adaboost, Hiperparametros: {'algorithm': 'SAMME.R', 'estimator': None, 'learning_rate': 0.0005, 'n_estimators': 1, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 4, 'min_samples_split': 9, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.75, 'n_estimators': 755, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 4, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}",
+      "MODELO": "VotingSoft",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 74.07,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 77.56,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 74.2,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 77.56,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 36.37,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 58.56,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 94.64,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 95.24,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 94.78,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 95.24,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 81.29,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 91.04,
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "Estimador: Adaboost, Hiperparametros: {'algorithm': 'SAMME.R', 'estimator': None, 'learning_rate': 0.0005, 'n_estimators': 1, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 4, 'min_samples_split': 9, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.75, 'n_estimators': 755, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 4, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}",
+      "MODELO": "StackingLineal",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 73.12,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 78.87,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 74.73,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 78.87,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 40.14,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 61.48,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 88.46,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 87.68,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 85.16,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 87.68,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 60.23,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 75.58,
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 4, 'min_samples_split': 9, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.75, 'n_estimators': 755, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 4, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}",
+      "MODELO": "Stackingnolineal",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 73.92,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 75.82,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 72.84,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 75.82,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 37.76,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 56.13,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 87.55,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 86.74,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 85.94,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 86.74,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 62.21,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 74.59,
+      "MODELO": "VotingWeighted",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 71.77,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 75.82,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 72.59,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 75.82,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 35.96,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 55.89,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 82.75,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 85.43,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 82.96,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 85.43,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 55.48,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 71.25,
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 4, 'min_samples_split': 9, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.75, 'n_estimators': 755, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 4, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}, Estimador: Gradient, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.01, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 900, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}",
+      "MODELO": "SuperAprendiz",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 70.49,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 77.34,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 72.68,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 77.34,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 37.51,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 57.91,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 83.69,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 88.52,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 85.72,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 88.52,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 63.5,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 77.78,
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Mejores Hiperparametros",
+      "VALOR": "Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 4, 'min_samples_split': 9, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 3, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.75, 'n_estimators': 755, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 6, 'max_features': 4, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 6, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}",
+      "MODELO": "SuperAprendizdoscapas",
+      "TIPO_DE_DATOS": "Hiperparametros del modelo"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 73.75,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 76.91,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 72.88,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 76.91,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 35.24,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 56.72,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Prueba"
+    },
+    {
+      "METRICA": "Precision",
+      "VALOR": 76.53,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exhaustividad",
+      "VALOR": 79.74,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Puntuacion F1",
+      "VALOR": 75.44,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Exactitud",
+      "VALOR": 79.74,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Informacion Mutua Normalizada (NMI)",
+      "VALOR": 39.64,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Indice Kappa de Cohen",
+      "VALOR": 58.44,
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    },
+    {
+      "METRICA": "Hiperparametros",
+      "VALOR": "input_size=14, hidden_size=155, num_classes=5, num_epochs=100, learning_rate=0.0015",
+      "MODELO": "RedNeuronal",
+      "TIPO_DE_DATOS": "Entrenamiento"
+    }
+  ]
+}

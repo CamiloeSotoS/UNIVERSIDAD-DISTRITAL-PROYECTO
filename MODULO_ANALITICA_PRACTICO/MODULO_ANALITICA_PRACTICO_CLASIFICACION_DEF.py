@@ -93,7 +93,7 @@ from sklearn.tree import DecisionTreeClassifier
 # folder_id = '1hQeetmO4XIObUefS_nzePqKqq3VksUEC'
 
 # # Ruta de destino para guardar los archivos descargados
-# cwd = os.getcwd()
+
 # save_path = os.path.join(cwd, 'DATOS')  # Reemplazar con la ruta deseada
 
 # # Función para descargar archivos de la carpeta de Drive
@@ -123,7 +123,10 @@ from sklearn.tree import DecisionTreeClassifier
 # for file in files:
 #     print(file)
 
+cwd = os.getcwd()
+
 app = FastAPI()
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -194,8 +197,12 @@ def predict(data: dict):
         raise HTTPException(status_code=404, detail="No hay modelo entrenado")
     
 def cargar_datos(carrera, semestre):
-    ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PRACTICO/DATOS/{carrera}{semestre}.csv'
-    datos = pd.read_csv(ruta_archivo, sep=";")
+    # ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PRACTICO/DATOS/{carrera}{semestre}.csv'
+    # datos = pd.read_csv(ruta_archivo, sep=";")
+    # return datos
+    file = f'DATOS/{carrera}{semestre}.csv'
+    ruta_archivo = os.path.join(cwd, file)
+    datos = pd.read_csv(ruta_archivo,sep=";")
     return datos
 
 def transformacion_johnson(X):
@@ -297,7 +304,6 @@ def cargar_entrenar_modelo():
     except Exception as e:
         print("Error al cargar y entrenar el modelo:", e)
         
-
 def entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = {
         'n_neighbors': [i for i in range(1, 18, 1)],
@@ -345,7 +351,6 @@ def entrenar_modelo_svc_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     predictions = mejor_modelo.predict(X_tst)
     accuracy = (predictions == Y_tst).mean() 
     return mejor_modelo, accuracy
-
     
 def entrenar_modelo_tree_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = {          
@@ -462,7 +467,6 @@ def entrenar_modelo_random_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     predictions = mejor_modelo.predict(X_tst)
     accuracy = (predictions == Y_tst).mean()
     return mejor_modelo, accuracy,mejores_hiperparametros_random
-
 
 def entrenar_modelo_extra_con_transformacion(X_trn, Y_trn, X_tst, Y_tst):
     parameters = {'min_samples_split' : [i for i in range(1,10,1)], 
