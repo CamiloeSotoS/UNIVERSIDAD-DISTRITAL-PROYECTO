@@ -1,0 +1,3912 @@
+{
+  "compatibilityLevel": 1550,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"MODULO_ANALITICA_DESCRIPTIVA_DATOS\",\"Medidas\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.128.1177.0 (24.04)"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DevMode\"]"
+      }
+    ],
+    "culture": "es-CO",
+    "cultures": [
+      {
+        "name": "es-CO",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "es-CO",
+    "tables": [
+      {
+        "name": "MODULO_ANALITICA_DESCRIPTIVA_DATOS",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navegación"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "NUMERO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7155501a-46c1-470c-b060-6e313b031fa2",
+            "sourceColumn": "NUMERO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "338bea2c-0451-463d-8513-6c794367cc12",
+            "sourceColumn": "ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "GENERO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "6e917585-8d7d-4f0a-8a57-a04048e74325",
+            "sourceColumn": "GENERO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "TIPO_COLEGIO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2eac7835-bcc9-4542-8ef4-58f372cc56f6",
+            "sourceColumn": "TIPO_COLEGIO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "LOCALIDAD_COLEGIO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "64376a3b-0f9d-402b-90e8-b536992ff2e5",
+            "sourceColumn": "LOCALIDAD_COLEGIO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "CALENDARIO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c078f6ae-77a0-4b7f-993a-07fb6f5f381c",
+            "sourceColumn": "CALENDARIO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "MUNICIPIO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8095bc2a-0838-4f7c-8bd3-ce8bdf1a50f5",
+            "sourceColumn": "MUNICIPIO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "DEPARTAMENTO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "debea7ce-d978-43e3-9d51-468d48506cf1",
+            "sourceColumn": "DEPARTAMENTO",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "PG_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6dc56e4c-d8bd-4964-bd2e-080302dc4a3d",
+            "sourceColumn": "PG_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CON_MAT_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "38bc7952-35e6-4197-aa0e-e19154531901",
+            "sourceColumn": "CON_MAT_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "APT_MAT_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f7c89f39-13d8-4585-a7f3-8f9b5482e5ee",
+            "sourceColumn": "APT_MAT_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "FISICA_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4c676dfd-fcde-4e1e-ab4b-f8a2e66a9079",
+            "sourceColumn": "FISICA_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "QUIMICA_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2add2813-787f-4f0e-a550-041f6a0f4d7f",
+            "sourceColumn": "QUIMICA_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "APT_VERB_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a5736bad-0a52-48d5-a1ea-36cfe4ba5a08",
+            "sourceColumn": "APT_VERB_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "LITERATURA_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "80273086-d489-488e-b84d-ebb60f28acdd",
+            "sourceColumn": "LITERATURA_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "BIOLOGIA_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c83a3886-c455-4349-9059-ba74f4d5130c",
+            "sourceColumn": "BIOLOGIA_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "SOCIALES_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ed83c0d7-269f-4d8d-bd7d-095ede4b29b1",
+            "sourceColumn": "SOCIALES_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "FILOSOFIA_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4b6b89a5-2ab4-455a-93ab-4126961ccdbc",
+            "sourceColumn": "FILOSOFIA_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "IDIOMA_ICFES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "81f726dc-3a31-4257-8e9d-883b844ba624",
+            "sourceColumn": "IDIOMA_ICFES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "LOCALIDAD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9b6df138-72e7-4e20-b450-27211251e93d",
+            "sourceColumn": "LOCALIDAD",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "INSCRIPCION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "38b003b6-b38c-4ae9-a676-8c596f982d9a",
+            "sourceColumn": "INSCRIPCION",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ESTRATO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d1c1bc0f-034e-46c0-9938-767328c03254",
+            "sourceColumn": "ESTRATO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ANO_INGRESO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b7438173-9545-4f7e-a609-f15f882b5a87",
+            "sourceColumn": "ANO_INGRESO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CORTE_INGRESO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f1b51a9c-67ce-4c09-a434-7b7cd2a82071",
+            "sourceColumn": "CORTE_INGRESO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "ESTADO_FINAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "051b6407-bc3d-479c-a523-d4c3252e22f0",
+            "sourceColumn": "ESTADO_FINAL",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "NOTA_DIFERENCIAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a0844232-b082-486d-bc1d-f1408d5d2ec7",
+            "sourceColumn": "NOTA_DIFERENCIAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_DIFERENCIAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f2bf07ef-e6e6-4091-9579-7d64833dfd91",
+            "sourceColumn": "VECES_DIFERENCIAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_DIFERENCIAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e6324fe9-05eb-48a0-99b6-c2d125ba3509",
+            "sourceColumn": "CREDITOS_DIFERENCIAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_DIBUJO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "afc4723e-b2be-422f-ad59-5e6449b2d92a",
+            "sourceColumn": "NOTA_DIBUJO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_DIBUJO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "316e84f9-e8c8-4ea1-8c80-0f511191f7c2",
+            "sourceColumn": "VECES_DIBUJO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_DIBUJO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "74b7da2e-d986-41ec-a8a8-dc5fc5362c20",
+            "sourceColumn": "CREDITOS_DIBUJO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_QUIMICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ab38115d-217b-4187-88f6-353effd5612d",
+            "sourceColumn": "NOTA_QUIMICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_QUIMICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bb2b3070-3d0d-45b6-a5fd-46b16a1ae2b7",
+            "sourceColumn": "VECES_QUIMICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_QUIMICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1fe381e2-61ea-48db-9d21-7ba60d9d84a0",
+            "sourceColumn": "CREDITOS_QUIMICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_CFJC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "92ce4c2f-e28b-447f-830f-b2b8acfc59f7",
+            "sourceColumn": "NOTA_CFJC",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_CFJC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9344689f-9b21-4c7d-be46-16abbdc9b9f1",
+            "sourceColumn": "VECES_CFJC",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_CFJC",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "aced94b4-cd98-4963-b9c9-04ceda5226ea",
+            "sourceColumn": "CREDITOS_CFJC",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_TEXTOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6b362807-3a6d-4abe-8353-54e8e577e6f6",
+            "sourceColumn": "NOTA_TEXTOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_TEXTOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "18a1faee-0552-4d45-814a-8180ec9bf854",
+            "sourceColumn": "VECES_TEXTOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_TEXTOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2ea65f75-d0b1-4405-b84e-75ba3213474c",
+            "sourceColumn": "CREDITOS_TEXTOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_SEMINARIO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "48dbb0ca-0de1-45a3-92f7-5e58dc816534",
+            "sourceColumn": "NOTA_SEMINARIO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_SEMINARIO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8a61924b-fcdc-42eb-befb-6811e52847d5",
+            "sourceColumn": "VECES_SEMINARIO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_SEMINARIO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "acc57870-effe-4da3-90df-e7244c3385da",
+            "sourceColumn": "CREDITOS_SEMINARIO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EE_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "74ebd4d6-3692-474a-9239-487582fb259c",
+            "sourceColumn": "NOTA_EE_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EE_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e4a44577-c1af-4b53-a0d3-c32e12514828",
+            "sourceColumn": "VECES_EE_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EE_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9465597f-54a8-4219-8c80-ca68f7a654d0",
+            "sourceColumn": "CREDITOS_EE_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_ALGEBRA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6f4242fe-083a-42ac-bb0b-a9074ce766db",
+            "sourceColumn": "NOTA_ALGEBRA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_ALGEBRA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "59190bcf-8afb-4520-88a1-2905e4e86df8",
+            "sourceColumn": "VECES_ALGEBRA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_ALGEBRA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cc9835e7-f467-4325-bbaf-89d6a314629d",
+            "sourceColumn": "CREDITOS_ALGEBRA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_INTEGRAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "00a67779-a50f-452c-9e15-5f4027b0c5cb",
+            "sourceColumn": "NOTA_INTEGRAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_INTEGRAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "af2e21bc-3125-4851-b3ac-7d7e890bc8a2",
+            "sourceColumn": "VECES_INTEGRAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_INTEGRAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e2ee0218-7eb7-4849-af8e-bf4af8041758",
+            "sourceColumn": "CREDITOS_INTEGRAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_FISICA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2feec975-279f-47f6-b6f8-12e7c5a31c80",
+            "sourceColumn": "NOTA_FISICA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_FISICA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a48ec53c-13f3-4832-87c2-324974779a20",
+            "sourceColumn": "VECES_FISICA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_FISICA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7543279e-b399-4a55-8912-ab23bebeec44",
+            "sourceColumn": "CREDITOS_FISICA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_MATERIALES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "44ee6845-3d55-4e9a-ad3e-d92feba6a608",
+            "sourceColumn": "NOTA_MATERIALES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_MATERIALES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9bc02245-97d8-4e24-9efa-bf61146bab11",
+            "sourceColumn": "VECES_MATERIALES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_MATERIALES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "73291265-9982-4d65-8b26-ecd036b43443",
+            "sourceColumn": "CREDITOS_MATERIALES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_DEMOCRACIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d6297fdb-74c6-46c8-908b-85a29470a845",
+            "sourceColumn": "NOTA_DEMOCRACIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_DEMOCRACIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b0cde845-7884-456b-b554-c57a3873233b",
+            "sourceColumn": "VECES_DEMOCRACIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_DEMOCRACIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0d919f14-48fc-4f06-8235-d883769bb5ba",
+            "sourceColumn": "CREDITOS_DEMOCRACIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_PBASICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d884b405-da39-4f7f-a15f-5829c0fb5d3a",
+            "sourceColumn": "NOTA_PBASICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_PBASICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "272a4814-3408-4e5a-b724-5547dee0fc8a",
+            "sourceColumn": "VECES_PBASICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_PBASICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8581b6ad-f854-483a-8f72-8032635ea931",
+            "sourceColumn": "CREDITOS_PBASICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EE_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1e822365-664c-48d8-a858-02f185c65001",
+            "sourceColumn": "NOTA_EE_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EE_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c725d708-4ccd-4c92-ac00-a466fc030568",
+            "sourceColumn": "VECES_EE_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EE_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "458a9d83-ee51-4e5a-88aa-ca82b74c7338",
+            "sourceColumn": "CREDITOS_EE_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_MULTIVARIADO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "795d31b3-e160-48ba-b994-185b6e343b58",
+            "sourceColumn": "NOTA_MULTIVARIADO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_MULTIVARIADO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fb50384c-c516-4771-a962-7d096f66e6a0",
+            "sourceColumn": "VECES_MULTIVARIADO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_MULTIVARIADO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d13d17c0-6e53-4d11-a930-4f2d92b46f5a",
+            "sourceColumn": "CREDITOS_MULTIVARIADO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_ESTADISTICA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4676ecf2-cdbf-4883-bf98-0dc90e75531d",
+            "sourceColumn": "NOTA_ESTADISTICA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_ESTADISTICA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9cffae14-e7f5-45d8-873f-44d0fd5b41a1",
+            "sourceColumn": "VECES_ESTADISTICA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_ESTADISTICA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4a4880a3-15f6-4a1e-9a1f-9a6a2838cb32",
+            "sourceColumn": "CREDITOS_ESTADISTICA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_TERMODINAMICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "68ce8bd8-e91f-4c5f-a5b6-0ec9117f8823",
+            "sourceColumn": "NOTA_TERMODINAMICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_TERMODINAMICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "175ba503-5270-4e52-96d4-96cfb2309f76",
+            "sourceColumn": "VECES_TERMODINAMICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_TERMODINAMICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "df1165db-5662-4381-b98b-b978b32959da",
+            "sourceColumn": "CREDITOS_TERMODINAMICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_TGS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5706100e-bdd1-4cb9-8c72-568ac1899475",
+            "sourceColumn": "NOTA_TGS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_TGS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b898a2c2-d58c-4b4d-a229-0c6cb2193f66",
+            "sourceColumn": "VECES_TGS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_TGS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1d42c403-c68e-4932-9b90-a578200c3db4",
+            "sourceColumn": "CREDITOS_TGS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_ETICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b3d249af-46a7-4e39-8d2f-835049332584",
+            "sourceColumn": "NOTA_ETICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_ETICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1d620d5b-a5b8-453c-a7b1-02091d5c71db",
+            "sourceColumn": "VECES_ETICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_ETICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1359137f-b219-4eb9-b2b3-357ce3bae79f",
+            "sourceColumn": "CREDITOS_ETICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_PORIENTADA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a99396a8-e492-41a4-912b-57279a93d079",
+            "sourceColumn": "NOTA_PORIENTADA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_PORIENTADA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "45acc505-f355-4cda-905f-504313151946",
+            "sourceColumn": "VECES_PORIENTADA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_PORIENTADA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "976baf0f-b0df-4c6d-97dc-9e9e6c92f562",
+            "sourceColumn": "CREDITOS_PORIENTADA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EE_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "33104b57-b7cb-4d98-8f5a-694a238cd095",
+            "sourceColumn": "NOTA_EE_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EE_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "976197b0-201d-48fb-87ec-dffebde54a31",
+            "sourceColumn": "VECES_EE_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EE_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cd22089d-3d74-491f-bf98-672d53bab623",
+            "sourceColumn": "CREDITOS_EE_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_ECONOMIA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ee0d56ef-eba5-494c-ae0b-5c76dc02a07c",
+            "sourceColumn": "NOTA_ECONOMIA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_ECONOMIA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c3819603-173c-4dcb-948b-4adca748d9da",
+            "sourceColumn": "VECES_ECONOMIA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_ECONOMIA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1d4ffc48-a855-4a66-9c34-5f0fa542cd10",
+            "sourceColumn": "CREDITOS_ECONOMIA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_ECUACIONES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d7a18899-0f4d-4780-a73f-a984bf12151a",
+            "sourceColumn": "NOTA_ECUACIONES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_ECUACIONES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6267f0ef-6c21-4b84-aa00-13351e1aa33a",
+            "sourceColumn": "VECES_ECUACIONES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_ECUACIONES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a557ce51-1089-41c4-a1e0-252dc46d6930",
+            "sourceColumn": "CREDITOS_ECUACIONES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_ESTADISTICA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "86491920-b567-4fb4-ac55-0869b6cfb6d0",
+            "sourceColumn": "NOTA_ESTADISTICA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_ESTADISTICA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f2d94f27-4763-4f2b-bb43-9d291e840ef8",
+            "sourceColumn": "VECES_ESTADISTICA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_ESTADISTICA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3124a93b-3844-4a58-af36-9b321dabd7b6",
+            "sourceColumn": "CREDITOS_ESTADISTICA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_FISICA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "78331e57-a085-4ec1-93f2-537dc1c0bb89",
+            "sourceColumn": "NOTA_FISICA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_FISICA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "97d677d3-0f88-463b-a93c-f767baf86aeb",
+            "sourceColumn": "VECES_FISICA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_FISICA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "77f8a9c1-6f2e-42fe-800b-f88f410787a6",
+            "sourceColumn": "CREDITOS_FISICA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_MECANICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b69a16cf-7ee7-443d-85ca-6c1047672b6b",
+            "sourceColumn": "NOTA_MECANICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_MECANICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f3fa1d2b-c6ed-4a33-a82d-179d97713d0e",
+            "sourceColumn": "VECES_MECANICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_MECANICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "34a4c450-591c-42c9-990c-96c8d50c71f5",
+            "sourceColumn": "CREDITOS_MECANICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_PROCESOSQ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6e0f7e20-2143-4c5d-9057-451025d25587",
+            "sourceColumn": "NOTA_PROCESOSQ",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_PROCESOSQ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b072af2c-1e99-4c34-9f00-da154325e3e1",
+            "sourceColumn": "VECES_PROCESOSQ",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_PROCESOSQ",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a86570d8-cbcf-4182-b6ac-c651e5bf128c",
+            "sourceColumn": "CREDITOS_PROCESOSQ",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EE_CUATRO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "66e35aa2-0b13-4406-a267-63590f6b4fb3",
+            "sourceColumn": "NOTA_EE_CUATRO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EE_CUATRO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9230ef2f-3b7d-4b4c-93b1-a4eb4968de07",
+            "sourceColumn": "VECES_EE_CUATRO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EE_CUATRO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6a4c4c78-e516-42f8-9e0f-4ec7603ff16d",
+            "sourceColumn": "CREDITOS_EE_CUATRO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_METODOLOGIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5f2bedac-cb6b-42d1-bdcb-79c404cc9dc1",
+            "sourceColumn": "NOTA_METODOLOGIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_METODOLOGIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d09b76fa-6e25-41ef-99a1-d90810f2014c",
+            "sourceColumn": "VECES_METODOLOGIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_METODOLOGIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6a1db854-1978-4923-b4e3-64fe9dd44f85",
+            "sourceColumn": "CREDITOS_METODOLOGIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_FISICA_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4b7963a7-583e-4425-832d-17ee1f37722c",
+            "sourceColumn": "NOTA_FISICA_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_FISICA_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8b4857a8-87b0-416b-aa96-db9ab91b11ac",
+            "sourceColumn": "VECES_FISICA_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_FISICA_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1ba99235-d446-4109-9835-649b33671b46",
+            "sourceColumn": "CREDITOS_FISICA_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_CONTABILIDAD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6986aed7-1005-4ef0-b082-5f962f01767c",
+            "sourceColumn": "NOTA_CONTABILIDAD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_CONTABILIDAD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "43f0ed26-2cab-4eed-aaf4-032be42c7178",
+            "sourceColumn": "VECES_CONTABILIDAD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_CONTABILIDAD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "df763324-e854-4b6b-b73f-932300b01470",
+            "sourceColumn": "CREDITOS_CONTABILIDAD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_PROCESOSM",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "411bd9c4-eb98-449e-8e84-c656c98d0154",
+            "sourceColumn": "NOTA_PROCESOSM",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_PROCESOSM",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "aed1ee01-e3d4-4003-b28a-2f4e6aa48fe0",
+            "sourceColumn": "VECES_PROCESOSM",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_PROCESOSM",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "50fe24ff-979a-498e-80b7-04b4e2cdddad",
+            "sourceColumn": "CREDITOS_PROCESOSM",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_ADMINISTRACION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "746c6f5b-4ae9-45e7-8487-3f7cb7d46038",
+            "sourceColumn": "NOTA_ADMINISTRACION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_ADMINISTRACION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e4aef5f8-65e1-4da8-a756-a92253e914fb",
+            "sourceColumn": "VECES_ADMINISTRACION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_ADMINISTRACION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f3bb879b-fa5d-4ac8-b058-d80ee1a7a319",
+            "sourceColumn": "CREDITOS_ADMINISTRACION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_LENGUA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "573aa30d-c7e3-4ade-b1f8-beb9338649ee",
+            "sourceColumn": "NOTA_LENGUA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_LENGUA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8d5ccd0f-bc90-474c-a4d3-69f830b9a21c",
+            "sourceColumn": "VECES_LENGUA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_LENGUA_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c39e7ae8-cdc8-41d9-828d-9422d8391283",
+            "sourceColumn": "CREDITOS_LENGUA_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EI_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "41d60f7b-bdeb-4ff9-9f65-965cb031dc84",
+            "sourceColumn": "NOTA_EI_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EI_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "28c900d4-9e2a-4436-aa77-7f068a29d7b5",
+            "sourceColumn": "VECES_EI_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EI_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "04c14aa7-bbc8-49ae-aad7-e562b8ae006d",
+            "sourceColumn": "CREDITOS_EI_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EI_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "151abcb4-55ec-47e6-aa81-e204a463353f",
+            "sourceColumn": "NOTA_EI_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EI_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7cabf326-e5f3-4504-b4f1-daed241fa985",
+            "sourceColumn": "VECES_EI_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EI_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "226810da-a4f2-4ce1-ace0-d944ffd3ee77",
+            "sourceColumn": "CREDITOS_EI_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_ECONOMIA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7f504ed9-7d7b-48f6-96fc-a958d6b1706d",
+            "sourceColumn": "NOTA_ECONOMIA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_ECONOMIA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "666fbebd-109e-48f1-8e2a-28789ac5f985",
+            "sourceColumn": "VECES_ECONOMIA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_ECONOMIA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "96e27ef2-d2c5-41bc-8984-8e155fc5c748",
+            "sourceColumn": "CREDITOS_ECONOMIA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_PLINEAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "69bd9c3b-0d9c-47ba-8c61-840f2191a05d",
+            "sourceColumn": "NOTA_PLINEAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_PLINEAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5c69faf1-5f4f-4b2d-8a93-3772188cff84",
+            "sourceColumn": "VECES_PLINEAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_PLINEAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "698b1eb2-a55a-49b4-80a7-1a26017dd1d0",
+            "sourceColumn": "CREDITOS_PLINEAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_DERECHO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "339d130e-fa29-4cb8-92c6-a3e0f7f98d32",
+            "sourceColumn": "NOTA_DERECHO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_DERECHO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ba35fb9c-7812-4c58-b4c8-d851b3b7d460",
+            "sourceColumn": "VECES_DERECHO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_DERECHO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eeec1944-780a-4828-b733-f9a87ebb97d5",
+            "sourceColumn": "CREDITOS_DERECHO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_IECONOMICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "518f1d6d-b77e-4c2e-ae93-c0f22d123b66",
+            "sourceColumn": "NOTA_IECONOMICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_IECONOMICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0c0becd4-f3cc-4c23-afec-eba26f0ecd70",
+            "sourceColumn": "VECES_IECONOMICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_IECONOMICA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1f04758e-bf23-4589-aa64-f7b70c28bb9b",
+            "sourceColumn": "CREDITOS_IECONOMICA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_DISENO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "52fcb42b-c0da-40f7-8934-91fd19eee8ce",
+            "sourceColumn": "NOTA_DISENO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_DISENO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c3bbb478-e3e2-4cd3-9655-3ee4f192ae40",
+            "sourceColumn": "VECES_DISENO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_DISENO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "86781f5a-eaa8-44c4-8317-d5baafcce69d",
+            "sourceColumn": "CREDITOS_DISENO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_METODOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e906de57-5d26-4c75-9011-563f551138be",
+            "sourceColumn": "NOTA_METODOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_METODOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c7b61b16-6ce0-43d0-9e68-be32ec838bc6",
+            "sourceColumn": "VECES_METODOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_METODOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d03a7608-dd96-41db-8dce-2283fbc41110",
+            "sourceColumn": "CREDITOS_METODOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_SEGURIDAD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b33e87b0-7e26-4be4-b9c4-513b5edd2427",
+            "sourceColumn": "NOTA_SEGURIDAD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_SEGURIDAD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c129efdf-7cc1-4a3b-b0ea-2ec0ad22c9e7",
+            "sourceColumn": "VECES_SEGURIDAD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_SEGURIDAD",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9acb21de-fce3-4fcf-9e1a-612e24a3e48a",
+            "sourceColumn": "CREDITOS_SEGURIDAD",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EI_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "41057a03-f051-481c-a590-b15a95e361a9",
+            "sourceColumn": "NOTA_EI_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EI_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4c13494e-97df-4f02-91a3-a80817967959",
+            "sourceColumn": "VECES_EI_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EI_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ec6a54f4-3af1-4b0b-8067-95f9196c7fb0",
+            "sourceColumn": "CREDITOS_EI_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EMPRENDIMIENTO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c6b8c227-bb33-41ab-9145-af2a064b6fc8",
+            "sourceColumn": "NOTA_EMPRENDIMIENTO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EMPRENDIMIENTO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "876d79e1-351e-4d3e-b6d4-150c68f86a7f",
+            "sourceColumn": "VECES_EMPRENDIMIENTO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EMPRENDIMIENTO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9e7b4c98-b01a-43f3-87d6-ee1f6618fb15",
+            "sourceColumn": "CREDITOS_EMPRENDIMIENTO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_GRAFOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "33d00a4d-28f6-4e9b-83f7-649234f97b94",
+            "sourceColumn": "NOTA_GRAFOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_GRAFOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ce923ff3-82e5-4785-b893-7bfba7ed7e2c",
+            "sourceColumn": "VECES_GRAFOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_GRAFOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "008a6192-e558-49ef-bec0-31245ce5175e",
+            "sourceColumn": "CREDITOS_GRAFOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_CALIDAD_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a3e6cb49-d596-43e6-871b-3ceb269b6c6b",
+            "sourceColumn": "NOTA_CALIDAD_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_CALIDAD_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c4ecc53a-7e80-4c83-8be7-a16cb6d94e53",
+            "sourceColumn": "VECES_CALIDAD_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_CALIDAD_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "502d4a8f-0cdc-4a34-9a38-bdf63c785747",
+            "sourceColumn": "CREDITOS_CALIDAD_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_MERCADOTECNIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "570b2b05-8b94-4e25-9ace-a06d3fc22221",
+            "sourceColumn": "NOTA_MERCADOTECNIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_MERCADOTECNIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "6c2c6627-341a-4ae7-83ea-2a60fe6c5342",
+            "sourceColumn": "VECES_MERCADOTECNIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_MERCADOTECNIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e078a886-47ac-4373-b964-6f17f9948e2d",
+            "sourceColumn": "CREDITOS_MERCADOTECNIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_ERGONOMIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d200f983-ddc3-4116-88b2-392aee64bcbc",
+            "sourceColumn": "NOTA_ERGONOMIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_ERGONOMIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ddceb9c0-4446-49bc-87e0-21f7ae1a7286",
+            "sourceColumn": "VECES_ERGONOMIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_ERGONOMIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "2b7b5f50-76ba-47b0-94b7-b426d2ec28ee",
+            "sourceColumn": "CREDITOS_ERGONOMIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_HOMBRE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0200870c-a641-4c21-9d0b-d0f013be06af",
+            "sourceColumn": "NOTA_HOMBRE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_HOMBRE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eca6ed74-4a5b-4c8d-a99f-abc90fb71929",
+            "sourceColumn": "VECES_HOMBRE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_HOMBRE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e1d34453-4027-4a4b-bdb0-1499c0a4d89c",
+            "sourceColumn": "CREDITOS_HOMBRE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EI_CUATRO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0c5fbb49-84d6-4915-98f0-00a5df27b035",
+            "sourceColumn": "NOTA_EI_CUATRO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EI_CUATRO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "368aba94-cfbb-41e2-9755-eb58d5ebcdcf",
+            "sourceColumn": "VECES_EI_CUATRO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EI_CUATRO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "3f9c0277-71ef-4f09-8c93-eb1e1438e5b2",
+            "sourceColumn": "CREDITOS_EI_CUATRO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EI_CINCO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c274e615-07e0-4272-9d50-f27f7c375ba5",
+            "sourceColumn": "NOTA_EI_CINCO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EI_CINCO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "51a4489d-e1e5-4edc-ae1e-ed088c763c8f",
+            "sourceColumn": "VECES_EI_CINCO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EI_CINCO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7e13e1e2-6768-4916-b9cb-276074718eb3",
+            "sourceColumn": "CREDITOS_EI_CINCO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_LOG_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "31d9e3f1-86dc-4e4e-96d6-cfec97d2a4d6",
+            "sourceColumn": "NOTA_LOG_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_LOG_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "09a3846b-bc8c-48b8-8a92-4fb2308dd682",
+            "sourceColumn": "VECES_LOG_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_LOG_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "53ce89e7-88a3-4690-81fe-ccd88beb3c4d",
+            "sourceColumn": "CREDITOS_LOG_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_GOPERACIONES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e95df898-85e1-465a-8817-1ef7b4023468",
+            "sourceColumn": "NOTA_GOPERACIONES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_GOPERACIONES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "cbf48abb-b3b5-4d0e-880b-b299d8a9f057",
+            "sourceColumn": "VECES_GOPERACIONES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_GOPERACIONES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "df81bc40-3d6e-4418-a0d5-4a99b197fe07",
+            "sourceColumn": "CREDITOS_GOPERACIONES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_CALIDAD_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7f3f4a35-e3c7-48f5-884d-c1db9af907fe",
+            "sourceColumn": "NOTA_CALIDAD_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_CALIDAD_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f5b6714d-f41a-4c5c-9b75-5ff0dbab4fad",
+            "sourceColumn": "VECES_CALIDAD_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_CALIDAD_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "836446fc-060c-4131-9e15-2de01f7296ad",
+            "sourceColumn": "CREDITOS_CALIDAD_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_GAMBIENTAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a0969c17-0084-4612-aadf-37d535a45bf9",
+            "sourceColumn": "NOTA_GAMBIENTAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_GAMBIENTAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ae79a0b0-116d-4465-b03e-bf625442bf0b",
+            "sourceColumn": "VECES_GAMBIENTAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_GAMBIENTAL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "96c47ee5-5506-4369-86ee-0a00e3046ff5",
+            "sourceColumn": "CREDITOS_GAMBIENTAL",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_LENGUA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "10b77732-3f89-44ee-801a-c3e74ad114ae",
+            "sourceColumn": "NOTA_LENGUA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_LENGUA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1f4f49e5-4363-4076-85dc-c2805795ac2b",
+            "sourceColumn": "VECES_LENGUA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_LENGUA_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e2ff38c1-a2c7-4bb3-8e24-bad27151f654",
+            "sourceColumn": "CREDITOS_LENGUA_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_CONTEXTO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "bb3a429e-2ff7-4c92-9d11-bfd66c134ddf",
+            "sourceColumn": "NOTA_CONTEXTO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_CONTEXTO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0aef983f-2f04-427f-9934-7e21c161097b",
+            "sourceColumn": "VECES_CONTEXTO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_CONTEXTO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a9c95c7d-5c8e-4ded-bcde-f885acf820db",
+            "sourceColumn": "CREDITOS_CONTEXTO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EI_SEIS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "41244d33-6b0b-4a7a-b339-f7a113236974",
+            "sourceColumn": "NOTA_EI_SEIS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EI_SEIS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b168d198-eb2d-4e32-a413-362bd19023bd",
+            "sourceColumn": "VECES_EI_SEIS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EI_SEIS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "75d60002-7828-4bfa-ae1b-451b69a4515e",
+            "sourceColumn": "CREDITOS_EI_SEIS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EI_SIETE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "28e4f20c-4f91-48f6-ace5-d376bb5407bb",
+            "sourceColumn": "NOTA_EI_SIETE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EI_SIETE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "af1a3e3a-763c-4ece-9926-0488ce7651ae",
+            "sourceColumn": "VECES_EI_SIETE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EI_SIETE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e87455dc-dfe9-41a6-ac29-0e1beaaf93bd",
+            "sourceColumn": "CREDITOS_EI_SIETE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_GRADO_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4b342b53-d666-4441-9a5f-b04b28ae515e",
+            "sourceColumn": "NOTA_GRADO_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_GRADO_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a60ba255-a492-418d-9a0e-4bae4704fa43",
+            "sourceColumn": "VECES_GRADO_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_GRADO_UNO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "809a1b5b-c21b-43e7-8e0e-63ed80f21e8f",
+            "sourceColumn": "CREDITOS_GRADO_UNO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_LOG_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d26caafa-efb6-44ae-b5a4-630a22aa82ca",
+            "sourceColumn": "NOTA_LOG_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_LOG_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "0003ffe1-05c7-4ed0-b4da-0525b72fdd9f",
+            "sourceColumn": "VECES_LOG_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_LOG_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "dcc90487-08c3-4810-9648-61bdf18b5c30",
+            "sourceColumn": "CREDITOS_LOG_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_DECISION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e20905df-bae8-4207-8bb6-a5fb26434d63",
+            "sourceColumn": "NOTA_DECISION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_DECISION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "93a09cec-650c-48bd-b5bc-7caa25a67088",
+            "sourceColumn": "VECES_DECISION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_DECISION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "1b75f931-95e5-425c-a896-f74a858559db",
+            "sourceColumn": "CREDITOS_DECISION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_PRODUCCION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f6070bf5-fbeb-4989-9d3c-05d9b27630f6",
+            "sourceColumn": "NOTA_PRODUCCION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_PRODUCCION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "39b780b5-6df2-448e-93be-8896cfd84513",
+            "sourceColumn": "VECES_PRODUCCION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_PRODUCCION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "922af6ed-8653-4603-849a-2edd2c4d05ad",
+            "sourceColumn": "CREDITOS_PRODUCCION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_FINANZAS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4fc0436d-c50b-47d4-8336-970b7d0cb82f",
+            "sourceColumn": "NOTA_FINANZAS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_FINANZAS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5b2c7a1f-d7d6-4039-bb9d-89d7bbec5f95",
+            "sourceColumn": "VECES_FINANZAS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_FINANZAS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4e29eacc-e0c2-4e6f-b028-0e7cab20c374",
+            "sourceColumn": "CREDITOS_FINANZAS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_GIT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d7d08ea0-0270-4a40-9421-bd59884cd5ff",
+            "sourceColumn": "NOTA_GIT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_GIT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4eef07ef-961f-4ac4-bbe2-8de2e58c9163",
+            "sourceColumn": "VECES_GIT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_GIT",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "21e84a0d-b4f5-4a01-8288-2021428fc056",
+            "sourceColumn": "CREDITOS_GIT",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_GTH",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "92ff7241-6dca-4257-9095-6f30ec2b57d5",
+            "sourceColumn": "NOTA_GTH",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_GTH",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "f8fc52f6-14cc-463b-8fe8-f88537e7e2d8",
+            "sourceColumn": "VECES_GTH",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_GTH",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7b451a79-7f3f-49a9-9ef0-29a70846b147",
+            "sourceColumn": "CREDITOS_GTH",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_HISTORIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4f69f1b8-a9e9-4d3c-af0b-a7251170c420",
+            "sourceColumn": "NOTA_HISTORIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_HISTORIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "868581b9-ad97-498b-902c-1f0f85dd7674",
+            "sourceColumn": "VECES_HISTORIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_HISTORIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e0d9fed7-b397-4f51-ab41-cb5e90c9ce49",
+            "sourceColumn": "CREDITOS_HISTORIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_GRADO_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5a88f7f2-31dc-42e2-baa2-56b358cd6f15",
+            "sourceColumn": "NOTA_GRADO_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_GRADO_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "fb0684ea-4089-4dc3-aaa3-a843f6c51605",
+            "sourceColumn": "VECES_GRADO_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_GRADO_DOS",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "d437f01d-b5d1-4440-b457-df7a7228cc96",
+            "sourceColumn": "CREDITOS_GRADO_DOS",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_LOG_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c0525b3c-f708-4154-a5b1-f85e0e9f1568",
+            "sourceColumn": "NOTA_LOG_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_LOG_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "b8175433-5e08-4ab4-9859-fe7ea0582c94",
+            "sourceColumn": "VECES_LOG_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_LOG_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "9e2cc1ac-220c-40de-9ef3-fc240a0ac7f8",
+            "sourceColumn": "CREDITOS_LOG_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_SIMULACION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "880b6551-df35-4263-8b13-56f9102b2928",
+            "sourceColumn": "NOTA_SIMULACION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_SIMULACION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c59ee792-51a0-4045-b9c8-eb899d99f98f",
+            "sourceColumn": "VECES_SIMULACION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_SIMULACION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "e46b98c7-ba99-466a-bf68-e099b6bc8d88",
+            "sourceColumn": "CREDITOS_SIMULACION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_FORMULACION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "abcf2f7d-8619-43c8-be9d-840ac4073bd2",
+            "sourceColumn": "NOTA_FORMULACION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_FORMULACION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "73e328d3-9fc3-40c0-af2c-181d7447b16d",
+            "sourceColumn": "VECES_FORMULACION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_FORMULACION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "ac84f0e1-cf28-40ab-ba92-fa8efce45f5e",
+            "sourceColumn": "CREDITOS_FORMULACION",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_GERENCIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "4c1e6511-7a72-4588-be50-25eb60edea8e",
+            "sourceColumn": "NOTA_GERENCIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_GERENCIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "29780658-8340-4440-96ea-6482e3af644e",
+            "sourceColumn": "VECES_GERENCIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_GERENCIA",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7f4a8511-eb8e-46cd-962c-3ed281191637",
+            "sourceColumn": "CREDITOS_GERENCIA",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_LENGUA_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "37cc8ea4-bf5b-4080-a989-68cc2722eab9",
+            "sourceColumn": "NOTA_LENGUA_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_LENGUA_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "c0800882-2cb6-4e5c-b314-e30882c70bf9",
+            "sourceColumn": "VECES_LENGUA_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_LENGUA_TRES",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "75453fe0-07a8-46d9-af7b-924a1d04f534",
+            "sourceColumn": "CREDITOS_LENGUA_TRES",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EI_OCHO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "a49232a3-c194-49ba-a581-0465f51dcbe4",
+            "sourceColumn": "NOTA_EI_OCHO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EI_OCHO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "5a33b5b0-dce9-4214-9d67-5c9aff217b3a",
+            "sourceColumn": "VECES_EI_OCHO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EI_OCHO",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "32b09458-1ea4-4461-82f9-2bf3ffd727f2",
+            "sourceColumn": "CREDITOS_EI_OCHO",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "NOTA_EI_NUEVE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "193ec1a3-eeeb-4536-ab21-eb12bf15a6ae",
+            "sourceColumn": "NOTA_EI_NUEVE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "VECES_EI_NUEVE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "635dc03b-5e92-4274-9f6f-23c39d49515e",
+            "sourceColumn": "VECES_EI_NUEVE",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "CREDITOS_EI_NUEVE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "520de4c8-267f-4bc0-afda-59e45d6c5a49",
+            "sourceColumn": "CREDITOS_EI_NUEVE",
+            "summarizeBy": "sum"
+          }
+        ],
+        "lineageTag": "6e98341a-fdca-49a5-ac8e-d03ac04a506e",
+        "partitions": [
+          {
+            "name": "MODULO_ANALITICA_DESCRIPTIVA_DATOS",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Csv.Document(File.Contents(\"C:\\Users\\URIELDARIO\\Desktop\\VISUALIZACIÓN UD\\MODULO_ANALITICA_DESCRIPTIVA_DATOS.csv\"),[Delimiter=\",\", Columns=253, Encoding=1252, QuoteStyle=QuoteStyle.None]),",
+                "    #\"Encabezados promovidos\" = Table.PromoteHeaders(Origen, [PromoteAllScalars=true]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(#\"Encabezados promovidos\",{{\"NUMERO\", Int64.Type}, {\"ID\", type number}, {\"GENERO\", type text}, {\"TIPO_COLEGIO\", type text}, {\"LOCALIDAD_COLEGIO\", type text}, {\"CALENDARIO\", type text}, {\"MUNICIPIO\", type text}, {\"DEPARTAMENTO\", type text}, {\"PG_ICFES\", Int64.Type}, {\"CON_MAT_ICFES\", Int64.Type}, {\"APT_MAT_ICFES\", Int64.Type}, {\"FISICA_ICFES\", Int64.Type}, {\"QUIMICA_ICFES\", Int64.Type}, {\"APT_VERB_ICFES\", Int64.Type}, {\"LITERATURA_ICFES\", Int64.Type}, {\"BIOLOGIA_ICFES\", Int64.Type}, {\"SOCIALES_ICFES\", Int64.Type}, {\"FILOSOFIA_ICFES\", Int64.Type}, {\"IDIOMA_ICFES\", Int64.Type}, {\"LOCALIDAD\", type text}, {\"INSCRIPCION\", type text}, {\"ESTRATO\", Int64.Type}, {\"ANO_INGRESO\", Int64.Type}, {\"CORTE_INGRESO\", Int64.Type}, {\"ESTADO_FINAL\", type text}, {\"NOTA_DIFERENCIAL\", Int64.Type}, {\"VECES_DIFERENCIAL\", Int64.Type}, {\"CREDITOS_DIFERENCIAL\", Int64.Type}, {\"NOTA_DIBUJO\", Int64.Type}, {\"VECES_DIBUJO\", Int64.Type}, {\"CREDITOS_DIBUJO\", Int64.Type}, {\"NOTA_QUIMICA\", Int64.Type}, {\"VECES_QUIMICA\", Int64.Type}, {\"CREDITOS_QUIMICA\", Int64.Type}, {\"NOTA_CFJC\", Int64.Type}, {\"VECES_CFJC\", Int64.Type}, {\"CREDITOS_CFJC\", Int64.Type}, {\"NOTA_TEXTOS\", Int64.Type}, {\"VECES_TEXTOS\", Int64.Type}, {\"CREDITOS_TEXTOS\", Int64.Type}, {\"NOTA_SEMINARIO\", Int64.Type}, {\"VECES_SEMINARIO\", Int64.Type}, {\"CREDITOS_SEMINARIO\", Int64.Type}, {\"NOTA_EE_UNO\", Int64.Type}, {\"VECES_EE_UNO\", Int64.Type}, {\"CREDITOS_EE_UNO\", Int64.Type}, {\"NOTA_ALGEBRA\", Int64.Type}, {\"VECES_ALGEBRA\", Int64.Type}, {\"CREDITOS_ALGEBRA\", Int64.Type}, {\"NOTA_INTEGRAL\", Int64.Type}, {\"VECES_INTEGRAL\", Int64.Type}, {\"CREDITOS_INTEGRAL\", Int64.Type}, {\"NOTA_FISICA_UNO\", Int64.Type}, {\"VECES_FISICA_UNO\", Int64.Type}, {\"CREDITOS_FISICA_UNO\", Int64.Type}, {\"NOTA_MATERIALES\", Int64.Type}, {\"VECES_MATERIALES\", Int64.Type}, {\"CREDITOS_MATERIALES\", Int64.Type}, {\"NOTA_DEMOCRACIA\", Int64.Type}, {\"VECES_DEMOCRACIA\", Int64.Type}, {\"CREDITOS_DEMOCRACIA\", Int64.Type}, {\"NOTA_PBASICA\", Int64.Type}, {\"VECES_PBASICA\", Int64.Type}, {\"CREDITOS_PBASICA\", Int64.Type}, {\"NOTA_EE_DOS\", Int64.Type}, {\"VECES_EE_DOS\", Int64.Type}, {\"CREDITOS_EE_DOS\", Int64.Type}, {\"NOTA_MULTIVARIADO\", Int64.Type}, {\"VECES_MULTIVARIADO\", Int64.Type}, {\"CREDITOS_MULTIVARIADO\", Int64.Type}, {\"NOTA_ESTADISTICA_UNO\", Int64.Type}, {\"VECES_ESTADISTICA_UNO\", Int64.Type}, {\"CREDITOS_ESTADISTICA_UNO\", Int64.Type}, {\"NOTA_TERMODINAMICA\", Int64.Type}, {\"VECES_TERMODINAMICA\", Int64.Type}, {\"CREDITOS_TERMODINAMICA\", Int64.Type}, {\"NOTA_TGS\", Int64.Type}, {\"VECES_TGS\", Int64.Type}, {\"CREDITOS_TGS\", Int64.Type}, {\"NOTA_ETICA\", Int64.Type}, {\"VECES_ETICA\", Int64.Type}, {\"CREDITOS_ETICA\", Int64.Type}, {\"NOTA_PORIENTADA\", Int64.Type}, {\"VECES_PORIENTADA\", Int64.Type}, {\"CREDITOS_PORIENTADA\", Int64.Type}, {\"NOTA_EE_TRES\", Int64.Type}, {\"VECES_EE_TRES\", Int64.Type}, {\"CREDITOS_EE_TRES\", Int64.Type}, {\"NOTA_ECONOMIA_UNO\", Int64.Type}, {\"VECES_ECONOMIA_UNO\", Int64.Type}, {\"CREDITOS_ECONOMIA_UNO\", Int64.Type}, {\"NOTA_ECUACIONES\", Int64.Type}, {\"VECES_ECUACIONES\", Int64.Type}, {\"CREDITOS_ECUACIONES\", Int64.Type}, {\"NOTA_ESTADISTICA_DOS\", Int64.Type}, {\"VECES_ESTADISTICA_DOS\", Int64.Type}, {\"CREDITOS_ESTADISTICA_DOS\", Int64.Type}, {\"NOTA_FISICA_DOS\", Int64.Type}, {\"VECES_FISICA_DOS\", Int64.Type}, {\"CREDITOS_FISICA_DOS\", Int64.Type}, {\"NOTA_MECANICA\", Int64.Type}, {\"VECES_MECANICA\", Int64.Type}, {\"CREDITOS_MECANICA\", Int64.Type}, {\"NOTA_PROCESOSQ\", Int64.Type}, {\"VECES_PROCESOSQ\", Int64.Type}, {\"CREDITOS_PROCESOSQ\", Int64.Type}, {\"NOTA_EE_CUATRO\", Int64.Type}, {\"VECES_EE_CUATRO\", Int64.Type}, {\"CREDITOS_EE_CUATRO\", Int64.Type}, {\"NOTA_METODOLOGIA\", Int64.Type}, {\"VECES_METODOLOGIA\", Int64.Type}, {\"CREDITOS_METODOLOGIA\", Int64.Type}, {\"NOTA_FISICA_TRES\", Int64.Type}, {\"VECES_FISICA_TRES\", Int64.Type}, {\"CREDITOS_FISICA_TRES\", Int64.Type}, {\"NOTA_CONTABILIDAD\", Int64.Type}, {\"VECES_CONTABILIDAD\", Int64.Type}, {\"CREDITOS_CONTABILIDAD\", Int64.Type}, {\"NOTA_PROCESOSM\", Int64.Type}, {\"VECES_PROCESOSM\", Int64.Type}, {\"CREDITOS_PROCESOSM\", Int64.Type}, {\"NOTA_ADMINISTRACION\", Int64.Type}, {\"VECES_ADMINISTRACION\", Int64.Type}, {\"CREDITOS_ADMINISTRACION\", Int64.Type}, {\"NOTA_LENGUA_UNO\", Int64.Type}, {\"VECES_LENGUA_UNO\", Int64.Type}, {\"CREDITOS_LENGUA_UNO\", Int64.Type}, {\"NOTA_EI_UNO\", Int64.Type}, {\"VECES_EI_UNO\", Int64.Type}, {\"CREDITOS_EI_UNO\", Int64.Type}, {\"NOTA_EI_DOS\", Int64.Type}, {\"VECES_EI_DOS\", Int64.Type}, {\"CREDITOS_EI_DOS\", Int64.Type}, {\"NOTA_ECONOMIA_DOS\", Int64.Type}, {\"VECES_ECONOMIA_DOS\", Int64.Type}, {\"CREDITOS_ECONOMIA_DOS\", Int64.Type}, {\"NOTA_PLINEAL\", Int64.Type}, {\"VECES_PLINEAL\", Int64.Type}, {\"CREDITOS_PLINEAL\", Int64.Type}, {\"NOTA_DERECHO\", Int64.Type}, {\"VECES_DERECHO\", Int64.Type}, {\"CREDITOS_DERECHO\", Int64.Type}, {\"NOTA_IECONOMICA\", Int64.Type}, {\"VECES_IECONOMICA\", Int64.Type}, {\"CREDITOS_IECONOMICA\", Int64.Type}, {\"NOTA_DISENO\", Int64.Type}, {\"VECES_DISENO\", Int64.Type}, {\"CREDITOS_DISENO\", Int64.Type}, {\"NOTA_METODOS\", Int64.Type}, {\"VECES_METODOS\", Int64.Type}, {\"CREDITOS_METODOS\", Int64.Type}, {\"NOTA_SEGURIDAD\", Int64.Type}, {\"VECES_SEGURIDAD\", Int64.Type}, {\"CREDITOS_SEGURIDAD\", Int64.Type}, {\"NOTA_EI_TRES\", Int64.Type}, {\"VECES_EI_TRES\", Int64.Type}, {\"CREDITOS_EI_TRES\", Int64.Type}, {\"NOTA_EMPRENDIMIENTO\", Int64.Type}, {\"VECES_EMPRENDIMIENTO\", Int64.Type}, {\"CREDITOS_EMPRENDIMIENTO\", Int64.Type}, {\"NOTA_GRAFOS\", Int64.Type}, {\"VECES_GRAFOS\", Int64.Type}, {\"CREDITOS_GRAFOS\", Int64.Type}, {\"NOTA_CALIDAD_UNO\", Int64.Type}, {\"VECES_CALIDAD_UNO\", Int64.Type}, {\"CREDITOS_CALIDAD_UNO\", Int64.Type}, {\"NOTA_MERCADOTECNIA\", Int64.Type}, {\"VECES_MERCADOTECNIA\", Int64.Type}, {\"CREDITOS_MERCADOTECNIA\", Int64.Type}, {\"NOTA_ERGONOMIA\", Int64.Type}, {\"VECES_ERGONOMIA\", Int64.Type}, {\"CREDITOS_ERGONOMIA\", Int64.Type}, {\"NOTA_HOMBRE\", Int64.Type}, {\"VECES_HOMBRE\", Int64.Type}, {\"CREDITOS_HOMBRE\", Int64.Type}, {\"NOTA_EI_CUATRO\", Int64.Type}, {\"VECES_EI_CUATRO\", Int64.Type}, {\"CREDITOS_EI_CUATRO\", Int64.Type}, {\"NOTA_EI_CINCO\", Int64.Type}, {\"VECES_EI_CINCO\", Int64.Type}, {\"CREDITOS_EI_CINCO\", Int64.Type}, {\"NOTA_LOG_UNO\", Int64.Type}, {\"VECES_LOG_UNO\", Int64.Type}, {\"CREDITOS_LOG_UNO\", Int64.Type}, {\"NOTA_GOPERACIONES\", Int64.Type}, {\"VECES_GOPERACIONES\", Int64.Type}, {\"CREDITOS_GOPERACIONES\", Int64.Type}, {\"NOTA_CALIDAD_DOS\", Int64.Type}, {\"VECES_CALIDAD_DOS\", Int64.Type}, {\"CREDITOS_CALIDAD_DOS\", Int64.Type}, {\"NOTA_GAMBIENTAL\", Int64.Type}, {\"VECES_GAMBIENTAL\", Int64.Type}, {\"CREDITOS_GAMBIENTAL\", Int64.Type}, {\"NOTA_LENGUA_DOS\", Int64.Type}, {\"VECES_LENGUA_DOS\", Int64.Type}, {\"CREDITOS_LENGUA_DOS\", Int64.Type}, {\"NOTA_CONTEXTO\", Int64.Type}, {\"VECES_CONTEXTO\", Int64.Type}, {\"CREDITOS_CONTEXTO\", Int64.Type}, {\"NOTA_EI_SEIS\", Int64.Type}, {\"VECES_EI_SEIS\", Int64.Type}, {\"CREDITOS_EI_SEIS\", Int64.Type}, {\"NOTA_EI_SIETE\", Int64.Type}, {\"VECES_EI_SIETE\", Int64.Type}, {\"CREDITOS_EI_SIETE\", Int64.Type}, {\"NOTA_GRADO_UNO\", Int64.Type}, {\"VECES_GRADO_UNO\", Int64.Type}, {\"CREDITOS_GRADO_UNO\", Int64.Type}, {\"NOTA_LOG_DOS\", Int64.Type}, {\"VECES_LOG_DOS\", Int64.Type}, {\"CREDITOS_LOG_DOS\", Int64.Type}, {\"NOTA_DECISION\", Int64.Type}, {\"VECES_DECISION\", Int64.Type}, {\"CREDITOS_DECISION\", Int64.Type}, {\"NOTA_PRODUCCION\", Int64.Type}, {\"VECES_PRODUCCION\", Int64.Type}, {\"CREDITOS_PRODUCCION\", Int64.Type}, {\"NOTA_FINANZAS\", Int64.Type}, {\"VECES_FINANZAS\", Int64.Type}, {\"CREDITOS_FINANZAS\", Int64.Type}, {\"NOTA_GIT\", Int64.Type}, {\"VECES_GIT\", Int64.Type}, {\"CREDITOS_GIT\", Int64.Type}, {\"NOTA_GTH\", Int64.Type}, {\"VECES_GTH\", Int64.Type}, {\"CREDITOS_GTH\", Int64.Type}, {\"NOTA_HISTORIA\", Int64.Type}, {\"VECES_HISTORIA\", Int64.Type}, {\"CREDITOS_HISTORIA\", Int64.Type}, {\"NOTA_GRADO_DOS\", Int64.Type}, {\"VECES_GRADO_DOS\", Int64.Type}, {\"CREDITOS_GRADO_DOS\", Int64.Type}, {\"NOTA_LOG_TRES\", Int64.Type}, {\"VECES_LOG_TRES\", Int64.Type}, {\"CREDITOS_LOG_TRES\", Int64.Type}, {\"NOTA_SIMULACION\", Int64.Type}, {\"VECES_SIMULACION\", Int64.Type}, {\"CREDITOS_SIMULACION\", Int64.Type}, {\"NOTA_FORMULACION\", Int64.Type}, {\"VECES_FORMULACION\", Int64.Type}, {\"CREDITOS_FORMULACION\", Int64.Type}, {\"NOTA_GERENCIA\", Int64.Type}, {\"VECES_GERENCIA\", Int64.Type}, {\"CREDITOS_GERENCIA\", Int64.Type}, {\"NOTA_LENGUA_TRES\", Int64.Type}, {\"VECES_LENGUA_TRES\", Int64.Type}, {\"CREDITOS_LENGUA_TRES\", Int64.Type}, {\"NOTA_EI_OCHO\", Int64.Type}, {\"VECES_EI_OCHO\", Int64.Type}, {\"CREDITOS_EI_OCHO\", Int64.Type}, {\"NOTA_EI_NUEVE\", Int64.Type}, {\"VECES_EI_NUEVE\", Int64.Type}, {\"CREDITOS_EI_NUEVE\", Int64.Type}}),",
+                "    #\"Valor reemplazado\" = Table.ReplaceValue(#\"Tipo cambiado\",\"SOACHA\",\"FUERA DE BOGOTA\",Replacer.ReplaceText,{\"LOCALIDAD_COLEGIO\"}),",
+                "    #\"Valor reemplazado1\" = Table.ReplaceValue(#\"Valor reemplazado\",\"RAFAEL URIBE\",\"RAFAEL URIBE URIBE\",Replacer.ReplaceValue,{\"LOCALIDAD_COLEGIO\"}),",
+                "    #\"Valor reemplazado2\" = Table.ReplaceValue(#\"Valor reemplazado1\",\"SIN LOCALIDAD\",\"FUERA DE BOGOTA\",Replacer.ReplaceText,{\"LOCALIDAD_COLEGIO\"}),",
+                "    #\"Valor reemplazado3\" = Table.ReplaceValue(#\"Valor reemplazado2\",\"SALDA\",\"SALDAÑA\",Replacer.ReplaceText,{\"MUNICIPIO\"}),",
+                "    #\"Valor reemplazado4\" = Table.ReplaceValue(#\"Valor reemplazado3\",\"SALDAÑAÃ‘A\",\"SALDAÑA\",Replacer.ReplaceText,{\"MUNICIPIO\"}),",
+                "    #\"Valor reemplazado5\" = Table.ReplaceValue(#\"Valor reemplazado4\",\"SIN LOCALIDAD\",\"FUERA DE BOGOTA\",Replacer.ReplaceText,{\"LOCALIDAD\"}),",
+                "    #\"Filas filtradas\" = Table.SelectRows(#\"Valor reemplazado5\", each [PG_ICFES] < 500)",
+                "in",
+                "    #\"Filas filtradas\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "DateTableTemplate_b947e014-2c30-43fa-88a0-72895959dc8a",
+        "annotations": [
+          {
+            "name": "__PBI_TemplateDateTable",
+            "value": "true"
+          },
+          {
+            "name": "DefaultItem",
+            "value": "DateHierarchy"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Date",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              }
+            ],
+            "dataCategory": "PaddedDateTableDates",
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "isNameInferred": true,
+            "lineageTag": "3f4a0bc6-0878-402b-8343-1178b1c0c5ad",
+            "sourceColumn": "[Date]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Año",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Year"
+              }
+            ],
+            "dataCategory": "Years",
+            "dataType": "int64",
+            "expression": "YEAR([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "375358a4-0202-46ec-821c-99c849fd6e6e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroMes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "MonthNumber"
+              }
+            ],
+            "dataCategory": "MonthOfYear",
+            "dataType": "int64",
+            "expression": "MONTH([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "650bb52a-2350-441c-b7bc-d5c377d693ec",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Mes",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Month"
+              }
+            ],
+            "dataCategory": "Months",
+            "dataType": "string",
+            "expression": "FORMAT([Date], \"MMMM\")",
+            "isHidden": true,
+            "lineageTag": "7b3fbb56-ced1-4cc0-90ae-0f306f622b6c",
+            "sortByColumn": "NroMes",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "NroTrimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "QuarterNumber"
+              }
+            ],
+            "dataCategory": "QuarterOfYear",
+            "dataType": "int64",
+            "expression": "INT(([NroMes] + 2) / 3)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "fcc96439-e511-440a-9580-146065638495",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Trimestre",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Quarter"
+              }
+            ],
+            "dataCategory": "Quarters",
+            "dataType": "string",
+            "expression": "\"Trim. \" & [NroTrimestre]",
+            "isHidden": true,
+            "lineageTag": "5a49f872-0156-4f1b-bc82-537bd12ae35c",
+            "sortByColumn": "NroTrimestre",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Día",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "User"
+              },
+              {
+                "name": "TemplateId",
+                "value": "Day"
+              }
+            ],
+            "dataCategory": "DayOfMonth",
+            "dataType": "int64",
+            "expression": "DAY([Date])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "b0b9cbba-2120-4ceb-aa70-933518118a45",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "hierarchies": [
+          {
+            "name": "Jerarquía de fechas",
+            "annotations": [
+              {
+                "name": "TemplateId",
+                "value": "DateHierarchy"
+              }
+            ],
+            "levels": [
+              {
+                "name": "Año",
+                "column": "Año",
+                "lineageTag": "d9d71bc2-7573-4b8e-a0b4-5e99629d62bb",
+                "ordinal": 0
+              },
+              {
+                "name": "Trimestre",
+                "column": "Trimestre",
+                "lineageTag": "824c0b89-6f0e-4918-b6bf-f8887d6ac71f",
+                "ordinal": 1
+              },
+              {
+                "name": "Mes",
+                "column": "Mes",
+                "lineageTag": "1b6313bf-9a47-4255-9898-58a0d0264191",
+                "ordinal": 2
+              },
+              {
+                "name": "Día",
+                "column": "Día",
+                "lineageTag": "c4a45fa4-5742-48f3-8bb9-1ea11ab90783",
+                "ordinal": 3
+              }
+            ],
+            "lineageTag": "65c65c8a-0ba5-4086-9b22-0e943021fa13"
+          }
+        ],
+        "isHidden": true,
+        "isPrivate": true,
+        "lineageTag": "938fdacf-8547-4010-ba89-4c49a2b8b880",
+        "partitions": [
+          {
+            "name": "DateTableTemplate_b947e014-2c30-43fa-88a0-72895959dc8a",
+            "mode": "import",
+            "source": {
+              "expression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Medidas",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Columna1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "44eb205a-5b48-4d7d-9d60-77b84ca070da",
+            "sourceColumn": "Columna1",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "1f14cfdc-a434-4269-bd20-38ebb89a0a99",
+        "measures": [
+          {
+            "name": "Cantidad de Personas",
+            "expression": "COUNT(MODULO_ANALITICA_DESCRIPTIVA_DATOS[ID])",
+            "formatString": "0",
+            "lineageTag": "84c3efc9-ef35-40c9-8787-788d3ee3ed55"
+          },
+          {
+            "name": "Año_mínimo",
+            "expression": "MIN(MODULO_ANALITICA_DESCRIPTIVA_DATOS[ANO_INGRESO])",
+            "formatString": "0",
+            "lineageTag": "7750bc02-8c26-4eaa-b9c3-c31149c2c102"
+          },
+          {
+            "name": "Medida",
+            "annotations": [
+              {
+                "name": "43dbc3e8-3a1c-4b6f-9923-b49ff7d6691c",
+                "value": "True"
+              }
+            ],
+            "lineageTag": "703a78ad-4b09-4052-a87a-cc75b6734522"
+          },
+          {
+            "name": "Año_máximo",
+            "expression": "MAX(MODULO_ANALITICA_DESCRIPTIVA_DATOS[ANO_INGRESO])",
+            "formatString": "0",
+            "lineageTag": "1b30cfc8-e9d2-455e-beb0-3d3f64d05d9c"
+          },
+          {
+            "name": "Promedio Puntaje Icfes",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "AVERAGE(MODULO_ANALITICA_DESCRIPTIVA_DATOS[PG_ICFES])",
+            "lineageTag": "bc1910c6-ddb7-4679-ae94-3c12b883a7f6"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Medidas",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Origen = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\"i44FAA==\", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Columna1 = _t]),",
+                "    #\"Tipo cambiado\" = Table.TransformColumnTypes(Origen,{{\"Columna1\", type text}})",
+                "in",
+                "    #\"Tipo cambiado\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
