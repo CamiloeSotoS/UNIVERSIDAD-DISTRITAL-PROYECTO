@@ -1,0 +1,273 @@
+METRICA|VALOR|MODELO|TIPO_DE_DATOS
+Precision|66.77|KNeighbors|Prueba
+Exhaustividad|70.64|KNeighbors|Prueba
+Puntuacion F1|64.3|KNeighbors|Prueba
+Exactitud|70.64|KNeighbors|Prueba
+Informacion Mutua Normalizada (NMI)|35.88|KNeighbors|Prueba
+Indice Kappa de Cohen|50.03|KNeighbors|Prueba
+Precision|72.97|KNeighbors|Entrenamiento
+Exhaustividad|74.23|KNeighbors|Entrenamiento
+Puntuacion F1|68.9|KNeighbors|Entrenamiento
+Exactitud|74.23|KNeighbors|Entrenamiento
+Informacion Mutua Normalizada (NMI)|36.84|KNeighbors|Entrenamiento
+Indice Kappa de Cohen|55.61|KNeighbors|Entrenamiento
+Mejores Hiperparametros|algorithm: auto, leaf_size: 30, metric: manhattan, metric_params: None, n_jobs: None, n_neighbors: 12, p: 2, weights: uniform|KNeighbors|Hiperparametros del modelo
+Precision|50.3|SVC|Prueba
+Exhaustividad|52.84|SVC|Prueba
+Puntuacion F1|50.99|SVC|Prueba
+Exactitud|52.84|SVC|Prueba
+Informacion Mutua Normalizada (NMI)|16.42|SVC|Prueba
+Indice Kappa de Cohen|23.32|SVC|Prueba
+Precision|52.77|SVC|Entrenamiento
+Exhaustividad|57.13|SVC|Entrenamiento
+Puntuacion F1|54.07|SVC|Entrenamiento
+Exactitud|57.13|SVC|Entrenamiento
+Informacion Mutua Normalizada (NMI)|15.51|SVC|Entrenamiento
+Indice Kappa de Cohen|27.58|SVC|Entrenamiento
+Mejores Hiperparametros|C: 0.0008, break_ties: False, cache_size: 200, class_weight: None, coef0: 0.0, decision_function_shape: ovr, degree: 3, gamma: 0.8, kernel: linear, max_iter: 1, probability: False, random_state: 1, shrinking: True, tol: 0.001, verbose: False|SVC|Hiperparametros del modelo
+Precision|64.63|DecisionTree|Prueba
+Exhaustividad|72.29|DecisionTree|Prueba
+Puntuacion F1|65.97|DecisionTree|Prueba
+Exactitud|72.29|DecisionTree|Prueba
+Informacion Mutua Normalizada (NMI)|37.78|DecisionTree|Prueba
+Indice Kappa de Cohen|52.82|DecisionTree|Prueba
+Precision|71.13|DecisionTree|Entrenamiento
+Exhaustividad|73.68|DecisionTree|Entrenamiento
+Puntuacion F1|67.66|DecisionTree|Entrenamiento
+Exactitud|73.68|DecisionTree|Entrenamiento
+Informacion Mutua Normalizada (NMI)|37.9|DecisionTree|Entrenamiento
+Indice Kappa de Cohen|54.4|DecisionTree|Entrenamiento
+Mejores Hiperparametros|ccp_alpha: 0.0, class_weight: None, criterion: gini, max_depth: 5, max_features: 3, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 2, min_samples_split: 2, min_weight_fraction_leaf: 0.0, monotonic_cst: None, random_state: 4, splitter: random|DecisionTree|Hiperparametros del modelo
+Precision|65.7|NaiveBayes|Prueba
+Exhaustividad|68.81|NaiveBayes|Prueba
+Puntuacion F1|66.83|NaiveBayes|Prueba
+Exactitud|68.81|NaiveBayes|Prueba
+Informacion Mutua Normalizada (NMI)|37.14|NaiveBayes|Prueba
+Indice Kappa de Cohen|50.66|NaiveBayes|Prueba
+Precision|66.95|NaiveBayes|Entrenamiento
+Exhaustividad|70.37|NaiveBayes|Entrenamiento
+Puntuacion F1|67.58|NaiveBayes|Entrenamiento
+Exactitud|70.37|NaiveBayes|Entrenamiento
+Informacion Mutua Normalizada (NMI)|33.65|NaiveBayes|Entrenamiento
+Indice Kappa de Cohen|51.33|NaiveBayes|Entrenamiento
+No tiene Hiperparametros|No tiene hiperparametros|NaiveBayes|Hiperparametros del modelo
+Precision|66.94|LDA|Prueba
+Exhaustividad|71.38|LDA|Prueba
+Puntuacion F1|67.92|LDA|Prueba
+Exactitud|71.38|LDA|Prueba
+Informacion Mutua Normalizada (NMI)|36.91|LDA|Prueba
+Indice Kappa de Cohen|53.01|LDA|Prueba
+Precision|68.95|LDA|Entrenamiento
+Exhaustividad|72.03|LDA|Entrenamiento
+Puntuacion F1|68.28|LDA|Entrenamiento
+Exactitud|72.03|LDA|Entrenamiento
+Informacion Mutua Normalizada (NMI)|35.81|LDA|Entrenamiento
+Indice Kappa de Cohen|53.04|LDA|Entrenamiento
+Mejores Hiperparametros|covariance_estimator: None, n_components: 1, priors: None, shrinkage: auto, solver: lsqr, store_covariance: False, tol: 0.001|LDA|Hiperparametros del modelo
+Precision|63.52|Bagging|Prueba
+Exhaustividad|72.11|Bagging|Prueba
+Puntuacion F1|66.18|Bagging|Prueba
+Exactitud|72.11|Bagging|Prueba
+Informacion Mutua Normalizada (NMI)|38.15|Bagging|Prueba
+Indice Kappa de Cohen|52.74|Bagging|Prueba
+Precision|100.0|Bagging|Entrenamiento
+Exhaustividad|100.0|Bagging|Entrenamiento
+Puntuacion F1|100.0|Bagging|Entrenamiento
+Exactitud|100.0|Bagging|Entrenamiento
+Informacion Mutua Normalizada (NMI)|100.0|Bagging|Entrenamiento
+Indice Kappa de Cohen|100.0|Bagging|Entrenamiento
+Mejores Hiperparametros|bootstrap: True, bootstrap_features: True, estimator: None, max_features: 0.75, max_samples: 0.7, n_estimators: 750, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|Bagging|Hiperparametros del modelo
+Precision|62.99|RandomForest|Prueba
+Exhaustividad|71.56|RandomForest|Prueba
+Puntuacion F1|65.21|RandomForest|Prueba
+Exactitud|71.56|RandomForest|Prueba
+Informacion Mutua Normalizada (NMI)|36.38|RandomForest|Prueba
+Indice Kappa de Cohen|51.77|RandomForest|Prueba
+Precision|77.62|RandomForest|Entrenamiento
+Exhaustividad|76.91|RandomForest|Entrenamiento
+Puntuacion F1|72.2|RandomForest|Entrenamiento
+Exactitud|76.91|RandomForest|Entrenamiento
+Informacion Mutua Normalizada (NMI)|42.15|RandomForest|Entrenamiento
+Indice Kappa de Cohen|60.44|RandomForest|Entrenamiento
+Mejores Hiperparametros|bootstrap: True, ccp_alpha: 0.0, class_weight: None, criterion: entropy, max_depth: None, max_features: sqrt, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 9, min_samples_split: 2, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|RandomForest|Hiperparametros del modelo
+Precision|62.49|ExtraTrees|Prueba
+Exhaustividad|71.38|ExtraTrees|Prueba
+Puntuacion F1|65.39|ExtraTrees|Prueba
+Exactitud|71.38|ExtraTrees|Prueba
+Informacion Mutua Normalizada (NMI)|37.08|ExtraTrees|Prueba
+Indice Kappa de Cohen|51.77|ExtraTrees|Prueba
+Precision|86.05|ExtraTrees|Entrenamiento
+Exhaustividad|84.24|ExtraTrees|Entrenamiento
+Puntuacion F1|82.28|ExtraTrees|Entrenamiento
+Exactitud|84.24|ExtraTrees|Entrenamiento
+Informacion Mutua Normalizada (NMI)|55.96|ExtraTrees|Entrenamiento
+Indice Kappa de Cohen|73.72|ExtraTrees|Entrenamiento
+Mejores Hiperparametros|bootstrap: False, ccp_alpha: 0.0, class_weight: None, criterion: gini, max_depth: None, max_features: sqrt, max_leaf_nodes: None, max_samples: None, min_impurity_decrease: 0.0, min_samples_leaf: 3, min_samples_split: 8, min_weight_fraction_leaf: 0.0, monotonic_cst: None, n_estimators: 100, n_jobs: None, oob_score: False, random_state: None, verbose: 0, warm_start: False|ExtraTrees|Hiperparametros del modelo
+Precision|56.28|AdaBoost|Prueba
+Exhaustividad|72.66|AdaBoost|Prueba
+Puntuacion F1|63.43|AdaBoost|Prueba
+Exactitud|72.66|AdaBoost|Prueba
+Informacion Mutua Normalizada (NMI)|41.32|AdaBoost|Prueba
+Indice Kappa de Cohen|52.58|AdaBoost|Prueba
+Precision|54.05|AdaBoost|Entrenamiento
+Exhaustividad|70.92|AdaBoost|Entrenamiento
+Puntuacion F1|61.34|AdaBoost|Entrenamiento
+Exactitud|70.92|AdaBoost|Entrenamiento
+Informacion Mutua Normalizada (NMI)|35.24|AdaBoost|Entrenamiento
+Indice Kappa de Cohen|48.35|AdaBoost|Entrenamiento
+Mejores Hiperparametros|algorithm: SAMME.R, estimator: None, learning_rate: 0.0005, n_estimators: 1, random_state: None|AdaBoost|Hiperparametros del modelo
+Precision|68.09|GradientBoosting|Prueba
+Exhaustividad|72.11|GradientBoosting|Prueba
+Puntuacion F1|68.22|GradientBoosting|Prueba
+Exactitud|72.11|GradientBoosting|Prueba
+Informacion Mutua Normalizada (NMI)|37.23|GradientBoosting|Prueba
+Indice Kappa de Cohen|53.95|GradientBoosting|Prueba
+Precision|83.41|GradientBoosting|Entrenamiento
+Exhaustividad|82.43|GradientBoosting|Entrenamiento
+Puntuacion F1|80.56|GradientBoosting|Entrenamiento
+Exactitud|82.43|GradientBoosting|Entrenamiento
+Informacion Mutua Normalizada (NMI)|52.35|GradientBoosting|Entrenamiento
+Indice Kappa de Cohen|70.64|GradientBoosting|Entrenamiento
+Mejores Hiperparametros|ccp_alpha: 0.0, criterion: friedman_mse, init: None, learning_rate: 0.01, loss: log_loss, max_depth: 3, max_features: None, max_leaf_nodes: None, min_impurity_decrease: 0.0, min_samples_leaf: 1, min_samples_split: 2, min_weight_fraction_leaf: 0.0, n_estimators: 400, n_iter_no_change: None, random_state: None, subsample: 1.0, tol: 0.0001, validation_fraction: 0.1, verbose: 0, warm_start: False|GradientBoosting|Hiperparametros del modelo
+Precision|66.13|XGB|Prueba
+Exhaustividad|71.19|XGB|Prueba
+Puntuacion F1|66.23|XGB|Prueba
+Exactitud|71.19|XGB|Prueba
+Informacion Mutua Normalizada (NMI)|34.88|XGB|Prueba
+Indice Kappa de Cohen|51.81|XGB|Prueba
+Precision|90.07|XGB|Entrenamiento
+Exhaustividad|89.05|XGB|Entrenamiento
+Puntuacion F1|88.12|XGB|Entrenamiento
+Exactitud|89.05|XGB|Entrenamiento
+Informacion Mutua Normalizada (NMI)|68.78|XGB|Entrenamiento
+Indice Kappa de Cohen|81.91|XGB|Entrenamiento
+Mejores Hiperparametros|objective: multi:softprob, base_score: None, booster: None, callbacks: None, colsample_bylevel: None, colsample_bynode: None, colsample_bytree: 0.6, device: None, early_stopping_rounds: None, enable_categorical: False, eval_metric: None, feature_types: None, gamma: None, grow_policy: None, importance_type: None, interaction_constraints: None, learning_rate: None, max_bin: None, max_cat_threshold: None, max_cat_to_onehot: None, max_delta_step: None, max_depth: None, max_leaves: None, min_child_weight: None, missing: nan, monotone_constraints: None, multi_strategy: None, n_estimators: 9, n_jobs: None, num_parallel_tree: None, random_state: None, reg_alpha: 0.4, reg_lambda: 0.105, sampling_method: None, scale_pos_weight: None, subsample: None, tree_method: None, validate_parameters: None, verbosity: None, loss: log_loss, max_features: sqrt|XGB|Hiperparametros del modelo
+Precision|64.07|CatBoost|Prueba
+Exhaustividad|72.11|CatBoost|Prueba
+Puntuacion F1|66.03|CatBoost|Prueba
+Exactitud|72.11|CatBoost|Prueba
+Informacion Mutua Normalizada (NMI)|36.98|CatBoost|Prueba
+Indice Kappa de Cohen|52.64|CatBoost|Prueba
+Precision|68.81|CatBoost|Entrenamiento
+Exhaustividad|73.52|CatBoost|Entrenamiento
+Puntuacion F1|67.51|CatBoost|Entrenamiento
+Exactitud|73.52|CatBoost|Entrenamiento
+Informacion Mutua Normalizada (NMI)|36.46|CatBoost|Entrenamiento
+Indice Kappa de Cohen|54.01|CatBoost|Entrenamiento
+Mejores Hiperparametros|learning_rate: 0.01, depth: 4, l2_leaf_reg: 42, border_count: 53, thread_count: 4, verbose: 0|CatBoost|Hiperparametros del modelo
+Precision|62.46|LGBM|Prueba
+Exhaustividad|68.99|LGBM|Prueba
+Puntuacion F1|65.3|LGBM|Prueba
+Exactitud|68.99|LGBM|Prueba
+Informacion Mutua Normalizada (NMI)|30.07|LGBM|Prueba
+Indice Kappa de Cohen|48.97|LGBM|Prueba
+Precision|96.12|LGBM|Entrenamiento
+Exhaustividad|96.06|LGBM|Entrenamiento
+Puntuacion F1|95.99|LGBM|Entrenamiento
+Exactitud|96.06|LGBM|Entrenamiento
+Informacion Mutua Normalizada (NMI)|85.73|LGBM|Entrenamiento
+Indice Kappa de Cohen|93.74|LGBM|Entrenamiento
+Mejores Hiperparametros|boosting_type: gbdt, class_weight: None, colsample_bytree: 0.6, importance_type: split, learning_rate: 0.1, max_depth: -1, min_child_samples: 75, min_child_weight: 0.001, min_split_gain: 0.0, n_estimators: 100, n_jobs: None, num_leaves: 31, objective: multiclass, random_state: 42, reg_alpha: 0.0, reg_lambda: 0.0, subsample: 1.0, subsample_for_bin: 200000, subsample_freq: 0, verbose: -1|LGBM|Hiperparametros del modelo
+Precision|62.99|VotingHard|Prueba
+Exhaustividad|71.56|VotingHard|Prueba
+Puntuacion F1|65.21|VotingHard|Prueba
+Exactitud|71.56|VotingHard|Prueba
+Informacion Mutua Normalizada (NMI)|37.17|VotingHard|Prueba
+Indice Kappa de Cohen|51.8|VotingHard|Prueba
+Precision|83.42|VotingHard|Entrenamiento
+Exhaustividad|81.17|VotingHard|Entrenamiento
+Puntuacion F1|78.36|VotingHard|Entrenamiento
+Exactitud|81.17|VotingHard|Entrenamiento
+Informacion Mutua Normalizada (NMI)|50.93|VotingHard|Entrenamiento
+Indice Kappa de Cohen|68.15|VotingHard|Entrenamiento
+Mejores Hiperparametros|Estimador: Gradient, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.01, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 400, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}, Estimador: Adaboost, Hiperparametros: {'algorithm': 'SAMME.R', 'estimator': None, 'learning_rate': 0.0005, 'n_estimators': 1, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 8, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 9, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 5, 'max_features': 3, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}, Estimador: XGB, Hiperparametros: {'objective': 'multi:softprob', 'base_score': None, 'booster': None, 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': 0.6, 'device': None, 'early_stopping_rounds': None, 'enable_categorical': False, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': None, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': None, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 9, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': 0.4, 'reg_lambda': 0.105, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': None, 'validate_parameters': None, 'verbosity': None, 'loss': 'log_loss', 'max_features': 'sqrt'}|VotingHard|Hiperparametros del modelo
+Precision|64.18|VotingSoft|Prueba
+Exhaustividad|72.66|VotingSoft|Prueba
+Puntuacion F1|65.91|VotingSoft|Prueba
+Exactitud|72.66|VotingSoft|Prueba
+Informacion Mutua Normalizada (NMI)|39.55|VotingSoft|Prueba
+Indice Kappa de Cohen|53.5|VotingSoft|Prueba
+Precision|80.33|VotingSoft|Entrenamiento
+Exhaustividad|77.86|VotingSoft|Entrenamiento
+Puntuacion F1|73.83|VotingSoft|Entrenamiento
+Exactitud|77.86|VotingSoft|Entrenamiento
+Informacion Mutua Normalizada (NMI)|45.14|VotingSoft|Entrenamiento
+Indice Kappa de Cohen|62.04|VotingSoft|Entrenamiento
+Mejores Hiperparametros|Estimador: Gradient, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.01, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 400, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}, Estimador: Adaboost, Hiperparametros: {'algorithm': 'SAMME.R', 'estimator': None, 'learning_rate': 0.0005, 'n_estimators': 1, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 8, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 9, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 5, 'max_features': 3, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}|VotingSoft|Hiperparametros del modelo
+Precision|63.66|StackingLineal|Prueba
+Exhaustividad|71.74|StackingLineal|Prueba
+Puntuacion F1|66.37|StackingLineal|Prueba
+Exactitud|71.74|StackingLineal|Prueba
+Informacion Mutua Normalizada (NMI)|36.67|StackingLineal|Prueba
+Indice Kappa de Cohen|52.36|StackingLineal|Prueba
+Precision|85.57|StackingLineal|Entrenamiento
+Exhaustividad|86.13|StackingLineal|Entrenamiento
+Puntuacion F1|84.1|StackingLineal|Entrenamiento
+Exactitud|86.13|StackingLineal|Entrenamiento
+Informacion Mutua Normalizada (NMI)|61.11|StackingLineal|Entrenamiento
+Indice Kappa de Cohen|77.04|StackingLineal|Entrenamiento
+Mejores Hiperparametros|Estimador: Adaboost, Hiperparametros: {'algorithm': 'SAMME.R', 'estimator': None, 'learning_rate': 0.0005, 'n_estimators': 1, 'random_state': None}, Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 8, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 9, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 5, 'max_features': 3, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}|StackingLineal|Hiperparametros del modelo
+Precision|65.31|Stackingnolineal|Prueba
+Exhaustividad|72.66|Stackingnolineal|Prueba
+Puntuacion F1|68.07|Stackingnolineal|Prueba
+Exactitud|72.66|Stackingnolineal|Prueba
+Informacion Mutua Normalizada (NMI)|37.6|Stackingnolineal|Prueba
+Indice Kappa de Cohen|54.64|Stackingnolineal|Prueba
+Precision|75.12|Stackingnolineal|Entrenamiento
+Exhaustividad|79.28|Stackingnolineal|Entrenamiento
+Puntuacion F1|75.5|Stackingnolineal|Entrenamiento
+Exactitud|79.28|Stackingnolineal|Entrenamiento
+Informacion Mutua Normalizada (NMI)|46.04|Stackingnolineal|Entrenamiento
+Indice Kappa de Cohen|64.98|Stackingnolineal|Entrenamiento
+Mejores Hiperparametros|Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 8, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 9, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 5, 'max_features': 3, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}|Stackingnolineal|Hiperparametros del modelo
+Precision|67.42|VotingWeighted|Prueba
+Exhaustividad|72.48|VotingWeighted|Prueba
+Puntuacion F1|67.85|VotingWeighted|Prueba
+Exactitud|72.48|VotingWeighted|Prueba
+Informacion Mutua Normalizada (NMI)|39.54|VotingWeighted|Prueba
+Indice Kappa de Cohen|54.13|VotingWeighted|Prueba
+Precision|80.23|VotingWeighted|Entrenamiento
+Exhaustividad|78.88|VotingWeighted|Entrenamiento
+Puntuacion F1|77.13|VotingWeighted|Entrenamiento
+Exactitud|78.88|VotingWeighted|Entrenamiento
+Informacion Mutua Normalizada (NMI)|50.12|VotingWeighted|Entrenamiento
+Indice Kappa de Cohen|65.05|VotingWeighted|Entrenamiento
+Precision|66.97|SuperAprendiz|Prueba
+Exhaustividad|71.74|SuperAprendiz|Prueba
+Puntuacion F1|66.97|SuperAprendiz|Prueba
+Exactitud|71.74|SuperAprendiz|Prueba
+Informacion Mutua Normalizada (NMI)|35.53|SuperAprendiz|Prueba
+Indice Kappa de Cohen|52.83|SuperAprendiz|Prueba
+Precision|84.02|SuperAprendiz|Entrenamiento
+Exhaustividad|85.11|SuperAprendiz|Entrenamiento
+Puntuacion F1|83.84|SuperAprendiz|Entrenamiento
+Exactitud|85.11|SuperAprendiz|Entrenamiento
+Informacion Mutua Normalizada (NMI)|54.19|SuperAprendiz|Entrenamiento
+Indice Kappa de Cohen|75.96|SuperAprendiz|Entrenamiento
+Mejores Hiperparametros|Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 8, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 9, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 5, 'max_features': 3, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}, Estimador: Gradient, Hiperparametros: {'ccp_alpha': 0.0, 'criterion': 'friedman_mse', 'init': None, 'learning_rate': 0.01, 'loss': 'log_loss', 'max_depth': 3, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 400, 'n_iter_no_change': None, 'random_state': None, 'subsample': 1.0, 'tol': 0.0001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}|SuperAprendiz|Hiperparametros del modelo
+Precision|66.69|SuperAprendizdoscapas|Prueba
+Exhaustividad|72.29|SuperAprendizdoscapas|Prueba
+Puntuacion F1|67.1|SuperAprendizdoscapas|Prueba
+Exactitud|72.29|SuperAprendizdoscapas|Prueba
+Informacion Mutua Normalizada (NMI)|36.79|SuperAprendizdoscapas|Prueba
+Indice Kappa de Cohen|53.31|SuperAprendizdoscapas|Prueba
+Precision|74.84|SuperAprendizdoscapas|Entrenamiento
+Exhaustividad|78.88|SuperAprendizdoscapas|Entrenamiento
+Puntuacion F1|75.34|SuperAprendizdoscapas|Entrenamiento
+Exactitud|78.88|SuperAprendizdoscapas|Entrenamiento
+Informacion Mutua Normalizada (NMI)|48.51|SuperAprendizdoscapas|Entrenamiento
+Indice Kappa de Cohen|64.02|SuperAprendizdoscapas|Entrenamiento
+Mejores Hiperparametros|Estimador: Extratrees, Hiperparametros: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 3, 'min_samples_split': 8, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Random Forest, Hiperparametros: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'entropy', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 9, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'n_estimators': 100, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Bagging, Hiperparametros: {'bootstrap': True, 'bootstrap_features': True, 'estimator': None, 'max_features': 0.75, 'max_samples': 0.7, 'n_estimators': 750, 'n_jobs': None, 'oob_score': False, 'random_state': None, 'verbose': 0, 'warm_start': False}, Estimador: Decision tree, Hiperparametros: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': 5, 'max_features': 3, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 2, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'monotonic_cst': None, 'random_state': 4, 'splitter': 'random'}|SuperAprendizdoscapas|Hiperparametros del modelo
+Precision|62.15|RedNeuronal|Prueba
+Exhaustividad|70.46|RedNeuronal|Prueba
+Puntuacion F1|65.16|RedNeuronal|Prueba
+Exactitud|70.46|RedNeuronal|Prueba
+Informacion Mutua Normalizada (NMI)|33.75|RedNeuronal|Prueba
+Indice Kappa de Cohen|50.62|RedNeuronal|Prueba
+Precision|67.98|RedNeuronal|Entrenamiento
+Exhaustividad|73.92|RedNeuronal|Entrenamiento
+Puntuacion F1|68.51|RedNeuronal|Entrenamiento
+Exactitud|73.92|RedNeuronal|Entrenamiento
+Informacion Mutua Normalizada (NMI)|37.11|RedNeuronal|Entrenamiento
+Indice Kappa de Cohen|55.38|RedNeuronal|Entrenamiento
+Hiperparametros|input_size=18, hidden_size=155, num_classes=5, num_epochs=100, learning_rate=0.0015|RedNeuronal|Entrenamiento
