@@ -25,6 +25,7 @@ from googleapiclient.http import MediaIoBaseDownload
 #---------------------------------------------------------------
 # CARGUE DE DATOS
 #---------------------------------------------------------------
+"""
 SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
 creds = None
@@ -73,7 +74,7 @@ files = os.listdir(save_path)
 print("Archivos descargados:")
 for file in files:
     print(file)
-
+"""
 
 app = FastAPI()
 carrera = ""
