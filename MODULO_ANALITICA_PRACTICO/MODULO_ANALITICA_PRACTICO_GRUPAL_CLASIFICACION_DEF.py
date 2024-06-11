@@ -267,7 +267,7 @@ async def procesar_datos(data: InputData):
 def cargar_datos(carrera, semestre):
     ruta_archivo = f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PRACTICO/DATOS/{carrera}{semestre}.csv'
     datos = pd.read_csv(ruta_archivo,sep=";")
-    ruta_archivo_prediccion= f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PRACTICO/DATOS/{carrera}{semestre}_prediccion_grupal.csv'
+    ruta_archivo_prediccion= f'C:/Users/Intevo/Desktop/UNIVERSIDAD DISTRITAL PROYECTO FOLDER/UNIVERSIDAD-DISTRITAL-PROYECTO/MODULO_ANALITICA_PRACTICO/DATOS/{carrera}.csv'
     datos_prediccion=pd.read_csv(ruta_archivo_prediccion,sep=';')
     return datos,datos_prediccion
 carrera="industrial"
