@@ -70,7 +70,7 @@ import torch.optim as optim
 # CARGUE DE DATOS
 # -------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
-
+"""
 SCOPES = ['https://www.googleapis.com/auth/drive.readonly']
 
 creds = None
@@ -120,7 +120,7 @@ files = os.listdir(save_path)
 print("Archivos descargados:")
 for file in files:
     print(file)
-
+"""
 app = FastAPI()
 carrera = ""
 semestre = ""
@@ -309,7 +309,7 @@ def cargar_entrenar_modelo():
         
         X_prediccion = df_prediccion.loc[:, ~df_prediccion.columns.str.contains(f'RENDIMIENTO_{semestre_en_letras.upper()}')]
         Y_prediccion = df_prediccion.loc[:, df_prediccion.columns.str.contains(f'RENDIMIENTO_{semestre_en_letras.upper()}')]                                                     
-        print("Separación de datos usando Pandas") 
+        print("Separación de datos usando Pandas - prediccion") 
         print(X_prediccion.shape, Y_prediccion.shape)
         
         modelo_knn, accuracy_knn, mejores_hiperparametros_knn = entrenar_modelo_knn_con_transformacion(X_trn, Y_trn, X_tst, Y_tst)
