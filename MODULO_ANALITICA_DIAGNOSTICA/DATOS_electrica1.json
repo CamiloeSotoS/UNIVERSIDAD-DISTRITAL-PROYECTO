@@ -1,0 +1,6104 @@
+{
+    "data": [
+        {
+            "dataTransformacion": [
+                {
+                    "PG_ICFES": 448.47,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 450.27,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 429.72,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 445.15,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 439.63,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 460.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 451.49,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 539.63,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 470.71,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 509.82,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 439.21,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 453.44,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 482.15,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 453.41,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 461.49,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 456.99,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 469.07,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 504.37,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 451.14,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 481.47,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 489.4,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 461.74,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 443.5,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 466.97,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 463.18,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 444.44,
+                    "DEPARTAMENTO": "CALDAS"
+                },
+                {
+                    "PG_ICFES": 460.7,
+                    "DEPARTAMENTO": "CORDOBA"
+                },
+                {
+                    "PG_ICFES": 456.13,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 495.3,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 479.98,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 500.4,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 455.57,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 475.3,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 466.68,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 467.89,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 470.7,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 476.06,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 474.81,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 460.67,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 480.17,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 474.87,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 474.81,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 440.53,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 455.45,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 459.69,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 464.43,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 455.72,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 442.26,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 471.01,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 470.49,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 459.48,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 490.16,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 453.82,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 480.37,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 476.31,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 480.39,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 479.53,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 476.35,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 439.66,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 475.83,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 499.64,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 454.17,
+                    "DEPARTAMENTO": "NARINO"
+                },
+                {
+                    "PG_ICFES": 441.71,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 447.75,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 470.31,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 468.26,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 461.84,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 433.44,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 436.3,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 445.88,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 451.88,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 474.75,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 460.24,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 460.36,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 444.28,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 458.71,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 510.03,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 477.57,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 443.88,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 401.84,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 439.83,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 432.41,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.79,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 412.11,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 421.38,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 390.99,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 397.65,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 400.71,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 394.11,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 419.12,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 414.87,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.46,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 393.54,
+                    "DEPARTAMENTO": "CALDAS"
+                },
+                {
+                    "PG_ICFES": 398.62,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 417.66,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 390.8,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.27,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 389.9,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 391.08,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 420.02,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.24,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 395.98,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.03,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 390.78,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 377.04,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 389.12,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 388.74,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 378.31,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 385.79,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 407.91,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.72,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 396.46,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 387.97,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 382.27,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 381.52,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 408.33,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 388.6,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 388.31,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 382.86,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 386.73,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 376.31,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 391.38,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 371.28,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 377.37,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 375.01,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 376.69,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 394.73,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 377.46,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 386.99,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 385.81,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 383.21,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 387.96,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 383.75,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 382.52,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 386.04,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 386.16,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 374.2,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 380.81,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 376.52,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 372.71,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 366.16,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 372.11,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 366.32,
+                    "DEPARTAMENTO": "CASANARE"
+                },
+                {
+                    "PG_ICFES": 390.15,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 452.63,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 453.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 439.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 443.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 435.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 429.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 454.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 442.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 436.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 433.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 437.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 415.02,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 441.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 438.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 425.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 422.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 410.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.53,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 410.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 424.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 416.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 419.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 426.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 427.88,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 442.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 432.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 421.87,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 390.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 416.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 402.11,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 417.11,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 419.45,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 402.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 391.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 416.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.82,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 391.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 398.41,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 405.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 391.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 391.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.81,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 396.77,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 405.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 389.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 392.59,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 405.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 391.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 427.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 383.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.56,
+                    "DEPARTAMENTO": "GUAVIARE"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.83,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 377.59,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 384.14,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 467.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 453.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 432.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 467.0,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 431.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 434.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 419.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 436.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 427.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 415.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 431.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 431.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 410.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 424.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 441.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 425.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 402.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 410.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 387.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 411.45,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 387.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 402.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 416.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 424.0,
+                    "DEPARTAMENTO": "VALLE"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 397.17,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.19,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 379.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 362.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 363.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 386.7,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 361.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 382.47,
+                    "DEPARTAMENTO": "VALLE"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 383.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 378.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 360.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 384.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.48,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 383.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 372.85,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 364.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 383.65,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 363.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 357.29,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "CAQUETA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 359.67,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 368.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 378.42,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 390.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 377.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 359.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 367.42,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 370.55,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 360.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 382.34,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 371.65,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 376.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 378.17,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 366.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 374.8,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 374.55,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 383.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 367.15,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 353.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 364.23,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 361.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 362.51,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 363.1,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 353.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 468.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 455.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 437.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 450.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 438.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 437.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 439.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 454.0,
+                    "DEPARTAMENTO": "CASANARE"
+                },
+                {
+                    "PG_ICFES": 433.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 445.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 453.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 440.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 429.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 438.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 434.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 419.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 442.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 439.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 439.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 432.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 423.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 425.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 432.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 422.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 442.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 420.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 422.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 420.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 426.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 435.57,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 427.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.23,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 389.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 424.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 415.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 420.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 405.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.25,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 423.39,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "MAGDALENA"
+                },
+                {
+                    "PG_ICFES": 415.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 389.31,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 389.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 391.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 391.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 408.34,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 430.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 405.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 363.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "ARAUCA"
+                },
+                {
+                    "PG_ICFES": 383.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 402.88,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 410.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 384.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 402.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 496.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 495.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 470.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 458.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 446.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 451.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 453.69,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 442.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 440.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 441.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 450.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 410.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 419.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 420.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 420.56,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 416.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 422.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 423.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 414.71,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 392.38,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 390.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 420.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 402.85,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 391.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "CESAR"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 378.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 377.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 389.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 376.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 381.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.54,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 387.47,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 383.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.82,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 390.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 372.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 383.49,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 378.82,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 366.43,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 384.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 402.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 389.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 378.48,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.78,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 384.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 383.88,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 369.59,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 371.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 384.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 382.18,
+                    "DEPARTAMENTO": "ANTIOQUIA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 354.75,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 372.61,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 359.0,
+                    "DEPARTAMENTO": "QUINDIO"
+                },
+                {
+                    "PG_ICFES": 364.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.9,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 366.0,
+                    "DEPARTAMENTO": "NARINO"
+                },
+                {
+                    "PG_ICFES": 354.36,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 385.02,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 363.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 353.83,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 366.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 374.32,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 368.11,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 369.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 361.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 370.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 371.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 364.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 354.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 361.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 538.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 479.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 440.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 466.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 454.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 453.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 448.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 461.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 460.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 472.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 440.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 459.78,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 444.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 441.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 439.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 451.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 453.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 462.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 431.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 426.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 427.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 429.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 438.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 433.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 433.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 435.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 415.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 429.0,
+                    "DEPARTAMENTO": "CAQUETA"
+                },
+                {
+                    "PG_ICFES": 425.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "NARINO"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 422.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 422.0,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 419.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 415.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 424.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 440.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 436.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 419.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 423.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 390.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 419.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 425.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 427.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 430.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 432.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "CESAR"
+                },
+                {
+                    "PG_ICFES": 432.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 415.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "CASANARE"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.8,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 402.8,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 384.5,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "VALLE"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 407.93,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 390.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 416.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.82,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 377.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 402.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 400.69,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 379.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.04,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 415.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 415.59,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 359.43,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 354.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 376.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 371.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 359.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 532.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 496.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 436.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 455.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 462.0,
+                    "DEPARTAMENTO": "NARINO"
+                },
+                {
+                    "PG_ICFES": 446.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 445.96,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 444.0,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 429.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 446.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 431.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 424.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 419.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 423.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 416.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 436.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 427.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 410.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "BOLIVAR"
+                },
+                {
+                    "PG_ICFES": 415.1,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 405.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 421.56,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 420.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 410.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 433.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 435.21,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 410.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 425.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 405.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 405.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.34,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "BOLIVAR"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "VALLE"
+                },
+                {
+                    "PG_ICFES": 421.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 387.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 387.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 404.98,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 379.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 369.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 384.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.1,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 391.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 369.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 386.74,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 362.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 391.34,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 381.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 379.93,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 389.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 361.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 384.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 387.29,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 378.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 371.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 372.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 387.0,
+                    "DEPARTAMENTO": "CASANARE"
+                },
+                {
+                    "PG_ICFES": 360.0,
+                    "DEPARTAMENTO": "BOLIVAR"
+                },
+                {
+                    "PG_ICFES": 370.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 382.52,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 365.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 381.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 377.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 387.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 365.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 353.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 353.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 377.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 354.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 370.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 361.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 360.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 422.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 351.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 370.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 366.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 372.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 359.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 371.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 360.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 365.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 350.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 361.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 352.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 358.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 448.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 432.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 447.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 350.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 310.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 314.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 473.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 435.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 313.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 320.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 312.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 301.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 312.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 434.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 423.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 440.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 420.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 417.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 388.74,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 383.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 387.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 361.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 371.28,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 365.0,
+                    "DEPARTAMENTO": "NARINO"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 362.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 293.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 365.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 379.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 312.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 315.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 312.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 317.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 313.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 321.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 317.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 387.5,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 321.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 387.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 312.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 378.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 365.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 364.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 359.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 321.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 350.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 339.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 343.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 320.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 445.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 310.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 416.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 390.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 411.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 382.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 388.1,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "GUAINIA"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 409.8,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 419.45,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 421.82,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "NARINO"
+                },
+                {
+                    "PG_ICFES": 392.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 381.0,
+                    "DEPARTAMENTO": "NARINO"
+                },
+                {
+                    "PG_ICFES": 305.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 390.38,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 319.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 305.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 307.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 320.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 316.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 320.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 302.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 315.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 307.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 307.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 306.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 315.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 298.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 385.79,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 364.0,
+                    "DEPARTAMENTO": "NARINO"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 35.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 415.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 351.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 370.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 412.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 364.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 376.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 415.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 353.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 350.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 390.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 341.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 343.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 350.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 393.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 359.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 362.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 406.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 363.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 407.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 349.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 425.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 377.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 344.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 352.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 346.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 343.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 441.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 431.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 414.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 363.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 365.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 300.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 293.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 287.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 416.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 343.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 313.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 369.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 350.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 352.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 359.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 343.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 341.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 341.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 326.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 341.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 352.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 346.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 312.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "ARAUCA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 394.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 384.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 408.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 320.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 320.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 314.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 346.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 354.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 343.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 383.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 312.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 371.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "TOLIMA"
+                },
+                {
+                    "PG_ICFES": 405.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 451.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 287.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 388.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 377.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 389.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 316.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 317.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 315.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 326.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 395.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 365.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 374.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 360.0,
+                    "DEPARTAMENTO": "BOLIVAR"
+                },
+                {
+                    "PG_ICFES": 0.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 0.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 0.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 0.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 0.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 346.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 352.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 371.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 349.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 510.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 341.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 341.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 354.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 349.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 358.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 353.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 328.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 348.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 344.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 345.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 341.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 365.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 344.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 358.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 352.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 317.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 354.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 360.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 344.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 418.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 413.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 339.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 400.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 341.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "CORDOBA"
+                },
+                {
+                    "PG_ICFES": 385.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 316.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 377.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 419.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 310.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 397.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 399.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 366.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 328.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 403.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 373.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 339.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 328.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 286.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 344.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "HUILA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 398.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 317.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 317.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 386.0,
+                    "DEPARTAMENTO": "CUNDINAMARCA"
+                },
+                {
+                    "PG_ICFES": 328.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 315.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 319.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 308.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 315.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 301.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 317.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 377.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 344.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 343.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 362.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 362.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 396.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 344.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 349.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 366.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 349.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 368.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 326.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 328.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 348.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 350.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 368.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 348.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 339.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 378.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 362.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 285.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 348.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 349.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 347.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 356.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 357.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 344.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 346.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 350.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 348.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 202.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 326.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 380.0,
+                    "DEPARTAMENTO": "BOGOTA"
+                },
+                {
+                    "PG_ICFES": 321.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 315.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 328.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 401.0,
+                    "DEPARTAMENTO": "BOYACA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 321.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 328.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 339.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 339.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 343.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 355.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 346.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 334.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 345.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 339.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 351.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 353.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 339.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 339.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 326.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 360.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 346.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 342.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 344.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 345.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 345.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 375.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 352.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 337.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 367.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 325.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 358.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 340.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 466.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 341.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 327.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 328.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 336.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 338.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 331.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 364.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 371.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 350.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 332.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 333.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 314.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 330.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 329.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 322.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 324.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 317.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 335.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 318.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 404.0,
+                    "DEPARTAMENTO": "META"
+                },
+                {
+                    "PG_ICFES": 328.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                },
+                {
+                    "PG_ICFES": 323.0,
+                    "DEPARTAMENTO": "NO REGISTRA"
+                }
+            ]
+        }
+    ]
+}
