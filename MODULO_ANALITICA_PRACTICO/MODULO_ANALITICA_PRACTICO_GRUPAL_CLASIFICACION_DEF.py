@@ -541,9 +541,7 @@ def entrenar_modelo_BG_con_transformacion(X_trn, Y_trn, X_tst, Y_tst,mejores_hip
             'bootstrap_features': [True]}
     base_estimator= DecisionTreeClassifier(**mejores_hiperparametros_tree)
     semilla=5
-    modelo = BaggingClassifier(estimator=base_estimator,n_estimators=750, random_state=semilla,
-                            bootstrap= True, bootstrap_features = True, max_features = 0.7,
-                            max_samples= 0.5)
+    modelo = BaggingClassifier(estimator=base_estimator)
     num_folds=10
     kfold = StratifiedKFold(n_splits=num_folds, random_state=semilla, shuffle=True)
     metrica = 'accuracy'
